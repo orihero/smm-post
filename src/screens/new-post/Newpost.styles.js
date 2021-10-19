@@ -15,7 +15,9 @@ export const OptionsDiv = styled.div`
 export const Preview = styled.div`
   display: flex;
   flex: 1;
+  margin-left: 15px;
 `;
+
 export const PostContainer = styled.div`
   display: flex;
   flex: 1;
@@ -130,10 +132,8 @@ export const PreviewButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${colors.white};
-  background-color: ${(props) =>
-        props.active ? colors.primaryPink : colors.white};
-  color: ${(props) => (props.primary ? colors.white : colors.primaryPink)};
+  background-color: ${props => props.active ? colors.primaryPink : colors.white};
+  color: ${(props) => (props.active ? colors.white : colors.primaryPink)};
 `;
 
 export const PreviewIcon = styled.img`
@@ -184,22 +184,74 @@ export const SmileIcon = styled.img`
 `;
 
 export const DataDiv = styled.div`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  color: #102046;
+  flex: 1;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(16, 32, 70, 0.1);
 `;
 
 export const DataButton = styled.div`
-    padding: 10px;
-    /* bottom: 5px; */
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    /* margin-top: 2px; */
-`
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  border: 1px solid ${colors.primaryPink};
+  font-weight: 400;
+  color: #102046;
+  margin-left: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+`;
 
-export const DataHead = styled.h1``
+export const DataHead = styled.h1`
+  font-size: 16px;
+  font-weight: 500;
+`;
 
 export const DataImg = styled.img`
-    margin-left: 5px;
+  margin-left: 10px;
+`;
 
+export const TemasButton = styled.div`
+  display: flex;
+  align-items: center;
+  border: 1px solid ${colors.primaryPink};
+  border-radius: 15px;
+  padding: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: ${colors.primaryPink};
+  font-weight: 500;
+  margin-left: 15px;
+`;
+
+export const ButtonsContainer = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const ButtonsDiv = styled.div`
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 25px;
+  border: 1px solid ${colors.primaryPink};
+  color: ${colors.primaryPink};
+  font-weight: 500;
+  /* margin-left: 5px; */
+`;
+
+export const PreviewContainer = styled.div `
+    padding: 15px;
+    margin-left: 5px;
+    /* font-size: 18px; */
+    /* line-height: none; */
 `
+export const PreviewHead = styled.h1 ``
+

@@ -1,12 +1,12 @@
 import React from 'react'
-import emailimg from '../../assets/email.png'
-import posts from '../../assets/Newpost.png'
-import pensol from '../../assets/Pensol.png'
-import calendar from "../../assets/Calendar.png"
-import analitka from '../../assets/Analitka.png'
-import setting1 from '../../assets/settings 1.png'
-import settings2 from '../../assets/settings 2.png'
-import Vektor from "../../assets/Vector.png"
+import emailimg from '../../../assets/email.png'
+import posts from '../../../assets/Newpost.png'
+import pensol from '../../../assets/Pensol.png'
+import calendar from "../../../assets/Calendar.png"
+import analitka from '../../../assets/Analitka.png'
+import setting1 from '../../../assets/settings 1.png'
+import settings2 from '../../../assets/settings 2.png'
+import Vektor from "../../../assets/Vector.png"
 import {
     AnalitkaImg,
     AnalitkaParagraph,
@@ -31,8 +31,16 @@ import {
     SettingsSecondParagraph,
     VectorImg
 } from './Sidebar.styles'
+import { useHistory } from 'react-router';
+
 
 function Sidebar() {
+    let history = useHistory();
+    let onNavigate = (link) => {
+        return () => {
+            history.push(link)
+        }
+    }
     return (
         <>
             <Container>
@@ -46,7 +54,7 @@ function Sidebar() {
                         <LeftSideButtonSecond>+</LeftSideButtonSecond>
                     </ButtonsDiv>
                     <LeftSideBox>
-                        <ElementsDiv>
+                        <ElementsDiv onClick={onNavigate("/newpost")}>
                             <NewPostsImg src={posts} />
                             <PostsParagraph>Новый пост</PostsParagraph>
                         </ElementsDiv>

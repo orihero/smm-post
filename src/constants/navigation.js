@@ -1,0 +1,1 @@
+export let MENUS = [{ link: '/newpost', text: '' }]

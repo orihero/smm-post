@@ -4,7 +4,7 @@ import { AnalitkaContainer } from './Analitka.syles'
 function Analitka() {
     return (
         <>
-        {/* <AnalitkaContainer></AnalitkaContainer> */}
+        <AnalitkaContainer></AnalitkaContainer>
         </>
     )
 }

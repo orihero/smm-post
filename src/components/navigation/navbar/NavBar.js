@@ -1,6 +1,6 @@
 import React from 'react'
-import users from '../../assets/users.png'
-import vector2 from '../../assets/Vector2.png'
+import users from '../../../assets/users.png'
+import vector2 from '../../../assets/Vector2.png'
 import { NavbarDiv, NavbarHead, UserDiv, UserImg, UserParagraph, Vector } from '.././navbar/Navbar.style'
 
 export default function NavBar() {

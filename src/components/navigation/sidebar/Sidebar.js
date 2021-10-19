@@ -62,7 +62,7 @@ function Sidebar() {
                             <PensolImg src={pensol} />
                             <PensolParagraph>Черновики</PensolParagraph>
                         </ElementsDiv>
-                        <ElementsDiv>
+                        <ElementsDiv onClick={onNavigate("/publications")}>
                             <CalendarImg src={calendar} />
                             <CalendarParagraph>Публикации</CalendarParagraph>
                         </ElementsDiv>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../constants/colors";
+import { COLORS } from "../../constants/colors";
 
 export const Container = styled.div`
   width: 100%;
@@ -24,7 +24,7 @@ export const PostContainer = styled.div`
   flex-direction: column;
   margin: 60px 40px;
   padding: 40px;
-  background-color: ${colors.white};
+  background-color: ${COLORS.white};
 `;
 
 export const ContainerBox = styled.div`
@@ -60,14 +60,14 @@ export const ParagpaphFirst = styled.p`
   font-size: 17px;
   font-weight: 400;
   &:hover {
-    border-bottom: 3px solid ${colors.primaryPink};
-    color: ${colors.primaryPink};
+    border-bottom: 3px solid ${COLORS.primaryPink};
+    color: ${COLORS.primaryPink};
   }
   ${(props) =>
-        props.active &&
-        `{
-        border-bottom: 3px solid ${colors.primaryPink};
-        color: ${colors.primaryPink};
+    props.active &&
+    `{
+        border-bottom: 3px solid ${COLORS.primaryPink};
+        color: ${COLORS.primaryPink};
     }`}
 `;
 
@@ -103,7 +103,7 @@ export const ButtonFirst = styled.button`
   border: none;
   cursor: pointer;
   color: #fff;
-  background-color: ${colors.primaryPink};
+  background-color: ${COLORS.primaryPink};
   margin-top: 5%;
 `;
 
@@ -132,12 +132,12 @@ export const PreviewButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${props => props.active ? colors.primaryPink : colors.white};
-  color: ${(props) => (props.active ? colors.white : colors.primaryPink)};
+  background-color: ${props => props.active ? COLORS.primaryPink : COLORS.white};
+  color: ${(props) => (props.active ? COLORS.white : COLORS.primaryPink)};
 `;
 
 export const PreviewIcon = styled.img`
-  color: ${colors.white};
+  color: ${COLORS.white};
 `;
 
 export const TextareaContainer = styled.div`
@@ -198,7 +198,7 @@ export const DataButton = styled.div`
   display: flex;
   align-items: center;
   margin-top: 5px;
-  border: 1px solid ${colors.primaryPink};
+  border: 1px solid ${COLORS.primaryPink};
   font-weight: 400;
   color: #102046;
   margin-left: 15px;
@@ -218,12 +218,12 @@ export const DataImg = styled.img`
 export const TemasButton = styled.div`
   display: flex;
   align-items: center;
-  border: 1px solid ${colors.primaryPink};
+  border: 1px solid ${COLORS.primaryPink};
   border-radius: 15px;
   padding: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  color: ${colors.primaryPink};
+  color: ${COLORS.primaryPink};
   font-weight: 500;
   margin-left: 15px;
 `;
@@ -241,17 +241,17 @@ export const ButtonsDiv = styled.div`
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 25px;
-  border: 1px solid ${colors.primaryPink};
-  color: ${colors.primaryPink};
+  border: 1px solid ${COLORS.primaryPink};
+  color: ${COLORS.primaryPink};
   font-weight: 500;
   /* margin-left: 5px; */
 `;
 
-export const PreviewContainer = styled.div `
+export const PreviewContainer = styled.div`
     padding: 15px;
     margin-left: 5px;
     /* font-size: 18px; */
     /* line-height: none; */
 `
-export const PreviewHead = styled.h1 ``
+export const PreviewHead = styled.h1``
 

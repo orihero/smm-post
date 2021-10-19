@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
-import NavBar from '../components/navbar/NavBar'
+import NavBar from '../components/navigation/navbar/NavBar'
 import Sidebar from '../components/navigation/sidebar/Sidebar'
 import Analitka from '../screens/analitka/Analitka'
 import Loginscreens from '../screens/loginscreens/Loginscreens'
@@ -19,7 +19,7 @@ function Routes() {
                         <NavBar />
                         <Switch>
                             <Route exact path="/newpost" component={Newpost} />
-                            <Route exact path="/analitka" component={Analitka} />
+                            <Route exact path="/analytics" component={Analitka} />
                             <Route exact path="/publications" component={Publications} />
                         </Switch>
                     </div>

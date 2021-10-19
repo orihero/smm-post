@@ -1,6 +1,6 @@
 import React from 'react'
-import users from '../../assets/users.png'
-import vector2 from '../../assets/Vector2.png'
+import { IMAGES } from '../../../constants/images'
+
 import { NavbarDiv, NavbarHead, UserDiv, UserImg, UserParagraph, Vector } from '.././navbar/Navbar.style'
 
 export default function NavBar() {
@@ -9,8 +9,8 @@ export default function NavBar() {
             <NavbarHead>Расписание</NavbarHead>
             <UserDiv>
                 <UserParagraph>Привет, Рафаэль</UserParagraph>
-                <UserImg src={users} />
-                <Vector src={vector2} />
+                <UserImg src={IMAGES.header.users} />
+                <Vector src={IMAGES.header.arrowDown} />
             </UserDiv>
         </NavbarDiv>
     )

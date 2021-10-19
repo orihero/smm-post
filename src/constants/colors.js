@@ -1,5 +1,6 @@
-export let colors = {
+export let COLORS = {
     primaryPink: "#E8427E",
-    white: "#fff"
+    white: "#fff",
+    darkBlue: '#102046'
 }
 

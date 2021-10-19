@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import { colors } from "../../constants/colors";
+import { COLORS } from "../../constants/colors";
 
 export const PublicationsBottom = styled.div`
-  
   background-color: #f7fafc;
-
 
   flex-direction: column;
 `;
@@ -18,7 +16,6 @@ export const PublicationsHeader = styled.div`
 
 export const PublicationsButtons = styled.div`
   width: 70%;
-
   height: 20%;
   display: flex;
   align-items: center;
@@ -32,14 +29,14 @@ export const ParagpaphFirst = styled.p`
   font-size: 17px;
   font-weight: 400;
   &:hover {
-    border-bottom: 3px solid ${colors.primaryPink};
-    color: ${colors.primaryPink};
+    border-bottom: 3px solid ${COLORS.primaryPink};
+    color: ${COLORS.primaryPink};
   }
   ${(props) =>
     props.active &&
     `{
-        border-bottom: 3px solid ${colors.primaryPink};
-        color: ${colors.primaryPink};
+        border-bottom: 3px solid ${COLORS.primaryPink};
+        color: ${COLORS.primaryPink};
     }`}
 `;
 
@@ -47,7 +44,7 @@ export const PublicationsButton = styled.h1`
   font-size: 20px;
   font-weight: 500;
 
-  color: ${colors.primaryPink};
+  color: ${COLORS.primaryPink};
 `;
 
 export const PublicationsBox = styled.div`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { COLORS } from "../../../constants/colors";
 const hoverColor = '#E8427E'
 
 export const Container = styled.section`
@@ -80,18 +81,18 @@ export const ElementsDiv = styled.div`
     display: flex;
     align-items: center; 
     justify-content: flex-start;
-    margin-top: 5%;
+    margin-top: 15px;
     margin-left: 5%;
+    cursor: pointer;
 `
 
 export const PostsParagraph = styled.p`
-    margin-left: 7%;
+    margin-left: 10px;
     font-size: 16px;
     color: #102046;
-    &:hover{
-        color: ${hoverColor};
-    }
-`;
+    color:${props => props.active ? COLORS.primaryPink : COLORS.darkBlue};
+    font-weight: ${props => props.active ? 'bold' : 'normal'};
+`
 
 export const NewPostsImg = styled.img`
     width: 30px;

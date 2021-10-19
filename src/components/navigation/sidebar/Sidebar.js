@@ -1,6 +1,5 @@
 import React from 'react'
 import emailimg from '../../../assets/email.png'
-import posts from '../../../assets/Newpost.png'
 import pensol from '../../../assets/Pensol.png'
 import calendar from "../../../assets/Calendar.png"
 import analitka from '../../../assets/Analitka.png'
@@ -31,11 +30,13 @@ import {
     SettingsSecondParagraph,
     VectorImg
 } from './Sidebar.styles'
-import { useHistory } from 'react-router';
+import { useHistory, useLocation } from 'react-router';
+import { MENUS } from '../../../constants/navigation'
 
 
 function Sidebar() {
     let history = useHistory();
+    let location = useLocation();
     let onNavigate = (link) => {
         return () => {
             history.push(link)
@@ -54,30 +55,33 @@ function Sidebar() {
                         <LeftSideButtonSecond>+</LeftSideButtonSecond>
                     </ButtonsDiv>
                     <LeftSideBox>
-                        <ElementsDiv onClick={onNavigate("/newpost")}>
+                        {MENUS.map(({ link, text, image: Icon, }, i) => {
+                            return <ElementsDiv onClick={onNavigate(link)}>
+                                {/* <NewPostsImg src={Icon} /> */}
+                                <Icon active={location.pathname === link} />
+                                <PostsParagraph active={location.pathname === link} >{text}</PostsParagraph>
+                            </ElementsDiv>
+                        })}
+                        {/* <ElementsDiv onClick={onNavigate("/newpost")}>
                             <NewPostsImg src={posts} />
                             <PostsParagraph>Новый пост</PostsParagraph>
                         </ElementsDiv>
-                        <ElementsDiv>
-                            <PensolImg src={pensol} />
-                            <PensolParagraph>Черновики</PensolParagraph>
-                        </ElementsDiv>
-                        <ElementsDiv>
+                        <ElementsDiv onClick={onNavigate("/publications")}>
                             <CalendarImg src={calendar} />
                             <CalendarParagraph>Публикации</CalendarParagraph>
                         </ElementsDiv>
-                        <ElementsDiv>
+                        <ElementsDiv onClick={onNavigate("/analytics")}>
                             <AnalitkaImg src={analitka} />
                             <AnalitkaParagraph>Аналитика</AnalitkaParagraph>
                         </ElementsDiv>
-                        <ElementsDiv>
+                        <ElementsDiv onClick={onNavigate("/newpost")}>
                             <SettingsFirstImg src={setting1} />
                             <SettingsFirstParagraph>Инструменты</SettingsFirstParagraph>
                         </ElementsDiv>
-                        <ElementsDiv>
+                        <ElementsDiv onClick={onNavigate("/newpost")}>
                             <SettingsSecondImg src={settings2} />
                             <SettingsSecondParagraph>Настройки</SettingsSecondParagraph>
-                        </ElementsDiv>
+                        </ElementsDiv> */}
                     </LeftSideBox>
                 </LeftSide>
             </Container>

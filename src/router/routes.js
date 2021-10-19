@@ -5,6 +5,7 @@ import Sidebar from '../components/sidebar/Sidebar'
 import Analitka from '../screens/analitka/Analitka'
 import Loginscreens from '../screens/loginscreens/Loginscreens'
 import Newpost from '../screens/new-post/Newpost'
+import Publications from '../screens/Publications/Publications'
 
 function Routes() {
     return (
@@ -18,6 +19,7 @@ function Routes() {
                         <NavBar />
                         <Route path="/newpost" component={Newpost} />
                         <Route path="/analitka" component={Analitka} />
+                        <Route path="/publications" component={Publications} />
                     </div>
                 </div>
             </Switch>

@@ -4,6 +4,7 @@ import NavBar from '../components/navbar/NavBar'
 import Sidebar from '../components/sidebar/Sidebar'
 import Loginscreens from '../screens/loginscreens/Loginscreens'
 import Newpost from '../screens/new-post/Newpost'
+import Publications from '../screens/Publications/Publications'
 
 function Routes() {
     return (
@@ -16,6 +17,7 @@ function Routes() {
                     <div style={{ display: 'flex', flex: 1, flexDirection: 'column',marginLeft:"14%" }}>
                         <NavBar />
                         <Route path="/newpost" component={Newpost} />
+                        <Route path="/publications" component={Publications} />
                     </div>
                 </div>
             </Switch>

@@ -35,7 +35,7 @@ export default function Home() {
                                 </ParagpaphFirst>
                             );
                         })}
-                    </TextsDiv>
+                    </TextsDiv> 
                     <PostDivs>
                         <PostContainer>
                             <TipDiv>

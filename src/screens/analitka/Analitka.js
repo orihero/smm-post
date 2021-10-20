@@ -1,10 +1,13 @@
 import React from 'react'
+import BarChart from '../../components/charts/BarChart'
 import { AnalitkaContainer } from './Analitka.syles'
 
 function Analitka() {
     return (
         <>
-        <AnalitkaContainer></AnalitkaContainer>
+            <AnalitkaContainer>
+                <BarChart/>
+            </AnalitkaContainer>
         </>
     )
 }

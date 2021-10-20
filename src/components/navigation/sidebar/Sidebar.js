@@ -49,26 +49,6 @@ function Sidebar() {
                 </ElementsDiv>
               );
             })}
-            {/* <ElementsDiv onClick={onNavigate("/newpost")}>
-                            <NewPostsImg src={posts} />
-                            <PostsParagraph>Новый пост</PostsParagraph>
-                        </ElementsDiv>
-                          <ElementsDiv onClick={onNavigate("/publications")}>
-                            <CalendarImg src={calendar} />
-                            <CalendarParagraph>Публикации</CalendarParagraph>
-                        </ElementsDiv>
-                        <ElementsDiv onClick={onNavigate("/analytics")}>
-                            <AnalitkaImg src={analitka} />
-                            <AnalitkaParagraph>Аналитика</AnalitkaParagraph>
-                        </ElementsDiv>
-                        <ElementsDiv onClick={onNavigate("/newpost")}>
-                            <SettingsFirstImg src={setting1} />
-                            <SettingsFirstParagraph>Инструменты</SettingsFirstParagraph>
-                        </ElementsDiv>
-                        <ElementsDiv onClick={onNavigate("/newpost")}>
-                            <SettingsSecondImg src={settings2} />
-                            <SettingsSecondParagraph>Настройки</SettingsSecondParagraph>
-                        </ElementsDiv> */}
           </LeftSideBox>
         </LeftSide>
       </Container>

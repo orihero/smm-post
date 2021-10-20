@@ -1,9 +1,27 @@
-import React from 'react'
-import email from '../../assets/email.png'
-import instagram from '../../assets/instagram.png'
-import vk from '../../assets/vk.png'
-import facebook from '../../assets/facebook.png'
-import { DivButtonFirst, DivButtonSecond, DivButtonThird, EmailIcon, FaceBookIcon, Head, InstaIcon, ParagraphButtonFirst, ParagraphButtonSecond, ParagraphButtonThird, ParagraphFirst, ParagraphSecond, Section, SectionInner, SignInButton, VkIcon, WebsideDivs } from './Loginscreens.elements'
+import React from "react";
+import email from "../../assets/email.png";
+import instagram from "../../assets/instagram.png";
+import vk from "../../assets/vk.png";
+import facebook from "../../assets/facebook.png";
+import {
+    DivButtonFirst,
+    DivButtonSecond,
+    DivButtonThird,
+    EmailIcon,
+    FaceBookIcon,
+    Head,
+    InstaIcon,
+    ParagraphButtonFirst,
+    ParagraphButtonSecond,
+    ParagraphButtonThird,
+    ParagraphFirst,
+    ParagraphSecond,
+    Section,
+    SectionInner,
+    SignInButton,
+    VkIcon,
+    WebsideDivs,
+} from "./Loginscreens.elements";
 
 function Loginscreens() {
     return (
@@ -13,19 +31,27 @@ function Loginscreens() {
                 <SectionInner>
                     <WebsideDivs>
                         <Head>Начнем анализ</Head>
-                        <ParagraphFirst>Добавьте аккаунты соцсетей, с которыми вы работаете, и <br />
-                            сервис начнет собирать статистику по ним.</ParagraphFirst>
+                        <ParagraphFirst>
+                            Добавьте аккаунты соцсетей, с которыми вы работаете, и <br />
+                            сервис начнет собирать статистику по ним.
+                        </ParagraphFirst>
                         <DivButtonFirst>
                             <InstaIcon src={instagram} />
-                            <ParagraphButtonFirst>Добавить аккаунт Instagram</ParagraphButtonFirst>
+                            <ParagraphButtonFirst>
+                                Добавить аккаунт Instagram
+                            </ParagraphButtonFirst>
                         </DivButtonFirst>
                         <DivButtonSecond>
                             <VkIcon src={vk} />
-                            <ParagraphButtonSecond>Добавить аккаунт Vkontakte</ParagraphButtonSecond>
+                            <ParagraphButtonSecond>
+                                Добавить аккаунт Vkontakte
+                            </ParagraphButtonSecond>
                         </DivButtonSecond>
                         <DivButtonThird>
                             <FaceBookIcon src={facebook} />
-                            <ParagraphButtonThird>Добавить аккаунт Facebook</ParagraphButtonThird>
+                            <ParagraphButtonThird>
+                                Добавить аккаунт Facebook
+                            </ParagraphButtonThird>
                         </DivButtonThird>
                         <ParagraphSecond>или</ParagraphSecond>
                         <SignInButton>Добавить чужой аккаунт</SignInButton>
@@ -33,7 +59,7 @@ function Loginscreens() {
                 </SectionInner>
             </Section>
         </>
-    )
+    );
 }
 
 export default Loginscreens;

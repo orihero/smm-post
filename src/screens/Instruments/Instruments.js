@@ -18,7 +18,7 @@ import {
 } from "./Instruments.styles";
 import Modal from "./Modal";
 
-import ok from "../../assets/ok.png";
+import ok from "../../assets/ok_color.png";
 import saly from "../../assets/Saly-12.png";
 import telifon from "../../assets/Saly-24.png";
 import icon from "../../assets/Group-2.png";

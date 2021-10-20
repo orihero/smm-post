@@ -15,10 +15,11 @@ import {
   InstrumentsBoxContainerImageText,
   InstrumentsBoxContainerImageTextOne,
   InstrumentsBoxImage,
+  InstrumentsBoxImag,
 } from "./Instruments.styles";
 import Modal from "./Modal";
 
-import ok from "../../assets/ok_color.png";
+import ok from "../../assets/ok.png";
 import saly from "../../assets/Saly-12.png";
 import telifon from "../../assets/Saly-24.png";
 import icon from "../../assets/Group-2.png";
@@ -27,6 +28,7 @@ export default function Instruments() {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
+      {openModal && <Modal claseModal={setOpenModal}  />}
       <InstrumentsHeader>
         <InstrumentsHeaderContainer>
           <InstrumentsInner>
@@ -36,10 +38,7 @@ export default function Instruments() {
             </InstrumentsText>
           </InstrumentsInner>
           <InstrumentsContainer>
-            <InstrumentsBox
-              
-            >
-              
+            <InstrumentsBox>
               <InstrumentsBoxTextContainer>
                 <InstrumentsBoxText>
                   Настройте расписание <br /> постов под себя
@@ -58,7 +57,7 @@ export default function Instruments() {
                 <InstrumentsBoxContainerImageTextOne>
                   Вкл
                 </InstrumentsBoxContainerImageTextOne>
-                
+
                 <InstrumentsBoxImage src={ok} />
               </InstrumentsBoxContainerImage>
             </InstrumentsBox>
@@ -71,9 +70,14 @@ export default function Instruments() {
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
                   соцсетями...{" "}
-                  <InstrumentsBoxTextThree  onClick={() => {
-                setOpenModal(true);
-              }}> подробнее</InstrumentsBoxTextThree>
+                  <InstrumentsBoxTextThree
+                    onClick={() => {
+                      setOpenModal(true);
+                    }}
+                  >
+                    {" "}
+                    подробнее
+                  </InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
                   Для тех, кто хочет упростить работу с публикацией в соцсети
@@ -88,7 +92,6 @@ export default function Instruments() {
             </InstrumentsBox>
           </InstrumentsContainer>
           <InstrumentsContainer>
-          {openModal &&<Modal claseModal={setOpenModal}/>  }
             <InstrumentsBox>
               <InstrumentsBoxTextContainer>
                 <InstrumentsBoxText>
@@ -98,7 +101,9 @@ export default function Instruments() {
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
                   соцсетями...{" "}
-                  <InstrumentsBoxTextThree> подробнее</InstrumentsBoxTextThree>
+                  <InstrumentsBoxTextThree onClick={() => {
+                      setOpenModal(true);
+                    }}> подробнее</InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
                   Для тех, кто хочет упростить работу с публикацией в соцсети
@@ -120,7 +125,9 @@ export default function Instruments() {
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
                   соцсетями...{" "}
-                  <InstrumentsBoxTextThree> подробнее</InstrumentsBoxTextThree>
+                  <InstrumentsBoxTextThree onClick={() => {
+                      setOpenModal(true);
+                    }}> подробнее</InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
                   Для тех, кто хочет упростить работу с публикацией в соцсети
@@ -130,7 +137,7 @@ export default function Instruments() {
                 <InstrumentsBoxContainerImageText>
                   Выкл
                 </InstrumentsBoxContainerImageText>
-                <InstrumentsBoxImage src={icon} />
+                <InstrumentsBoxImag src={icon} />
               </InstrumentsBoxContainerImage>
             </InstrumentsBox>
           </InstrumentsContainer>

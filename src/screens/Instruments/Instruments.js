@@ -12,11 +12,10 @@ export default function Instruments() {
     return (
         <>
             <InstrumentsHeader>
-            <InstrumentsInner>
-            <InstrumentsText>
-            Используйте Модуль А по максимуму с полезными инструментами, чтобы  экономить время при работе с соцсетями и успевать больше               
-            </InstrumentsText>
-                </InstrumentsInner> 
+                <InstrumentsInner>
+                    <InstrumentsText>
+                    </InstrumentsText>
+                </InstrumentsInner>
             </InstrumentsHeader>
         </>
     )

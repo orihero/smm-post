@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IMAGES } from "../../constants/images";
 import {
   InstrumentsHeader,
   InstrumentsHeaderContainer,
@@ -19,16 +20,11 @@ import {
 } from "./Instruments.styles";
 import Modal from "./Modal";
 
-import ok from "../../assets/ok.png";
-import saly from "../../assets/Saly-12.png";
-import telifon from "../../assets/Saly-24.png";
-import icon from "../../assets/Group-2.png";
-
 export default function Instruments() {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
-      {openModal && <Modal claseModal={setOpenModal}  />}
+      {openModal && <Modal claseModal={setOpenModal} />}
       <InstrumentsHeader>
         <InstrumentsHeaderContainer>
           <InstrumentsInner>
@@ -46,7 +42,7 @@ export default function Instruments() {
                 <InstrumentsBoxTextOne>
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
-                  соцсетями...{" "}
+                  соцсетями...
                   <InstrumentsBoxTextThree> подробнее</InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
@@ -58,7 +54,7 @@ export default function Instruments() {
                   Вкл
                 </InstrumentsBoxContainerImageTextOne>
 
-                <InstrumentsBoxImage src={ok} />
+                <InstrumentsBoxImage src={IMAGES.insturments.ok} />
               </InstrumentsBoxContainerImage>
             </InstrumentsBox>
             <InstrumentsBox>
@@ -69,7 +65,7 @@ export default function Instruments() {
                 <InstrumentsBoxTextOne>
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
-                  соцсетями...{" "}
+                  соцсетями...
                   <InstrumentsBoxTextThree
                     onClick={() => {
                       setOpenModal(true);
@@ -87,7 +83,7 @@ export default function Instruments() {
                 <InstrumentsBoxContainerImageText>
                   Выкл
                 </InstrumentsBoxContainerImageText>
-                <InstrumentsBoxImage src={telifon} />
+                <InstrumentsBoxImage src={IMAGES.insturments.saly} />
               </InstrumentsBoxContainerImage>
             </InstrumentsBox>
           </InstrumentsContainer>
@@ -100,10 +96,14 @@ export default function Instruments() {
                 <InstrumentsBoxTextOne>
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
-                  соцсетями...{" "}
-                  <InstrumentsBoxTextThree onClick={() => {
+                  соцсетями...
+                  <InstrumentsBoxTextThree
+                    onClick={() => {
                       setOpenModal(true);
-                    }}> подробнее</InstrumentsBoxTextThree>
+                    }}
+                  >
+                    подробнее
+                  </InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
                   Для тех, кто хочет упростить работу с публикацией в соцсети
@@ -113,7 +113,7 @@ export default function Instruments() {
                 <InstrumentsBoxContainerImageText>
                   Выкл
                 </InstrumentsBoxContainerImageText>
-                <InstrumentsBoxImage src={saly} />
+                <InstrumentsBoxImage src={IMAGES.insturments.telephone} />
               </InstrumentsBoxContainerImage>
             </InstrumentsBox>
             <InstrumentsBox>
@@ -124,10 +124,14 @@ export default function Instruments() {
                 <InstrumentsBoxTextOne>
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
-                  соцсетями...{" "}
-                  <InstrumentsBoxTextThree onClick={() => {
+                  соцсетями...
+                  <InstrumentsBoxTextThree
+                    onClick={() => {
                       setOpenModal(true);
-                    }}> подробнее</InstrumentsBoxTextThree>
+                    }}
+                  >
+                    подробнее
+                  </InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
                   Для тех, кто хочет упростить работу с публикацией в соцсети
@@ -137,7 +141,7 @@ export default function Instruments() {
                 <InstrumentsBoxContainerImageText>
                   Выкл
                 </InstrumentsBoxContainerImageText>
-                <InstrumentsBoxImag src={icon} />
+                <InstrumentsBoxImag src={IMAGES.insturments.icon} />
               </InstrumentsBoxContainerImage>
             </InstrumentsBox>
           </InstrumentsContainer>

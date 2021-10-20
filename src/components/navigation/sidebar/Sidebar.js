@@ -1,7 +1,6 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router";
-import emailimg from "../../../assets/email.png";
-import Vektor from "../../../assets/Vector.png";
+import { IMAGES } from "../../../constants/images";
 import { MENUS } from "../../../constants/navigation";
 import {
   ButtonParagpraph,
@@ -29,11 +28,11 @@ function Sidebar() {
     <>
       <Container>
         <LeftSide>
-          <EmailImg src={emailimg} />
+          <EmailImg src={IMAGES.sidebar.emailimg} />
           <ButtonsDiv>
             <LeftSideButton>
               <ButtonParagpraph>Первый проект</ButtonParagpraph>
-              <VectorImg src={Vektor} />
+              <VectorImg src={IMAGES.sidebar.vektor} />
             </LeftSideButton>
             <LeftSideButtonSecond>+</LeftSideButtonSecond>
           </ButtonsDiv>
@@ -41,7 +40,6 @@ function Sidebar() {
             {MENUS.map(({ link, text, image: Icon }, i) => {
               return (
                 <ElementsDiv onClick={onNavigate(link)}>
-                  {/* <NewPostsImg src={Icon} /> */}
                   <Icon active={location.pathname === link} />
                   <PostsParagraph active={location.pathname === link}>
                     {text}

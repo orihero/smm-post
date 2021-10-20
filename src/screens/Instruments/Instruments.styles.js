@@ -26,6 +26,7 @@ export const InstrumentsBox = styled.div`
   background-color: #fff;
   display: flex;
   width: 484px;
+  height: 29vh;
 `;
 export const InstrumentsBoxText = styled.div`
   font-size: 18px;
@@ -47,11 +48,17 @@ export const InstrumentsBoxTextThree = styled.button`
   display: inline;
   color: #e8427e;
   background: #fff;
-  border:none;
+  border: none;
 `;
 export const InstrumentsBoxImage = styled.img`
   width: 160px;
-  height: 140px;
+  height: 149px;
+`;
+export const InstrumentsBoxImag = styled.img`
+  width: 160px;
+  margin-top: 25px;
+  margin-left: 2        5px;
+  height: 147px;
 `;
 export const InstrumentsBoxContainerImage = styled.div`
   display: flex;

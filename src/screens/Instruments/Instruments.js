@@ -43,7 +43,9 @@ export default function Instruments() {
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
                   соцсетями...
-                  <InstrumentsBoxTextThree> подробнее</InstrumentsBoxTextThree>
+                  <InstrumentsBoxTextThree onClick={() => {
+                      setOpenModal(true);
+                    }}> подробнее</InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
                   Для тех, кто хочет упростить работу с публикацией в соцсети
@@ -150,3 +152,5 @@ export default function Instruments() {
     </>
   );
 }
+
+

@@ -1,41 +1,56 @@
 import React from "react";
-import "./Modal.css";
+import { IMAGES } from "../../constants/images";
 import check from "../../assets/check.png";
+import vz from "../../assets/vp.svg";
+import RoundButton from "../../components/buttons/RoundButton";
+import { COLORS } from "../../constants/colors";
+import {
+  ModalBacgrund,
+  ModalContainer,
+  ModalBox,
+  ModalExit,
+  ModalDescription,
+  ModalText, 
+  ModalTextThree, 
+  ModalTextIcon,
+  ModalTextIconTwo,
+  ModalTextTwo,
+  ModalButton,
+} from "./Modal.styles";
 
 export default function Modal({ claseModal }) {
   return (
-    <div className="bacground">
-      <div className="Container">
-        <div className="box">
-          Считайте клики по ссылкам из постов
-          <h1 className="plus" onClick={() => claseModal(false)}>
-            {" "}
-            X
-          </h1>
-        </div>
-        <div className="title">
-          Включите сокращение ссылок и Амплифер покажет, какие <br /> ссылки
-          получают больше кликов, чтобы вы могли <br /> скорректировать
-          контент-план и быть в курсе интересов <br /> аудитории. У Амплифера
-          свой алгоритм подсчёта переходов,
-          <br /> поэтому данные могут незначительно отличаться от сведений в
-          соцсетях и системах аналитики.
-        </div>
+    <>
+      <ModalBacgrund>
+        <ModalContainer>
+          <ModalBox>
+            Считайте клики по ссылкам из постов
+            <ModalExit onClick={() => claseModal(false)}>x</ModalExit>
+          </ModalBox>
+          <ModalDescription>
+            Включите сокращение ссылок и Амплифер покажет, какие <br /> ссылки
+            получают больше кликов, чтобы вы могли <br /> скорректировать
+            контент-план и быть в курсе интересов <br /> аудитории. У Амплифера
+            свой алгоритм подсчёта переходов,
+            <br /> поэтому данные могут незначительно отличаться от сведений в
+            соцсетях и системах аналитики.
+          </ModalDescription>
 
-        <div className="container-one">
-          <h1>
-            <img src={check} alt="check" /> Показывает, какие посты получают
-            больше всего кликов
-          </h1>
-          <h1>
-            <img src={check} alt="check" /> Делает ссылки компактными и
-            аккуратными
-          </h1>
-        </div>
-        <div>
-          <h1> <img src="" alt="" /> Кому не подойдёт</h1>
-        </div>
-      </div>
-    </div>
+          <ModalText>
+            {" "}
+            <ModalTextIcon src={check} /> Кому не подойдёт{" "}
+          </ModalText>
+          <ModalText>
+            {" "}
+            <ModalTextIcon src={check} />
+            Делает ссылки компактными и аккуратными
+          </ModalText>
+          <ModalTextTwo>  <ModalTextIconTwo src={vz} /> Kому не подойдёт</ModalTextTwo>
+          <ModalTextThree>Тем, кто не добавляет ссылки к постам</ModalTextThree>
+          <ModalButton  primary active={true}>Включить сокращение
+</ModalButton>
+        </ModalContainer>
+      </ModalBacgrund>
+    </>
   );
 }

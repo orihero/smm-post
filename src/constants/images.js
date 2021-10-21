@@ -32,4 +32,7 @@ export let IMAGES = {
         telephone,
         icon,
     },
+    modal:{
+        
+    }
 };

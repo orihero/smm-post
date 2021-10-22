@@ -59,14 +59,14 @@ function InstrumentsIcon({ width = 32, height = 32, active = false, ...rest }) {
   let color = active ? COLORS.primaryPink : COLORS.darkBlue;
   return (
     <svg
-      {...{ width, height, fill: color, stroke: color }}
+      {...{ width, height, fill: "white", stroke: color, strokeWidth: "2px" }}
       {...rest}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       class="feather feather-tool"
+      style={{ transform: "rotateY(180deg)" }}
     >
       <path
-        fill={color}
         stroke={color}
         opacity="0.7"
         d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"

@@ -37,7 +37,7 @@ function Sidebar() {
             <LeftSideButtonSecond>+</LeftSideButtonSecond>
           </ButtonsDiv>
           <LeftSideBox>
-            {MENUS.map(({ link, text, image: Icon }, i) => {
+            {MENUS.map(({ link, text, image: Icon}, i) => {
               return (
                 <ElementsDiv onClick={onNavigate(link)}>
                   <Icon active={location.pathname === link} />

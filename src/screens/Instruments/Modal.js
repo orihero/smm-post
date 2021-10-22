@@ -1,6 +1,5 @@
 import React from "react";
-import check from "../../assets/check.png";
-import vz from "../../assets/vp.svg";
+import { IMAGES } from "../../constants/images";
 import {
   ModalBacgrund, ModalBox, ModalButton, ModalContainer, ModalDescription, ModalExit, ModalText, ModalTextIcon,
   ModalTextIconTwo, ModalTextThree, ModalTextTwo
@@ -24,14 +23,14 @@ export default function Modal({ claseModal }) {
             соцсетях и системах аналитики.
           </ModalDescription>
           <ModalText>
-            <ModalTextIcon src={check} /> Кому не подойдёт{" "}
+            <ModalTextIcon src={IMAGES.modal.check} /> Кому не подойдёт
           </ModalText>
           <ModalText>
-            <ModalTextIcon src={check} />
+            <ModalTextIcon src={IMAGES.modal.check} />
             Делает ссылки компактными и аккуратными
           </ModalText>
           <ModalTextTwo>
-            <ModalTextIconTwo src={vz} /> Kому не подойдёт
+            <ModalTextIconTwo src={""} /> Kому не подойдёт
           </ModalTextTwo>
           <ModalTextThree>Тем, кто не добавляет ссылки к постам</ModalTextThree>
           <ModalButton primary active={true}>

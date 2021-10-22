@@ -44,8 +44,8 @@ export default function Instruments() {
                   вашего проекта для удобной и <br /> быстрой работы с
                   соцсетями...
                   <InstrumentsBoxTextThree onClick={() => {
-                      setOpenModal(true);
-                    }}> подробнее</InstrumentsBoxTextThree>
+                    setOpenModal(true);
+                  }}> подробнее</InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
                   Для тех, кто хочет упростить работу с публикацией в соцсети
@@ -73,7 +73,6 @@ export default function Instruments() {
                       setOpenModal(true);
                     }}
                   >
-                    {" "}
                     подробнее
                   </InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>

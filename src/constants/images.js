@@ -16,6 +16,7 @@ import calendarIcon from '../assets/calendarIcon.png'
 import starsIcon from '../assets/starsIcon.png'
 import temsIcon from '../assets/temasIcon.png'
 import templatesIcon from '../assets/templatesIcon.png'
+import check from "../assets/check.png";
 
 export let IMAGES = {
     loginscreens: {
@@ -45,5 +46,8 @@ export let IMAGES = {
         starsIcon,
         temsIcon,
         templatesIcon
+    },
+    modal: {
+        check,
     }
 };

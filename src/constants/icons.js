@@ -91,6 +91,22 @@ function SettingsIcon({ width = 32, height = 32, active = false, ...rest }) {
     </svg>
   );
 }
+// function Modal({ width = 32, height = 32, active = false, ...rest }) {
+//   let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+//   return (
+//     <svg
+//       {...{ width, height, fill: color, stroke: color }}
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path
+//         fill={color}
+//         stroke={color}
+//         opacity="0.7"
+//         d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z"
+//       />
+//     </svg>
+//   );
+// }
 
 export let ICONS = {
   newPosts: NewPostsIcon,

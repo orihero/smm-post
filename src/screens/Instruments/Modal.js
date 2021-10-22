@@ -10,8 +10,8 @@ import {
   ModalBox,
   ModalExit,
   ModalDescription,
-  ModalText, 
-  ModalTextThree, 
+  ModalText,
+  ModalTextThree,
   ModalTextIcon,
   ModalTextIconTwo,
   ModalTextTwo,
@@ -37,18 +37,20 @@ export default function Modal({ claseModal }) {
           </ModalDescription>
 
           <ModalText>
-            {" "}
             <ModalTextIcon src={check} /> Кому не подойдёт{" "}
           </ModalText>
           <ModalText>
-            {" "}
             <ModalTextIcon src={check} />
             Делает ссылки компактными и аккуратными
           </ModalText>
-          <ModalTextTwo>  <ModalTextIconTwo src={vz} /> Kому не подойдёт</ModalTextTwo>
+          <ModalTextTwo>
+            {" "}
+            <ModalTextIconTwo src={vz} /> Kому не подойдёт
+          </ModalTextTwo>
           <ModalTextThree>Тем, кто не добавляет ссылки к постам</ModalTextThree>
-          <ModalButton  primary active={true}>Включить сокращение
-</ModalButton>
+          <ModalButton primary active={true}>
+            Включить сокращение
+          </ModalButton>
         </ModalContainer>
       </ModalBacgrund>
     </>

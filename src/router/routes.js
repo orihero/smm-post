@@ -8,6 +8,16 @@ import Loginscreens from "../screens/loginscreens/Loginscreens";
 import Newpost from "../screens/new-post/Newpost";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
+import React from 'react'
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
+import NavBar from '../components/navigation/navbar/NavBar'
+import Sidebar from '../components/navigation/sidebar/Sidebar'
+import Analitka from '../screens/analitka/Analitka'
+import Instruments from '../screens/Instruments/Instruments'
+import Loginscreens from '../screens/loginscreens/Loginscreens'
+import Newpost from '../screens/new-post/Newpost'
+import Publications from '../screens/Publications/Publications'
+import Help from '../screens/help/Help'
 
 function Routes() {
     return (
@@ -40,6 +50,8 @@ function Routes() {
                             <Route exact path="/publications" component={Publications} />
                             <Route exact path="/instruments" component={Instruments} />
                             <Route exact path="/settings" component={Settings} />
+                            <Route exact path="/help" component={Help} />
+
                         </Switch>
                     </div>
                 </div>

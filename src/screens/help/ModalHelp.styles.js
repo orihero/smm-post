@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../../constants/colors";
 
-export const ModalBacgrund = styled.div`
+export const ModalBacgrundHelp = styled.div`
   width: 100%;
   height: 100vh;
   background-color: rgba(200, 200, 200, 0.5);
@@ -10,7 +10,7 @@ export const ModalBacgrund = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export const ModalContainer = styled.div`
+export const ModalContainerHelp = styled.div`
   width: 500px;
   height: 400px;
   border-radius: 12px;
@@ -19,64 +19,59 @@ export const ModalContainer = styled.div`
   flex-direction: column;
   padding: 25px;
 `;
-export const ModalBox = styled.div`
+export const ModalBoxHelp = styled.div`
   display: flex;
-  font-size: 24px;
+  font-size: 18px;
   justify-content: space-between;
   padding-bottom: 11px;
   border-bottom: 1px solid rgb(197, 197, 197);
 `;
-export const ModalExit = styled.div`
+export const ModalExitHelp = styled.div`
   font-size: 15px;
-  width: 12px;
+  height: 30px;
+  width: 40px;
   background-color: #f7fafc;
-  border-radius: none;
-  padding: 5px 10px 5px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 7px;
 `;
 
-export const ModalDescription = styled.div`
-  font-style: 19px;
-  padding-top: 11px;
-  border-bottom: 1px solid rgb(197, 197, 197);
-  padding-bottom: 11px;
-  color: gray;
+export const ModalDescriptionHelp = styled.div`
+ font-size: 19px;
+ font-weight: 500;
 `;
-export const ModalText = styled.div`
+export const ModalTextHelp = styled.div`
   font-size: 15px;
   padding-top: 10px;
   font-weight: normal;
 `;
-export const ModalTextThree = styled.div`
+export const ModalTextThreeHelp = styled.div`
   font-size: 15px;
   margin-top: 9px;
   margin-left: 9px;
   color: gray;
 `;
-export const ModalTextTwo = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: 22px;
-  font-weight: normal;
-  margin-top: 9px;
+export const ModalTextTwoHelp = styled.div`
+  color: black;
 `;
 
-export const ModalTextIcon = styled.img``;
-export const ModalTextIconTwo = styled.img`
+export const ModalTextIconHelp = styled.img``;
+export const ModalTextIconTwoHelp = styled.img`
   width: 18px;
   margin-right: 12px;
   margin-left: 5px;
 `;
-export const ModalButton = styled.button`
+export const ModalButtonHelp = styled.button`
   font-size: 16px;
   width: 250px;
-  
+
   font-weight: bold;
   padding: 6px 20px;
   border-width: 2px;
   border: 1px solid ${COLORS.primaryPink};
   border-radius: 20px;
- 
+
   opacity: ${(props) => (props.active ? 1 : 0.5)};
   color: ${(props) => (props.primary ? COLORS.white : COLORS.primaryPink)};
   background-color: ${(props) =>

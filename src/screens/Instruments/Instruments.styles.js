@@ -52,12 +52,12 @@ export const InstrumentsBoxTextThree = styled.button`
 `;
 export const InstrumentsBoxImage = styled.img`
   width: 160px;
-  height: 149px;
+  height: 165px;
 `;
 export const InstrumentsBoxImag = styled.img`
   width: 160px;
   margin-top: 25px;
-  margin-left: 2        5px;
+  margin-left: 2 5px;
   height: 147px;
 `;
 export const InstrumentsBoxContainerImage = styled.div`

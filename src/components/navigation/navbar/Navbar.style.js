@@ -14,6 +14,7 @@ export const NavbarHead = styled.h1`
   margin-left: 45px;
   font-weight: 700;
   font-size: 28px;
+  color: ${COLORS.fontColors};
 `;
 
 export const UserDiv = styled.div`

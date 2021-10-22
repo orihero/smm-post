@@ -22,7 +22,7 @@ export default function ModalHelp({ claseModalHelp }) {
           <ModalExitHelp onClick={() => claseModalHelp(false)}>x</ModalExitHelp>
         </ModalBoxHelp>
         <ModalTextHelp>
-          <ModalTextIconHelp  src={}/>
+          <ModalTextIconHelp  src={''}/>
           <ModalDescriptionHelp>
           Как пользоваться Амплифером?
           </ModalDescriptionHelp>

@@ -1,21 +1,9 @@
 import React from "react";
-import { IMAGES } from "../../constants/images";
 import check from "../../assets/check.png";
 import vz from "../../assets/vp.svg";
-import RoundButton from "../../components/buttons/RoundButton";
-import { COLORS } from "../../constants/colors";
 import {
-  ModalBacgrund,
-  ModalContainer,
-  ModalBox,
-  ModalExit,
-  ModalDescription,
-  ModalText,
-  ModalTextThree,
-  ModalTextIcon,
-  ModalTextIconTwo,
-  ModalTextTwo,
-  ModalButton,
+  ModalBacgrund, ModalBox, ModalButton, ModalContainer, ModalDescription, ModalExit, ModalText, ModalTextIcon,
+  ModalTextIconTwo, ModalTextThree, ModalTextTwo
 } from "./Modal.styles";
 
 export default function Modal({ claseModal }) {
@@ -35,7 +23,6 @@ export default function Modal({ claseModal }) {
             <br /> поэтому данные могут незначительно отличаться от сведений в
             соцсетях и системах аналитики.
           </ModalDescription>
-
           <ModalText>
             <ModalTextIcon src={check} /> Кому не подойдёт{" "}
           </ModalText>
@@ -44,7 +31,6 @@ export default function Modal({ claseModal }) {
             Делает ссылки компактными и аккуратными
           </ModalText>
           <ModalTextTwo>
-            {" "}
             <ModalTextIconTwo src={vz} /> Kому не подойдёт
           </ModalTextTwo>
           <ModalTextThree>Тем, кто не добавляет ссылки к постам</ModalTextThree>

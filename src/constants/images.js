@@ -38,7 +38,6 @@ export let IMAGES = {
         telephone,
         icon,
     },
-<<<<<<< HEAD
     settings: {
         userIcon,
         likeIcon,
@@ -46,9 +45,5 @@ export let IMAGES = {
         starsIcon,
         temsIcon,
         templatesIcon
-=======
-    modal:{
-        
->>>>>>> 43cff28a3bb31355f51d41fea4d144d9940e712d
     }
 };

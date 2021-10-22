@@ -1,7 +1,6 @@
 import React from "react";
 import { IMAGES } from "../../constants/images";
-import check from "../../assets/check.png";
-import vz from "../../assets/vp.svg";
+
 import RoundButton from "../../components/buttons/RoundButton";
 import { COLORS } from "../../constants/colors";
 import {

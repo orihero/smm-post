@@ -30,7 +30,7 @@ export default function Modal({ claseModal }) {
             Делает ссылки компактными и аккуратными
           </ModalText>
           <ModalTextTwo>
-            <ModalTextIconTwo src={""} /> Kому не подойдёт
+            <ModalTextIconTwo src={IMAGES.modal.vz} /> Kому не подойдёт
           </ModalTextTwo>
           <ModalTextThree>Тем, кто не добавляет ссылки к постам</ModalTextThree>
           <ModalButton primary active={true}>

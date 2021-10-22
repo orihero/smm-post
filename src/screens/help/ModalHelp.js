@@ -2,16 +2,17 @@ import React from "react";
 import {
   ModalBacgrundHelp,
   ModalContainerHelp,
+  ModalContainerHelpIcon,
   ModalBoxHelp,
   ModalExitHelp,
   ModalDescriptionHelp,
   ModalTextHelp,
-  ModalTextThreeHelp,
   ModalTextIconHelp,
-  ModalTextIconTwoHelp,
   ModalTextTwoHelp,
-  ModalButtonHelp,
+  ModalBoxHelpContainer,
+  ModalVido,
 } from "./ModalHelp.styles";
+import vido from "../../Vido/Vido.mp4"
 
 export default function ModalHelp({ claseModalHelp }) {
   return (
@@ -21,14 +22,71 @@ export default function ModalHelp({ claseModalHelp }) {
           Посмотрите обучающее видео, чтобы узнать, как пользоваться Амплифером
           <ModalExitHelp onClick={() => claseModalHelp(false)}>x</ModalExitHelp>
         </ModalBoxHelp>
+        <ModalVido autoPlay loop muted src={vido} type="vido/mp4" />
         <ModalTextHelp>
-          <ModalTextIconHelp  src={''}/>
+          <ModalContainerHelpIcon>
+            <ModalTextIconHelp src={IMAGES.modalhelp.ModalHelpTelefon} />
+          </ModalContainerHelpIcon>
+             <ModalBoxHelpContainer>
           <ModalDescriptionHelp>
-          Как пользоваться Амплифером?
+            Как пользоваться Амплифером?
           </ModalDescriptionHelp>
-              <ModalTextTwoHelp>
-                  Получите ответы в Справочном центре
-              </ModalTextTwoHelp>
+          <ModalTextTwoHelp>
+            Получите ответы в Справочном центре
+          </ModalTextTwoHelp>
+             </ModalBoxHelpContainer>
+        </ModalTextHelp>
+        <ModalTextHelp>
+          <ModalContainerHelpIcon>
+            <ModalTextIconHelp src={IMAGES.modalhelp.Modalhelpsms} />
+          </ModalContainerHelpIcon>
+             <ModalBoxHelpContainer>
+          <ModalDescriptionHelp>
+            Как пользоваться Амплифером?
+          </ModalDescriptionHelp>
+          <ModalTextTwoHelp>
+            Получите ответы в Справочном центре
+          </ModalTextTwoHelp>
+             </ModalBoxHelpContainer>
+        </ModalTextHelp>
+        <ModalTextHelp>
+          <ModalContainerHelpIcon>
+            <ModalTextIconHelp src={IMAGES.modalhelp.ModalhelpLike} />
+          </ModalContainerHelpIcon>
+             <ModalBoxHelpContainer>
+          <ModalDescriptionHelp>
+            Как пользоваться Амплифером?
+          </ModalDescriptionHelp>
+          <ModalTextTwoHelp>
+            Получите ответы в Справочном центре
+          </ModalTextTwoHelp>
+             </ModalBoxHelpContainer>
+        </ModalTextHelp>
+        <ModalTextHelp>
+          <ModalContainerHelpIcon>
+            <ModalTextIconHelp src={IMAGES.modalhelp.ModalhelpOperator} />
+          </ModalContainerHelpIcon>
+             <ModalBoxHelpContainer>
+          <ModalDescriptionHelp>
+            Как пользоваться Амплифером?
+          </ModalDescriptionHelp>
+          <ModalTextTwoHelp>
+            Получите ответы в Справочном центре
+          </ModalTextTwoHelp>
+             </ModalBoxHelpContainer>
+        </ModalTextHelp>
+        <ModalTextHelp>
+          <ModalContainerHelpIcon>
+            <ModalTextIconHelp src={IMAGES.modalhelp.ModalhelpStar} />
+          </ModalContainerHelpIcon>
+             <ModalBoxHelpContainer>
+          <ModalDescriptionHelp>
+            Как пользоваться Амплифером?
+          </ModalDescriptionHelp>
+          <ModalTextTwoHelp>
+            Получите ответы в Справочном центре
+          </ModalTextTwoHelp>
+             </ModalBoxHelpContainer>
         </ModalTextHelp>
       </ModalContainerHelp>
     </ModalBacgrundHelp>

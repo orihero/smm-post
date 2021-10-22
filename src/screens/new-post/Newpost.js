@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import databutton from "../../assets/databutton.svg";
 import scripka from "../../assets/scripka.svg";
 import smile from "../../assets/smile.svg";
-import RoundButton from "../../components/general/buttons/RoundButton";
+import RoundButton from "../../components/general/buttons/RoundButton"
 import { COLORS } from "../../constants/colors";
 import {
     AttachmantsDiv, ButtonsContainer, Container,

@@ -14,10 +14,16 @@ import userIcon from "../assets/usersIcon.png";
 import likeIcon from "../assets/likeIcon.png";
 import calendarIcon from "../assets/calendarIcon.png";
 import starsIcon from "../assets/starsIcon.png";
-import check from "../../assets/check.png";
-import vz from "../../assets/vp.svg";
+import check from "../assets/check.png";
+import vz from "../assets/vz.png";
 import temsIcon from "../assets/temasIcon.png";
 import templatesIcon from "../assets/templatesIcon.png";
+import ModalHelpTelefon from "../assets/ModalhelpTelefon.png";
+import ModalhelpLupa from "../assets/ModalhelpLupa.png";
+import ModalhelpStar from "../assets/ModalhelpStar.png";
+import ModalhelpLike from "../assets/ModalhelpLike.png";
+import Modalhelpsms from "../assets/Modalhelpsms.png";
+import ModalhelpOperator from "../assets/ModalhelOperator.png";
 
 export let IMAGES = {
   loginscreens: {
@@ -47,10 +53,19 @@ export let IMAGES = {
     starsIcon,
     temsIcon,
     templatesIcon,
-    Xsdsa,
+   
   },
   modal: {
       check,
       vz,
   },
+  modalhelp:{
+    ModalHelpTelefon,
+    ModalhelpLupa,
+    ModalhelpStar,
+    ModalhelpLike,
+   ModalhelpOperator,
+    Modalhelpsms,
+
+  }
 };

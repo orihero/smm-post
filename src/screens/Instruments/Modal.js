@@ -1,8 +1,6 @@
 import React from "react";
 import { IMAGES } from "../../constants/images";
 
-import RoundButton from "../../components/buttons/RoundButton";
-import { COLORS } from "../../constants/colors";
 import {
   ModalBacgrund,
   ModalContainer,
@@ -36,15 +34,14 @@ export default function Modal({ claseModal }) {
           </ModalDescription>
 
           <ModalText>
-            <ModalTextIcon src={check} /> Кому не подойдёт{" "}
+            <ModalTextIcon src={IMAGES.modal.check} /> Кому не подойдёт
           </ModalText>
           <ModalText>
-            <ModalTextIcon src={check} />
+            <ModalTextIcon src={IMAGES.modal.check} />
             Делает ссылки компактными и аккуратными
           </ModalText>
           <ModalTextTwo>
-            {" "}
-            <ModalTextIconTwo src={vz} /> Kому не подойдёт
+            <ModalTextIconTwo src={IMAGES.modal.vz} /> Kому не подойдёт
           </ModalTextTwo>
           <ModalTextThree>Тем, кто не добавляет ссылки к постам</ModalTextThree>
           <ModalButton primary active={true}>

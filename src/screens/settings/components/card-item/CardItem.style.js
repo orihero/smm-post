@@ -16,8 +16,8 @@ export const LeftContainer = styled.div`
 `
 
 export const SettingsImage = styled.img`
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 `
 
 export const DetailsContainer = styled.div`
@@ -36,5 +36,20 @@ export const Description = styled(DefaultText)`
 `
 
 export const RightContainer = styled.div`
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+export const RightButton = styled.div`
+    border-radius: 15px;
+    padding: 4px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    border: 1px solid ${COLORS.primaryPink};
+    opacity: ${props => props.active ? 1 : .5};
+    color: ${props => props.primary ? COLORS.white : COLORS.primaryPink};
+    background-color:  ${props => props.primary ? COLORS.primaryPink : COLORS.white};
 `

@@ -11,6 +11,11 @@ import instagram from "../assets/instagram.png";
 import vk from "../assets/vk.png";
 import facebook from "../assets/facebook.png";
 import userIcon from "../assets/usersIcon.png";
+import likeIcon from '../assets/likeIcon.png'
+import calendarIcon from '../assets/calendarIcon.png'
+import starsIcon from '../assets/starsIcon.png'
+import temsIcon from '../assets/temasIcon.png'
+import templatesIcon from '../assets/templatesIcon.png'
 
 export let IMAGES = {
     loginscreens: {
@@ -33,7 +38,12 @@ export let IMAGES = {
         telephone,
         icon,
     },
-    settings:{
-        userIcon
+    settings: {
+        userIcon,
+        likeIcon,
+        calendarIcon,
+        starsIcon,
+        temsIcon,
+        templatesIcon
     }
 };

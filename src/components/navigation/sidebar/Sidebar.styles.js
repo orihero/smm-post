@@ -1,49 +1,70 @@
 import styled from "styled-components";
 import { COLORS } from "../../../constants/colors";
 
-export const Container = styled.section`
-  height: 100%;
+export const Container = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-color: #e5e5e5;
   position: fixed;
+  background-color: ${COLORS.backgroundColor};
+`;
+
+export const LeftSide = styled.div`
+  width: 212px;
+  height: 1080px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
 `;
 
 export const EmailImg = styled.img`
+  width: 80px;
+  height: 80px;
   margin-right: 65px;
   margin-top: 15px;
-  width: 80px;
-`;
+`
 
-export const ButtonsDiv = styled.div`
-  width: 90%;
-  height: 10%;
+export const ButtonsContainer = styled.div`
+  width: 191px;
+  height: 60px;
   display: flex;
   align-items: center;
 `;
 
 export const VectorImg = styled.img`
-  margin-left: 10px;
-  margin-top: 3px;
-`;
-
-export const LeftSideButton = styled.div`
-  width: 170px;
-  height: 40px;
-  border-radius: 15px 0 0 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  cursor: pointer;
+  color: ${COLORS.fontColors};
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 14.04px;
+  height: 8px;
   border: none;
 `;
 
-export const ButtonParagpraph = styled.p``;
+export const LeftSideButton = styled.button`
+  width: 170px;
+  height: 42px;
+  border-radius: 15px 0 0 15px;
+  font-size: 15px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
+  color: ${COLORS.fontColors};
+`;
 
-export const LeftSideButtonSecond = styled.button`
-  width: 40px;
+export const ButtonParagpraph = styled.p`
+  padding: 7px;
+  font-weight: 500;
+  border: none;
+  margin-right: 10px;
+`;
+
+export const RightSideButton = styled.button`
+  width: 50px;
   height: 42px;
   border-radius: 0 15px 15px 0;
   margin-left: 1px;
@@ -51,32 +72,24 @@ export const LeftSideButtonSecond = styled.button`
   cursor: pointer;
   background-color: #fff;
   border: none;
-`;
-
-export const LeftSide = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  flex-direction: column;
-  background-color: #fff;
+  box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
 `;
 
 export const LeftSideBox = styled.div`
   width: 90%;
-  height: 90%;
+  height: 1000px;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
+  color: ${COLORS.fontColors};
 `;
 
-export const ElementsDiv = styled.div`
-  height: 10%;
+export const ElementsContainer = styled.div`
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-left: 8px;
   cursor: pointer;
 `;
@@ -86,5 +99,5 @@ export const PostsParagraph = styled.p`
   font-size: 16px;
   color: #102046;
   color: ${(props) => (props.active ? COLORS.primaryPink : COLORS.darkBlue)};
-  font-weight: ${(props) => (props.active ? "bold" : "normal")};
+  font-weight: ${(props) => (props.active ? "600" : "normal")};
 `;

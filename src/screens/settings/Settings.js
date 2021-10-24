@@ -1,9 +1,8 @@
 import React from "react";
-import RoundButton from "../../components/buttons/RoundButton";
+import RoundButton from "../../components/general/buttons/RoundButton";
 import { IMAGES } from "../../constants/images";
 import Avatars from "./components/avatars/Avatars";
 import CardItem from "./components/card-item/CardItem";
-import { RightButton } from "./components/card-item/CardItem.style";
 import { ButtonContainer, CardContainer, CardHead, HeadCard, SettingsContainer } from "./Settings.styles";
 
 function Settings() {

@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { COLORS } from "../../../constants/colors";
-const hoverColor = "#E8427E";
 
 export const NavbarDiv = styled.div`
-  width: 100%;
+  width: 1300px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: ${COLORS.white};
+  box-shadow: 0px 1px 17px rgba(87, 87, 87, 0.06);
 `;
 
 export const NavbarHead = styled.h1`
@@ -32,6 +33,7 @@ export const UserParagraph = styled.p`
 
 export const UserImg = styled.img`
   width: 70px;
+  height: 70px;
 `;
 
 export const Vector = styled.img`

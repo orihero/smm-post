@@ -5,6 +5,5 @@ export let COLORS = {
     borderGray: "rgba(16, 32, 70, 0.15)",
     backgroundColor: "#F7FAFC",
     fontColors: "#102046"
-    // imgBorderColor: 
 }
 

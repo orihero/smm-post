@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { DefaultText } from "../../components/general/text/Text.style";
 import { COLORS } from "../../constants/colors";
 
 export const SettingsContainer = styled.div`
   background-color: ${COLORS.backgroundColor};
 `;
 
-export const CardContainer = styled.div`
+export const CardContainer = styled(DefaultText)`
   background-color: ${COLORS.white};
   border-radius: 20px;
   width: 900px;
@@ -22,7 +23,7 @@ export const CardHead = styled.h1`
   color: ${COLORS.fontColors};
 `;
 
-export const HeadCard = styled.p `
+export const HeadCard = styled.p`
     font-size: 19px;
     font-weight: 400;
     padding: 5px;
@@ -30,7 +31,7 @@ export const HeadCard = styled.p `
     margin-left: 55px;
 `
 
-export const ButtonContainer = styled.div `
+export const ButtonContainer = styled.div`
     display: flex;
     margin-left: 50px;
     padding-bottom: 20px;

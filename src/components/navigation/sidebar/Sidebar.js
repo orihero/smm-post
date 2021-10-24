@@ -4,8 +4,9 @@ import { IMAGES } from "../../../constants/images";
 import { MENUS } from "../../../constants/navigation";
 import {
   ButtonParagpraph,
-  ButtonsDiv,
+  ButtonsContainer,
   Container,
+  ElementsContainer,
   ElementsDiv,
   EmailImg,
   LeftSide,
@@ -13,7 +14,8 @@ import {
   LeftSideButton,
   LeftSideButtonSecond,
   PostsParagraph,
-  VectorImg,
+  RightSideButton,
+  VectorImg
 } from "./Sidebar.styles";
 
 function Sidebar() {
@@ -29,22 +31,22 @@ function Sidebar() {
       <Container>
         <LeftSide>
           <EmailImg src={IMAGES.sidebar.emailimg} />
-          <ButtonsDiv>
+          <ButtonsContainer>
             <LeftSideButton>
               <ButtonParagpraph>Первый проект</ButtonParagpraph>
               <VectorImg src={IMAGES.sidebar.vektor} />
             </LeftSideButton>
-            <LeftSideButtonSecond>+</LeftSideButtonSecond>
-          </ButtonsDiv>
+            <RightSideButton>+</RightSideButton>
+          </ButtonsContainer>
           <LeftSideBox>
-            {MENUS.map(({ link, text, image: Icon}, i) => {
+            {MENUS.map(({ link, text, image: Icon }, i) => {
               return (
-                <ElementsDiv onClick={onNavigate(link)}>
+                <ElementsContainer onClick={onNavigate(link)}>
                   <Icon active={location.pathname === link} />
                   <PostsParagraph active={location.pathname === link}>
                     {text}
                   </PostsParagraph>
-                </ElementsDiv>
+                </ElementsContainer>
               );
             })}
           </LeftSideBox>

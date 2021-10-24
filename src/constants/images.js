@@ -24,6 +24,8 @@ import ModalhelpStar from "../assets/ModalhelpStar.png";
 import ModalhelpLike from "../assets/ModalhelpLike.png";
 import Modalhelpsms from "../assets/Modalhelpsms.png";
 import ModalhelpOperator from "../assets/ModalhelOperator.png";
+import Hand from "../assets/Hand_image.png"
+import ProfileImage from '../assets/ProfileImage.png' 
 
 export let IMAGES = {
   loginscreens: {
@@ -66,6 +68,10 @@ export let IMAGES = {
     ModalhelpLike,
     ModalhelpOperator,
     Modalhelpsms,
+  },
+  profile:{
+    Hand,
+    ProfileImage
 
   }
 };

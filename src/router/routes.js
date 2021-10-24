@@ -9,6 +9,8 @@ import Newpost from "../screens/new-post/Newpost";
 import Publications from "../screens/Publications/Publications"
 import Settings from "../screens/settings/Settings";
 import Help from '../screens/help/Help'
+import Profile from "../screens/profile/Profile";
+import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 
 function Routes() {
     return (
@@ -42,6 +44,8 @@ function Routes() {
                             <Route exact path="/instruments" component={Instruments} />
                             <Route exact path="/settings" component={Settings} />
                             <Route exact path="/help" component={Help} />
+                            <Route exact path="/profile" component={Profile} />
+                            <Route exact path="/changePassword" component={ProfileChangePassword} />
 
                         </Switch>
                     </div>

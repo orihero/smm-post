@@ -7,6 +7,6 @@ width: 100%;
 
 export const Container = styled.button`
 width: 100%;
-height: 150vh;
+height: 100vh;
 
 `

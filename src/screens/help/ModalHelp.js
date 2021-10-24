@@ -1,4 +1,5 @@
 import React from "react";
+import { IMAGES } from "../../constants/images";
 import {
   ModalBacgrundHelp,
   ModalContainerHelp,

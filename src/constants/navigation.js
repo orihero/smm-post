@@ -6,4 +6,5 @@ export let MENUS = [
   { link: "/analytics", text: "Аналитика", image: ICONS.analytics },
   { link: "/instruments", text: "Инструменты", image: ICONS.instruments },
   { link: "/settings", text: "Настройки", image: ICONS.settings },
-  ];
+  // { link: "/profile", image: ICONS.profile.CallIcon },
+];

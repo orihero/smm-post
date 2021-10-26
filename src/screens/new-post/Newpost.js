@@ -4,6 +4,7 @@ import scripka from "../../assets/scripka.svg";
 import smile from "../../assets/smile.svg";
 import RoundButton from "../../components/general/buttons/RoundButton";
 import { COLORS } from "../../constants/colors";
+import { EyeIcon } from "../../constants/icons";
 import {
   AttachmantsDiv,
   ButtonsContainer,
@@ -25,9 +26,14 @@ import {
   TemasButton,
   Textarea,
   TextareaContainer,
+  PreviewContainerHeader,
   TextsDiv,
+  PreviewContainerHeaderText,
+  PreviewContainerHeaderIcon,
   TipDiv,
   TipHead,
+  PreviewContainerOne,
+  PreviewContainerHeaderIconOne,
 } from "./Newpost.styles";
 
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
@@ -39,7 +45,6 @@ export default function Home() {
     <>
       <Container>
         <ContainerBox>
-          
           <PostDivs>
             <PostContainer>
               <TipDiv>
@@ -103,8 +108,27 @@ export default function Home() {
             <Preview>
               <PreviewHead></PreviewHead>
               <PreviewHead></PreviewHead>
-              {previewing ? "Предпросмотр" : null}
-              {previewing ? "Обсуждения" : null}
+              {previewing ? (
+                <PreviewContainerOne>
+                  <PreviewContainerHeader>
+                    <PreviewContainerHeaderText>
+                      Предпросмотр
+                    </PreviewContainerHeaderText>
+                    <PreviewContainerHeaderText>
+                    Обсуждения
+                    </PreviewContainerHeaderText>
+                  </PreviewContainerHeader>
+                  <PreviewContainerHeaderIcon>
+                  <PreviewContainerHeaderIconOne>
+                    <EyeIcon />
+                    </PreviewContainerHeaderIconOne>
+                    Выберите страницы в Инстаграме, <br />
+                    чтобы посмотреть, как будет выглядеть <br />
+                    опубликованный пост.
+                    <br />
+                  </PreviewContainerHeaderIcon>
+                </PreviewContainerOne>
+              ) : null}
             </Preview>
           </PostDivs>
         </ContainerBox>

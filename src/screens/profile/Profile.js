@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { IMAGES } from "../../constants/images";
-<<<<<<< HEAD
-=======
 import { ICONS, PencilIcon } from "../../constants/icons";
->>>>>>> c1d4fd6cdb8900af48ba6b108fe13f70b7b8fb46
 
 import {
   ProfileHeadr,
@@ -20,18 +17,11 @@ import {
   ProfileTextTwo,
   ParagpaphFirst,
   TextsDiv,
-<<<<<<< HEAD
-} from "./Profile.styles";
-import ProfileHeader from "./ProfileHeader";
-
-let tabs = ["Запланированные", "Опубликованные"];
-=======
   ProfileIconContainer,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
 
 let tabs = ["Запланированные", "Уведомления"];
->>>>>>> c1d4fd6cdb8900af48ba6b108fe13f70b7b8fb46
 
 export default function Profile() {
   const [activeTab, setActiveTab] = useState(0);
@@ -56,8 +46,8 @@ export default function Profile() {
             <ProfileInnercontainer>
               <ProfileIconContainer>
 
-              <ProfileImageOne src={IMAGES.profile.ProfileImage} />
-              <PencilIcon />
+                <ProfileImageOne src={IMAGES.profile.ProfileImage} />
+                <PencilIcon />
               </ProfileIconContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Имя пользователя</ProfileInputText>

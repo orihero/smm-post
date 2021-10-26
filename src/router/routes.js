@@ -7,22 +7,16 @@ import Help from '../screens/help/Help';
 import Instruments from "../screens/Instruments/Instruments";
 import Loginscreens from "../screens/loginscreens/Loginscreens";
 import Newpost from "../screens/new-post/Newpost";
-<<<<<<< HEAD
-=======
 import Publications from "../screens/publications/Publications"
-import Settings from "../screens/settings/Settings";
-import Help from '../screens/help/Help'
->>>>>>> c1d4fd6cdb8900af48ba6b108fe13f70b7b8fb46
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
-import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 
 function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Redirect exact from="/" to="/home" />
+                <Redirect exact from="/" to="/newpost" />
                 <Route path="/login" component={Loginscreens} />
                 <div
                     style={{

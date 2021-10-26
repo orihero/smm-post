@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IMAGES } from "../../constants/images";
-
+import { ICONS, PencilIcon } from "../../constants/icons";
 
 import {
   ProfileHeadr,
@@ -13,47 +13,49 @@ import {
   ProfileInputText,
   ProfileContainer,
   ProfileDelete,
+  ProfileIcon,
   ProfileTextTwo,
   ParagpaphFirst,
-  TextsDiv
+  TextsDiv,
+  ProfileIconContainer,
 } from "./Profile.styles";
-import ProfileHeader from './ProfileHeader'
+import ProfileHeader from "./ProfileHeader";
 
-
-let tabs = ["Запланированные", "Опубликованные", ];
+let tabs = ["Запланированные", "Уведомления"];
 
 export default function Profile() {
-  function onChangePassword() {}
   const [activeTab, setActiveTab] = useState(0);
   return (
     <>
       <ProfileHeadr>
         <ProfileInner>
           <TextsDiv>
-            
-         
             {tabs.map((e, i) => {
               return (
                 <ParagpaphFirst
-                active={i === activeTab}
-                onClick={() => setActiveTab(i)}
+                  active={i === activeTab}
+                  onClick={() => setActiveTab(i)}
                 >
                   {e}
                 </ParagpaphFirst>
               );
             })}
           </TextsDiv>
-            <ProfileHeader/>
+          <ProfileHeader />
           <ProfileBoxOne>
             <ProfileInnercontainer>
+              <ProfileIconContainer>
+
               <ProfileImageOne src={IMAGES.profile.ProfileImage} />
+              <PencilIcon />
+              </ProfileIconContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Имя пользователя</ProfileInputText>
                 <ProfileInput placeholder="Рафаэль  Рафаэль" type="text" />
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Адресс почты</ProfileInputText>
-                <ProfileInput placeholder="rafael@gmail.com" />
+                <ProfileInput placeholder="rafael@gmail.com"></ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Номер телефона</ProfileInputText>

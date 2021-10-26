@@ -108,6 +108,54 @@ function ScripcsIcon({ width = 32, height = 32, active = false, ...rest }) {
     </svg>
   );
 }
+export function CallIcon({ width = 32, height = 32, active = false, ...rest }) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      {...{ width, height, fill: color, stroke: color }}
+      viewBox="0 0 22 22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill={color}
+        stroke={color}
+        opacity="0.7"
+        d="M1.99033 3.87254C2.30665 3.34878 4.0495 1.44376 5.29322 1.50127C5.665 1.53208 5.99364 1.75699 6.26067 2.01784C6.87379 2.61656 8.62897 4.88101 8.72859 5.35753C8.97096 6.52621 7.57833 7.1999 8.00454 8.37783C9.09112 11.0366 10.9634 12.9088 13.6233 13.9943C14.8003 14.4205 15.474 13.0279 16.6428 13.2713C17.1183 13.3709 19.3839 15.126 19.9826 15.7391C20.2425 16.0051 20.4684 16.3347 20.4992 16.7065C20.5454 18.0159 18.5222 19.7833 18.1278 20.0092C17.1974 20.6747 15.9834 20.6634 14.5035 19.9753C10.3739 18.2572 3.77426 11.7822 2.02422 7.49669C1.35461 6.02505 1.30839 4.80297 1.99033 3.87254Z"
+      />
+    </svg>
+  );
+}
+export function PencilIcon({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      {...{ width, height, fill: color, stroke: color }}
+      viewBox="0 0 300 300"       xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill={color}
+        stroke={color}
+        opacity="0.7"
+
+        d="M12.809,238.52L0,306.637l68.118-12.809l184.277-184.277l-55.309-55.309L12.809,238.52z M60.79,279.943l-41.992,7.896
+			l7.896-41.992L197.086,75.455l34.096,34.096L60.79,279.943z"
+      />
+      <path
+        fill={color}
+        stroke={color}
+        opacity="0.7"
+
+        d="M251.329,0l-41.507,41.507l55.308,55.308l41.507-41.507L251.329,0z M231.035,41.507l20.294-20.294l34.095,34.095
+			L265.13,75.602L231.035,41.507z"
+      />
+    </svg>
+  );
+}
 
 export let ICONS = {
   newPosts: NewPostsIcon,
@@ -116,4 +164,5 @@ export let ICONS = {
   analytics: AnalyticsIcon,
   instruments: InstrumentsIcon,
   settings: SettingsIcon,
+  profile: CallIcon,
 };

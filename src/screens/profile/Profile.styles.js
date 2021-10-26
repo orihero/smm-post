@@ -99,5 +99,12 @@ export const ProfileTextTwo = styled.div`
 color: ${COLORS.primaryPink};
 cursor: pointer;
 `
-// export const  = styled.div``
+export const ProfileIcon = styled.div``
+export const ProfileIconContainer = styled.div`
+display: flex;
+margin-left: -90px;
+align-items: center;
+width: 160px;
+justify-content: space-between;
+`
 // export const  = styled.div``

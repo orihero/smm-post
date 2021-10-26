@@ -39,7 +39,6 @@ export default function Home() {
     <>
       <Container>
         <ContainerBox>
-          
           <PostDivs>
             <PostContainer>
               <TipDiv>

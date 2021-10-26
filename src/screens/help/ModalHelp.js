@@ -14,7 +14,6 @@ import {
   ModalVido,
 } from "./ModalHelp.styles";
 import vido from "../../Vido/Vido.mp4"
-import { IMAGES } from "../../constants/images";
 
 export default function ModalHelp({ claseModalHelp }) {
   return (

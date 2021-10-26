@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IMAGES } from "../../constants/images";
 
-
 import {
   ProfileHeadr,
   ProfileInner,
@@ -15,12 +14,11 @@ import {
   ProfileDelete,
   ProfileTextTwo,
   ParagpaphFirst,
-  TextsDiv
+  TextsDiv,
 } from "./Profile.styles";
-import ProfileHeader from './ProfileHeader'
+import ProfileHeader from "./ProfileHeader";
 
-
-let tabs = ["Запланированные", "Опубликованные", ];
+let tabs = ["Запланированные", "Опубликованные"];
 
 export default function Profile() {
   function onChangePassword() {}
@@ -30,20 +28,18 @@ export default function Profile() {
       <ProfileHeadr>
         <ProfileInner>
           <TextsDiv>
-            
-         
             {tabs.map((e, i) => {
               return (
                 <ParagpaphFirst
-                active={i === activeTab}
-                onClick={() => setActiveTab(i)}
+                  active={i === activeTab}
+                  onClick={() => setActiveTab(i)}
                 >
                   {e}
                 </ParagpaphFirst>
               );
             })}
           </TextsDiv>
-            <ProfileHeader/>
+          <ProfileHeader />
           <ProfileBoxOne>
             <ProfileInnercontainer>
               <ProfileImageOne src={IMAGES.profile.ProfileImage} />

@@ -16,7 +16,6 @@ import {
   ProfileBoxRightText,
   ProfileBoxRightInputContiner,
   ProfileBoxRightInputText,
-  // Select
 } from "./ProfileChangePassword.styles";
 import ProfileHeader from "./ProfileHeader";
 
@@ -44,7 +43,7 @@ export default function ProfileChangePassword() {
               <ProfileBoxLeftInputContiner>
                 <ProfileBoxLeftInput type={"checkbox"} />
                 <ProfileBoxLeftInputText>
-                  Обновления в обсуждаемых постах{" "}
+                  Обновления в обсуждаемых постах
                 </ProfileBoxLeftInputText>
               </ProfileBoxLeftInputContiner>
               <ProfileBoxLeftInputContiner>
@@ -56,13 +55,13 @@ export default function ProfileChangePassword() {
               <ProfileBoxLeftInputContiner>
                 <ProfileBoxLeftInput type={"checkbox"} />
                 <ProfileBoxLeftInputText>
-                  Обновления Амплифера и блога{" "}
+                  Обновления Амплифера и блога
                 </ProfileBoxLeftInputText>
               </ProfileBoxLeftInputContiner>
               <ProfileBoxLeftInputContiner>
                 <ProfileBoxLeftInput type={"checkbox"} />
                 <ProfileBoxLeftInputText>
-                  Отчёты о метриках{" "}
+                  Отчёты о метриках
                 </ProfileBoxLeftInputText>
               </ProfileBoxLeftInputContiner>
               <ProfileBoxLeftInputContiner>

@@ -14,6 +14,7 @@ export const OptionsDiv = styled.div`
 
 export const Preview = styled.div`
   display: flex;
+  margin-top: 60px;
   flex: 1;
   margin-left: 15px;
 `;
@@ -254,4 +255,47 @@ export const PreviewContainer = styled.div`
     /* line-height: none; */
 `
 export const PreviewHead = styled.h1``
+export const PreviewContainerOne = styled.div`
+width: 400px;
+border-radius: 20px;
+margin-bottom: 70px;
+background-color: #FCFCFC;
+
+`
+export const PreviewContainerHeader  = styled.div`
+display: flex;
+background-color: #fff;
+justify-content: space-between;
+border-radius: 20px;
+
+`
+export const PreviewContainerHeaderIcon  = styled.div`
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+
+`
+export const PreviewContainerHeaderIconOne  = styled.div`
+margin-top: 80px;
+margin-bottom: 20px;
+
+`
+export const PreviewContainerHeaderText  = styled.p`
+padding: 15px 48px;
+font-weight: 400;
+&:hover {
+    border-bottom: 3px solid ${COLORS.primaryPink};
+    color: ${COLORS.primaryPink};
+  }
+  ${(props) =>
+    props.active &&
+    `{
+        border-bottom: 3px solid ${COLORS.primaryPink};
+        color: ${COLORS.primaryPink};
+    }`}
+`
 

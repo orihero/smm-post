@@ -9472,7 +9472,11 @@ react-scripts@^4.0.3:
 
 react-select@^5.1.0:
   version "5.1.0"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/react-select/-/react-select-5.1.0.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/react-select/-/react-select-5.1.0.tgz#ac384c8e25ba6f03126026192b2bdad0f53fbf50"
+>>>>>>> 6be47b409b8564b3b852fdc5ae7242023d3b2fa3
   integrity sha512-SkEBD1AYsSXrIdNj5HBt7+Ehe+jxdiB448J0atJqR6lE3l/GcFlRf4JYB3NlHe/02jrW4AnIQLo1t0IqWrxXOw==
   dependencies:
     "@babel/runtime" "^7.12.0"

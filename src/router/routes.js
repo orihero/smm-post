@@ -11,6 +11,8 @@ import Settings from "../screens/settings/Settings";
 import Help from '../screens/help/Help'
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
+import PlansScrens from "../screens/plans/PlansScrens";
+
 
 function Routes() {
     return (
@@ -46,7 +48,7 @@ function Routes() {
                             <Route exact path="/help" component={Help} />
                             <Route exact path="/profile" component={Profile} />
                             <Route exact path="/changePassword" component={ProfileChangePassword} />
-
+                            <Route exact path="/plans" component={PlansScrens} />
                         </Switch>
                     </div>
                 </div>

@@ -20,11 +20,16 @@ import {
   ProfileIconContainer,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
+import { useHistory } from "react-router-dom";
 
 let tabs = ["Запланированные", "Уведомления"];
 
-export default function Profile() {
+export default function Profile({}) {
+  let history = useHistory();
   const [activeTab, setActiveTab] = useState(0);
+  let onNavigate = ()=>{
+    history.push("/changePassword")
+  }
   return (
     <>
       <ProfileHeadr>
@@ -45,9 +50,8 @@ export default function Profile() {
           <ProfileBoxOne>
             <ProfileInnercontainer>
               <ProfileIconContainer>
-
-              <ProfileImageOne src={IMAGES.profile.ProfileImage} />
-              <PencilIcon />
+                <ProfileImageOne src={IMAGES.profile.ProfileImage} />
+                <PencilIcon />
               </ProfileIconContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Имя пользователя</ProfileInputText>
@@ -64,7 +68,7 @@ export default function Profile() {
             </ProfileInnercontainer>
             <ProfileContainer>
               <ProfileDelete> Удалить профиль</ProfileDelete>
-              <ProfileTextTwo>Сменить пароль</ProfileTextTwo>
+              <ProfileTextTwo onClick={onNavigate}>Сменить пароль</ProfileTextTwo>
             </ProfileContainer>
           </ProfileBoxOne>
         </ProfileInner>

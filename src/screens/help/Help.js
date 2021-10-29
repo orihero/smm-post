@@ -7,7 +7,6 @@ export default function Help() {
   return (
     <>
       {openModalHelp && <ModalHelp claseModal={setOpenModalHelp} />}
- <Container>
 
       <BUTTON
         onClick={() => {
@@ -16,7 +15,6 @@ export default function Help() {
       >
         11
       </BUTTON>
-        </ Container>
     </>
   );
 }

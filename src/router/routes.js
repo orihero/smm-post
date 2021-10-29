@@ -10,6 +10,7 @@ import Newpost from "../screens/new-post/Newpost";
 import Publications from "../screens/Publications/Publications"
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
+import PlansScrens from "../screens/plans/PlansScrens";
 import Settings from "../screens/settings/Settings";
 
 function Routes() {
@@ -46,7 +47,7 @@ function Routes() {
                             <Route exact path="/help" component={Help} />
                             <Route exact path="/profile" component={Profile} />
                             <Route exact path="/changePassword" component={ProfileChangePassword} />
-
+                            <Route exact path="/plans" component={PlansScrens} />
                         </Switch>
                     </div>
                 </div>

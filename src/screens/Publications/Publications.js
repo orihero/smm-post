@@ -38,7 +38,7 @@ export default function Publications() {
             );
           })}
         </PublicationsButtons>
-       
+
         <PublicationsBottom>
           <PublicationsBox>
             <PublicationsButton>Сегодня </PublicationsButton>
@@ -62,8 +62,13 @@ export default function Publications() {
           </PublicationsBox>
           <PublicationsContainer>
             <PublicationsSize>
+<<<<<<< HEAD
               <PlusIcon onClick={onNewpost}  src={Plus} />
               <PublicationsPost>Запланировать пост</PublicationsPost> 
+=======
+              <PlusIcon src={Plus} />
+              <PublicationsPost>Запланировать пост</PublicationsPost>
+>>>>>>> 963a5b2413b03e4b8e851db61d00b15513d6f1ec
             </PublicationsSize>
             <PublicationsSizeNo />
             <PublicationsSizeNo />

@@ -7,7 +7,7 @@ import Help from '../screens/help/Help';
 import Instruments from "../screens/Instruments/Instruments";
 import Loginscreens from "../screens/loginscreens/Loginscreens";
 import Newpost from "../screens/new-post/Newpost";
-import Publications from "../screens/publications/Publications"
+import Publications from "../screens/Publications/Publications"
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 import PlansScrens from "../screens/plans/PlansScrens";
@@ -18,7 +18,7 @@ function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Redirect exact from="/" to="/newpost" />
+                <Redirect exact from="/" to="/login" />
                 <Route path="/login" component={Loginscreens} />
                 <div
                     style={{

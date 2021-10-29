@@ -14,9 +14,14 @@ import {
   PlusIcon,
   PublicationsPost,
 } from "./Publications.styles";
+import { useHistory } from "react-router-dom";
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
 
 export default function Publications() {
+  let history = useHistory();
+  let onNewpost = () =>{
+    history.push("/newpost")
+  }
   const [activeTab, setActiveTab] = useState(0);
   return (
     <>
@@ -41,7 +46,7 @@ export default function Publications() {
           </PublicationsBox>
           <PublicationsContainer>
             <PublicationsSize>
-              <PlusIcon src={Plus} />
+              <PlusIcon onClick={onNewpost}  src={Plus} />
               <PublicationsPost>Запланировать пост</PublicationsPost> 
             </PublicationsSize>
             <PublicationsSizeNo />
@@ -57,7 +62,7 @@ export default function Publications() {
           </PublicationsBox>
           <PublicationsContainer>
             <PublicationsSize>
-              <PlusIcon src={Plus} />
+              <PlusIcon onClick={onNewpost}  src={Plus} />
               <PublicationsPost>Запланировать пост</PublicationsPost> 
             </PublicationsSize>
             <PublicationsSizeNo />

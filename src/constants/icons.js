@@ -142,6 +142,19 @@ export function EyeIcon({ width = 32, height = 32, active = false, ...rest }) {
     </svg>
   );
 }
+export function IIcon({ width = 32, height = 32, active = false, ...rest }) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      {...{ width, height, fill: color, stroke: color }}
+      viewBox="0 0 22 22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z" />
+
+    </svg>
+  );
+}
 export function PencilIcon({
   width = 23,
   height = 20,

@@ -75,6 +75,7 @@ export const PublicationsSizeNo = styled.div`
 
 export const PlusIcon = styled.img`
   width: 55px;
+  cursor: pointer;
   height: 70px;
 `;
 

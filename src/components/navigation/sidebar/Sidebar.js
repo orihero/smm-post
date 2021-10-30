@@ -7,15 +7,13 @@ import {
   ButtonsContainer,
   Container,
   ElementsContainer,
-  ElementsDiv,
   EmailImg,
   LeftSide,
   LeftSideBox,
   LeftSideButton,
-  LeftSideButtonSecond,
   PostsParagraph,
   RightSideButton,
-  VectorImg
+  VectorImg,
 } from "./Sidebar.styles";
 
 function Sidebar() {

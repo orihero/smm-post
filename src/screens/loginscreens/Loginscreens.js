@@ -1,4 +1,5 @@
 import React from "react";
+import { Buttons } from "../../components/general/buttons/RectangleButton.styles";
 import RoundButton from "../../components/general/buttons/RoundButton";
 import {
     LeftSideContainer,
@@ -8,6 +9,11 @@ import {
     Section,
     RegisterHead,
     RoundButtonContainer,
+    RegisterHeadSecond,
+    RegisterLogin,
+    RegisterSpanHead,
+    NetLoginHead,
+    NetLogin,
 } from "./Loginscreens.elements";
 
 function Loginscreens() {
@@ -33,8 +39,12 @@ function Loginscreens() {
                         placeholder="Подтвердите пароль"
                         required
                     />
-                    <RegisterHead>Регистрируясь, вы соглашаетесь с Лицензией и <br /> Политикой обработки данных</RegisterHead>
-                    <RoundButton primary active >Начать пользоваться</RoundButton>
+                    <RegisterHead>Регистрируясь, вы соглашаетесь с <RegisterSpanHead> Лицензией </RegisterSpanHead> и <br /> <RegisterSpanHead> Политикой обработки данных</RegisterSpanHead> </RegisterHead>
+                    <Buttons primary active >Начать пользоваться</Buttons>
+                    <RegisterHeadSecond>Уже зарегистрированы? <RegisterLogin>Войти</RegisterLogin></RegisterHeadSecond>
+                    <NetLogin>
+                        <NetLoginHead>Войти через соцсеть</NetLoginHead>
+                    </NetLogin>
                 </LeftSideContainer>
                 <RightSideContainer></RightSideContainer>
             </Section>

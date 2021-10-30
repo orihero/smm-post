@@ -5,5 +5,6 @@ export let COLORS = {
     backgroundColor: "#F7FAFC",
     fontColors: "#102046",
     inputBorderColor: 'rgba(16, 32, 70, 0.1)',
+    loginColors: '#006ED4',
 }
 

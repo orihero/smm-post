@@ -25,7 +25,10 @@ import ModalhelpLike from "../assets/ModalhelpLike.png";
 import Modalhelpsms from "../assets/Modalhelpsms.png";
 import ModalhelpOperator from "../assets/ModalhelOperator.png";
 import Hand from "../assets/Hand_image.png"
-import ProfileImage from '../assets/ProfileImage.png' 
+import ProfileImage from '../assets/ProfileImage.png'; 
+import Iworkmyself from  "../assets/I-work-myself.png";
+import Team from "../assets/Team.png"
+ 
 
 export let IMAGES = {
   loginscreens: {
@@ -72,6 +75,10 @@ export let IMAGES = {
   profile:{
     Hand,
     ProfileImage
-
+  },
+  education:{
+    Iworkmyself,
+    Team,
+    
   }
 };

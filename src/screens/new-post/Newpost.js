@@ -111,10 +111,10 @@ export default function Home() {
               {previewing ? (
                 <PreviewContainerOne>
                   <PreviewContainerHeader>
-                    <PreviewContainerHeaderText>
+                    <PreviewContainerHeaderText active>
                       Предпросмотр
                     </PreviewContainerHeaderText>
-                    <PreviewContainerHeaderText>
+                    <PreviewContainerHeaderText  >
                     Обсуждения
                     </PreviewContainerHeaderText>
                   </PreviewContainerHeader>

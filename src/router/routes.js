@@ -12,6 +12,7 @@ import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 import PlansScrens from "../screens/plans/PlansScrens";
 import Settings from "../screens/settings/Settings";
+import Education from "../screens/education/Education";
 
 function Routes() {
     return (
@@ -48,6 +49,7 @@ function Routes() {
                             <Route exact path="/profile" component={Profile} />
                             <Route exact path="/changePassword" component={ProfileChangePassword} />
                             <Route exact path="/plans" component={PlansScrens} />
+                            <Route exact path="/education" component={Education} />
                         </Switch>
                     </div>
                 </div>

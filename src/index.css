@@ -1,5 +1,9 @@
 * {
+<<<<<<< HEAD
   border: px solid red;
+=======
+  border:px solid red;
+>>>>>>> 7afb719a8cd6ad40ff81309ec8fa5014a201f30b
   margin: 0;
   padding: 0;
 }

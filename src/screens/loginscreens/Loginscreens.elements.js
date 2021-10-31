@@ -23,7 +23,7 @@ export const RightSideContainer = styled.div`
   width: 100px;
   height: 700px;
   display: flex;
-`
+`;
 
 export const RightSideHead = styled(DefaultText)`
   font-size: 40px;
@@ -43,6 +43,40 @@ export const LoginInput = styled.input`
   border: 2px solid ${COLORS.inputBorderColor};
 `;
 
-export const RegisterHead = styled.p`
+export const RegisterHead = styled(DefaultText)`
   margin-right: 130px;
+  margin-bottom: 15px;
+  cursor: pointer;
+`;
+
+export const RegisterSpanHead = styled.span`
+  color: ${COLORS.loginColors};
+`
+
+export const RegisterHeadSecond = styled(DefaultText)`
+  font-size: 17px;
+  margin-right: 250px;
+`;
+
+export const RegisterLogin = styled.span`
+  cursor: pointer;
+  &:hover{
+    color: ${COLORS.loginColors};
+    border-bottom: 2px solid ${COLORS.loginColors}
+  }
+`
+
+export const NetLogin = styled.div`
+  width: 400px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`
+
+export const NetLoginHead = styled(DefaultText)`
+  font-size: 18px;
+  font-weight: 600;
+  color: ${COLORS.fontColors};
 `

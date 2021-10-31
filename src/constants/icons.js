@@ -264,6 +264,29 @@ export function ProfileCall({
   );
 }
 
+export const CheckIcon = ({
+  width = 20,
+  height = 20,
+  active = false,
+  ...rest
+}) => {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 16 12"
+      fill={color}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.0315 0.339844H13.8028C13.6306 0.339844 13.4671 0.418945 13.3616 0.554297L6.11415 9.73535L2.63896 5.33203C2.58639 5.26529 2.51938 5.21132 2.44296 5.17417C2.36655 5.13703 2.28271 5.11768 2.19775 5.11758H0.969034C0.851261 5.11758 0.786222 5.25293 0.858292 5.34434L5.67294 11.4439C5.89794 11.7287 6.33036 11.7287 6.55712 11.4439L15.1423 0.564844C15.2143 0.475195 15.1493 0.339844 15.0315 0.339844Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
 export let ICONS = {
   newPosts: NewPostsIcon,
   ScripcsIcon,

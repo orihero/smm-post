@@ -151,7 +151,6 @@ export function IIcon({ width = 32, height = 32, active = false, ...rest }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z" />
-
     </svg>
   );
 }
@@ -182,6 +181,85 @@ export function PencilIcon({
         d="M251.329,0l-41.507,41.507l55.308,55.308l41.507-41.507L251.329,0z M231.035,41.507l20.294-20.294l34.095,34.095
 			L265.13,75.602L231.035,41.507z"
       />
+    </svg>
+  );
+}
+export function ProfileUser({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      {...{ width, height, fill: color, stroke: color }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill={color}
+        stroke={color}
+        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+      ></path>
+      <circle cx="12" cy="7" r="4"></circle>
+    </svg>
+  );
+}
+export function ProfileSms({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      {...{ width, height, stroke: color }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke={color}
+        opacity="0.7"
+        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+      ></path>
+
+      <polyline stroke={color} points="22,6 12,13 2,6"></polyline>
+    </svg>
+  );
+}
+export function ProfileCall({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      {...{ width, height, fill: color, stroke: color }}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke={color}
+        
+        
+     
+    >
+      <path
+      stroke={color}
+      
+      opacity="0.7" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   );
 }

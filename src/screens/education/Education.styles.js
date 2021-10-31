@@ -3,23 +3,30 @@ import { COLORS } from "../../constants/colors";
 
 export const EducationHeader = styled.div`
   width: 100%;
-  height: 170vh;
+  height: 150vh;
   background-color: #f7fafc;
 `;
 
 export const EducationInner = styled.div`
   margin-left: 70px;
+padding-bottom: 50px;
 `;
 export const EducationContainer = styled.div`
   background-color: #fff;
   width: 550px;
-  height: 1000px;
+  height: 700px;
   margin-top: 40px;
   border-radius: 10px;
   padding: 30px 35px;
 `;
 export const EducationText = styled.div`
   margin-bottom: 30px;
+  font-size: 23px;
+`;
+export const EducationTextOne = styled.div`
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: normal;
   font-size: 23px;
 `;
 export const EducationInput = styled.input`
@@ -53,13 +60,13 @@ export const EducationImageContainer = styled.div`
   flex-direction: column;
   &:hover {
     border: 1px solid ${COLORS.primaryPink};
-    border-bottom: 3px solid ${COLORS.primaryPink};
+    
   }
   ${(props) =>
     props.active &&
     css`
        {
-        border-bottom: 3px solid ${COLORS.primaryPink};
+        border: 3px solid ${COLORS.primaryPink};
       }
     `}
 `;
@@ -68,5 +75,28 @@ export const EducationBoxContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+export const EducationCheck = styled.input`
+width:25px ;
+height: 25px;
+border-radius: 20px;
+`
+export const  EducationCheckContainer = styled.div`
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+
+`
+export const EducationCheckText = styled.h5`
+font-size: 17px;
+font-weight: normal;
+margin-left: 10px;
+
+`
+export const EducationButton = styled.div`
+border-radius: 20px;
+border: solid 1px red;
+width: 100px;
+`
+// export const  = styled.div``
 // export const  = styled.div``
 // export const  = styled.div``

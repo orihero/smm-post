@@ -7,7 +7,7 @@ import Help from '../screens/help/Help';
 import Instruments from "../screens/Instruments/Instruments";
 import Loginscreens from "../screens/loginscreens/Loginscreens";
 import Newpost from "../screens/new-post/Newpost";
-import Publications from "../screens/Publications/Publications"
+import Publications from "../screens/publications/Publications"
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 import PlansScrens from "../screens/plans/PlansScrens";

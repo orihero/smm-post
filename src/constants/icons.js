@@ -151,7 +151,6 @@ export function IIcon({ width = 32, height = 32, active = false, ...rest }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z" />
-
     </svg>
   );
 }
@@ -185,6 +184,7 @@ export function PencilIcon({
     </svg>
   );
 }
+<<<<<<< HEAD
 export function GoogleIcon({
   width = 27,
   height = 27,
@@ -238,6 +238,110 @@ export function TwitterIcon({
     </svg>
   );
 }
+=======
+export function ProfileUser({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      {...{ width, height, fill: color, stroke: color }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill={color}
+        stroke={color}
+        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+      ></path>
+      <circle cx="12" cy="7" r="4"></circle>
+    </svg>
+  );
+}
+export function ProfileSms({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      {...{ width, height, stroke: color }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke={color}
+        opacity="0.7"
+        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+      ></path>
+
+      <polyline stroke={color} points="22,6 12,13 2,6"></polyline>
+    </svg>
+  );
+}
+export function ProfileCall({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      {...{ width, height, fill: color, stroke: color }}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke={color}
+        
+        
+     
+    >
+      <path
+      stroke={color}
+      
+      opacity="0.7" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  );
+}
+
+export const CheckIcon = ({
+  width = 20,
+  height = 20,
+  active = false,
+  ...rest
+}) => {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 16 12"
+      fill={color}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.0315 0.339844H13.8028C13.6306 0.339844 13.4671 0.418945 13.3616 0.554297L6.11415 9.73535L2.63896 5.33203C2.58639 5.26529 2.51938 5.21132 2.44296 5.17417C2.36655 5.13703 2.28271 5.11768 2.19775 5.11758H0.969034C0.851261 5.11758 0.786222 5.25293 0.858292 5.34434L5.67294 11.4439C5.89794 11.7287 6.33036 11.7287 6.55712 11.4439L15.1423 0.564844C15.2143 0.475195 15.1493 0.339844 15.0315 0.339844Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+>>>>>>> 3a208f250fe9ea9af313717783281451a1d70321
 
 export let ICONS = {
   newPosts: NewPostsIcon,

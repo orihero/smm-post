@@ -20,7 +20,7 @@ function PlansScrens() {
       <PlansScrensHeader>
         <PlansScrensContainer>
           <PlansScrensText>
-            <ExclamatoryIcons />
+            {/* <ExclamatoryIcons /> */}
             Ваш пробный период заканчивается через 7 дней.
           </PlansScrensText>
           <PlansScrensText>

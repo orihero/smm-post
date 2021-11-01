@@ -52,19 +52,19 @@ export default function Profile({}) {
             <ProfileInnercontainer>
               <ProfileIconContainer>
                 <ProfileImageOne src={IMAGES.profile.ProfileImage} />
-                <PencilIcon />
+                {/* <PencilIcon /> */}
               </ProfileIconContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Имя пользователя</ProfileInputText>
-                <ProfileInput><ProfileInput1  placeholder="Рафаэль  Рафаэль  " /><ProfileUser/></ProfileInput>
+                <ProfileInput><ProfileInput1  placeholder="Рафаэль  Рафаэль  " /></ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Адресс почты</ProfileInputText>
-                <ProfileInput><ProfileInput1  placeholder="rafael@gmail.com" /><ProfileSms/></ProfileInput>
+                <ProfileInput><ProfileInput1  placeholder="rafael@gmail.com" /></ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Номер телефона</ProfileInputText>
-                <ProfileInput><ProfileInput1  placeholder="+998 99 888 8888 " /><ProfileCall/></ProfileInput>
+                <ProfileInput><ProfileInput1  placeholder="+998 99 888 8888 " /></ProfileInput>
               </ProfileInputContainer>
             </ProfileInnercontainer>
             <ProfileContainer>

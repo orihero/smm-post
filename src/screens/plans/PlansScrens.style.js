@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { DefaultText } from "../../components/general/text/Text.style";
+import { COLORS } from "../../constants/colors";
 
 export const PlansScrensContainer = styled.div`
   margin-top: 20px;
@@ -13,7 +15,7 @@ export const PlansScrensHeader = styled.div`
   height: 150vh;
 `;
 
-export const PlansScrensText = styled.h1`
+export const PlansScrensText = styled(DefaultText)`
   font-size: 15px;
   font-weight: normal;
 `;
@@ -23,6 +25,7 @@ export const PlansScrensContainerOne = styled.div`
     margin-left: 50px;
     margin-top: 30px;
     padding: 10px;
+    display: flex;
     border-radius: 10px;
 `
 
@@ -35,51 +38,43 @@ export const PlansScrensDiv = styled.div`
     height: 800px;
 `   
 
-export const PlansScrensTextOne = styled.h1`
+export const PlansScrensTextOne = styled(DefaultText)`
     font-size: 80px;
     margin-left: 140px;
 `
-export const PlansScrensTextTwo = styled.h1`
+export const PlansScrensTextTwo = styled(DefaultText)`
     font-size: 22px;
     display: flex;
     flex-direction: column;
     font-weight: normal;
     color: gray;
     justify-content: center;
-    margin-left: 0px;
     text-align: center;
 `
-export const PlansScrensTextThree = styled.h1`
+export const PlansScrensTextThree = styled(DefaultText)`
     display: flex;
     font-size: 50px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
 `
-export const PlansScrensTextFour = styled.h1`
+export const PlansScrensTextFour = styled(DefaultText)`
     font-size: 25px;
     font-weight: 500;
     display: flex;
     margin-top: 25px;
     margin-left: 5px;
 `
-export const  PlansScrensTextFive = styled.h1`
-    font-weight: 400;
-    font-size: 20px;
+export const  PlansScrensTextFive = styled(DefaultText)`
+    font-weight: 500;
+    font-size: 17px;
     display: flex;
-    margin-left: 80px;
+    margin-left: 40px;
     margin-bottom: 20px;
 `
-export const PlansScrensTextSix = styled.h1`
-    
+export const PlansScrensTextSix = styled(DefaultText)`
+    color: ${COLORS.primaryPink};
+    font-weight: 500;
+    font-size: 19px;
+    margin-left: 75px;
 `
-// export const CheckIcon = styled.h1`
-//     font-weight: 300;
-// `
-// export const  = styled.h1``
-// export const  = styled.h1``
-// export const  = styled.h1``
-// export const  = styled.h1``
-// export const  = styled.h1``
-// export const  = styled.h1``
-

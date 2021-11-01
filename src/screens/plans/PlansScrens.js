@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckIcon } from "../../constants/icons";
+import { CheckIcon, ExclamatoryIcons } from "../../constants/icons";
 import {
   PlansScrensHeader,
   PlansScrensContainer,
@@ -20,6 +20,7 @@ function PlansScrens() {
       <PlansScrensHeader>
         <PlansScrensContainer>
           <PlansScrensText>
+            <ExclamatoryIcons />
             Ваш пробный период заканчивается через 7 дней.
           </PlansScrensText>
           <PlansScrensText>

@@ -2,7 +2,7 @@ import React from "react";
 import { COLORS } from "../constants/colors";
 
 function NewPostsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -20,7 +20,7 @@ function NewPostsIcon({ width = 32, height = 32, active = false, ...rest }) {
 }
 
 function CalendarIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -39,7 +39,7 @@ function CalendarIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 function AnalyticsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -56,7 +56,7 @@ function AnalyticsIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 function InstrumentsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: "white", stroke: color, strokeWidth: "2px" }}
@@ -75,7 +75,7 @@ function InstrumentsIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 function SettingsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -92,7 +92,7 @@ function SettingsIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 function ScripcsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -109,7 +109,7 @@ function ScripcsIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 export function CallIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -126,7 +126,7 @@ export function CallIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 export function EyeIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -143,7 +143,7 @@ export function EyeIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 export function IIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -151,7 +151,6 @@ export function IIcon({ width = 32, height = 32, active = false, ...rest }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z" />
-
     </svg>
   );
 }
@@ -161,7 +160,7 @@ export function PencilIcon({
   active = false,
   ...rest
 }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -192,7 +191,7 @@ export const CheckIcon = ({
   active = false,
   ...rest
 }) => {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       width={width}
@@ -208,6 +207,30 @@ export const CheckIcon = ({
     </svg>
   );
 };
+export const ExclamatoryIcons = ({
+  width = 20,
+  height = 20,
+  active = false,
+  ...rest
+}) => {
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 22 22"
+      fill={color}
+      xmlns="http://www.w3.org/2000/svg"
+    > 
+      <path
+        fill={color}
+        stroke={color}
+        opacity="0.7"
+        d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z"
+      />
+    </svg>
+  );
+};
 
 export let ICONS = {
   newPosts: NewPostsIcon,
@@ -217,4 +240,5 @@ export let ICONS = {
   instruments: InstrumentsIcon,
   settings: SettingsIcon,
   profile: CallIcon,
+  plans: ExclamatoryIcons,
 };

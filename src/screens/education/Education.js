@@ -15,6 +15,7 @@ import {
   EducationImageText,
   EducationBoxContainer,
   EducationButton,
+  // EducationContainerRight,  
 } from "./Education.styles";
 import { IMAGES } from "../../constants/images";
 
@@ -24,6 +25,7 @@ export default function Education() {
     <>
       <EducationHeader>
         <EducationInner>
+          
           <EducationContainer>
             <EducationText>
               Чтобы мы знали, как обращаться к вам в Модуле А, <br /> отчётах и

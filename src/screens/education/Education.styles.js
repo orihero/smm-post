@@ -92,10 +92,15 @@ font-weight: normal;
 margin-left: 10px;
 
 `
-export const EducationButton = styled.div`
+export const EducationButton = styled.button`
 border-radius: 20px;
-border: solid 1px red;
-width: 100px;
+border: solid 1px gray;
+padding: 10px 20px;
+background-color: #fff;
+margin-left: 500px;
+margin-top: 20px;
+
+
 `
 // export const  = styled.div``
 // export const  = styled.div``

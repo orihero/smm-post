@@ -33,6 +33,7 @@ export const UserParagraph = styled.p`
 
 export const UserImg = styled.img`
   width: 70px;
+  cursor: pointer;
   height: 70px;
 `;
 

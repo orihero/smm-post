@@ -2,7 +2,7 @@ import React from "react";
 import { COLORS } from "../constants/colors";
 
 function NewPostsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -20,7 +20,7 @@ function NewPostsIcon({ width = 32, height = 32, active = false, ...rest }) {
 }
 
 function CalendarIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -39,7 +39,7 @@ function CalendarIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 function AnalyticsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -56,7 +56,7 @@ function AnalyticsIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 function InstrumentsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: "white", stroke: color, strokeWidth: "2px" }}
@@ -75,7 +75,7 @@ function InstrumentsIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 function SettingsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -92,7 +92,7 @@ function SettingsIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 function ScripcsIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -109,7 +109,7 @@ function ScripcsIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 export function CallIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -126,7 +126,7 @@ export function CallIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 export function EyeIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -143,7 +143,7 @@ export function EyeIcon({ width = 32, height = 32, active = false, ...rest }) {
   );
 }
 export function IIcon({ width = 32, height = 32, active = false, ...rest }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -160,7 +160,7 @@ export function PencilIcon({
   active = false,
   ...rest
 }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
       {...{ width, height, fill: color, stroke: color }}
@@ -184,6 +184,61 @@ export function PencilIcon({
     </svg>
   );
 }
+<<<<<<< HEAD
+export function GoogleIcon({
+  width = 27,
+  height = 27,
+  active = false,
+  color,
+  ...rest
+}) {
+  return (
+    <svg {...{ width, height, fill: color, stroke: color }} viewBox="0 0 29 29" fill={COLORS.white} stroke={COLORS.white} xmlns="http://www.w3.org/2000/svg">
+      <path fill={color} stroke={color} opacity="0.7" d="M16.0409 13.0168H15.6909V13.3668V16.7094V17.0594H16.0409H23.5059C22.5887 21.3657 19.0647 24.3816 14.7039 24.3816C9.41531 24.3816 5.02609 19.9924 5.02609 14.7039C5.02609 9.41531 9.41531 5.02609 14.7039 5.02609C17.4056 5.02609 19.7218 6.18221 21.4 7.98943L21.6471 8.25558L21.9039 7.99876L24.3106 5.59209L24.5581 5.34461L24.3106 5.09712C21.8485 2.63496 18.5538 0.983496 14.7039 0.983496C7.15686 0.983496 0.983496 7.15686 0.983496 14.7039C0.983496 22.2509 7.15686 28.4242 14.7039 28.4242C22.274 28.4242 27.7557 22.2269 27.7557 14.7039V13.3668V13.0168H27.4057H16.0409Z" />
+    </svg>
+
+  );
+}
+export function FaceBookIcon({
+  width = 17,
+  height = 35,
+  active = false,
+  color,
+  ...rest
+}) {
+  return (
+    <svg {...{ width, height, fill: color, stroke: color }} xmlns="http://www.w3.org/2000/svg">
+      <path fill={color} stroke={color} opacity="0.7" d="M14.6261 8.16005H19.5234V0.925781H13.7665V0.951871C6.79106 1.19893 5.36143 5.11999 5.23542 9.23828H5.22108V12.8507H0.471191V19.9352H5.22108V38.9257H12.3794V19.9352H18.2433L19.376 12.8507H12.3818V10.6682C12.3818 9.27637 13.3079 8.16005 14.6261 8.16005Z" />
+    </svg>
+  );
+}
+export function VkontakteIcon({
+  width = 50,
+  height = 30,
+  active = false,
+  color,
+  ...rest
+}) {
+  return (
+    <svg {...{ width, height, fill: color, stroke: color }} viewBox="0 0 54 32" xmlns="http://www.w3.org/2000/svg">
+      <path fill={color} stroke={color} opacity="0.7" d="M12.3348 3.93705C13.7935 7.64233 15.6421 11.1358 18.077 14.2719C18.3999 14.6892 18.807 15.0603 19.2358 15.3624C19.8622 15.8049 20.4532 15.6494 20.7079 14.9123C20.9772 14.1389 21.2245 12.5715 21.2391 11.7593C21.2793 9.63715 21.2331 8.24636 21.1223 6.12681C21.0504 4.76927 20.5813 3.57726 18.6399 3.21748C18.0404 3.10593 17.9847 2.59833 18.3699 2.09197C19.1717 1.03775 20.2888 0.86974 21.5001 0.803251C23.4634 0.694175 25.4338 0.783194 27.3995 0.803251C28.2002 0.810806 29.0056 0.877159 29.7941 1.05396C30.8226 1.28461 31.3734 2.02671 31.5429 3.0595C31.6307 3.59224 31.6758 4.13995 31.6635 4.67901C31.6124 6.99543 31.5039 9.31061 31.4783 11.6258C31.4673 12.5345 31.5318 13.4659 31.7208 14.3509C31.9852 15.5842 32.8017 15.8939 33.6365 15.0027C34.6967 13.8709 35.6314 12.5973 36.5087 11.3038C38.1027 8.95096 39.2932 6.36886 40.3181 3.70653C40.8482 2.33278 41.2541 2.03441 42.6907 2.0307C45.3912 2.02438 48.0917 2.0219 50.7922 2.0307C51.2711 2.03317 51.7719 2.0796 52.224 2.22755C52.9576 2.46824 53.2489 3.08367 53.077 3.86465C52.6761 5.69476 51.7146 7.25026 50.6849 8.74572C49.0325 11.1448 47.3008 13.4864 45.6094 15.8579C45.3937 16.16 45.2037 16.4821 45.0269 16.8092C44.3944 17.985 44.4383 18.6443 45.3608 19.6232C46.8292 21.1813 48.4013 22.639 49.8234 24.2397C50.8568 25.4042 51.8133 26.6677 52.6323 27.9976C53.6681 29.6797 53.0283 31.2641 51.0932 31.5461C49.8758 31.7229 43.9292 31.5475 43.6219 31.5461C42.0231 31.5387 40.6217 30.9683 39.4932 29.8515C38.238 28.6081 37.0973 27.2442 35.8921 25.9469C35.529 25.5557 35.1414 25.181 34.7235 24.8538C33.7376 24.0803 32.77 24.2521 32.3094 25.443C31.9158 26.4659 31.5758 29.1519 31.5599 29.3814C31.4771 30.5809 30.7349 31.3455 29.4285 31.4195C25.6569 31.6301 22.0021 31.1976 18.5974 29.3212C15.7117 27.7318 13.4074 25.4843 11.4112 22.8633C8.24039 18.7003 5.73584 14.1242 3.44924 9.41378C3.33238 9.17296 1.01641 4.10382 0.954171 3.86438C0.747294 3.06266 0.940281 2.29679 1.59884 2.03317C2.00939 1.86887 9.64525 2.03262 9.77226 2.03963C10.9907 2.10749 11.8215 2.63625 12.3348 3.93705Z" />
+    </svg>
+  );
+}
+export function TwitterIcon({
+  width = 42,
+  height = 33,
+  active = false,
+  color,
+  ...rest
+}) {
+  return (
+    <svg {...{ width, height, fill: color, stroke: color }} viewBox="0 0 44 35" xmlns="http://www.w3.org/2000/svg">
+      <path fill={color} stroke={color} opacity="0.7" d="M43.1109 4.51732C41.5408 5.19548 39.8677 5.64498 38.1234 5.86324C39.9178 4.80833 41.2874 3.15062 41.9313 1.15254C40.2583 2.13469 38.411 2.82844 36.4424 3.21558C34.8538 1.55008 32.5896 0.518555 30.1196 0.518555C25.3274 0.518555 21.4694 4.34844 21.4694 9.04355C21.4694 9.7191 21.5274 10.3687 21.6699 10.9871C14.4737 10.6415 8.10603 7.24553 3.82839 2.07233C3.08159 3.34809 2.64353 4.80833 2.64353 6.3803C2.64353 9.33196 4.18728 11.9484 6.48839 13.4632C5.0977 13.4373 3.73339 13.0397 2.57756 12.4135C2.57756 12.4395 2.57756 12.4733 2.57756 12.5071C2.57756 16.6487 5.57798 20.0889 9.51256 20.8814C8.80798 21.071 8.04006 21.162 7.24312 21.162C6.68895 21.162 6.1295 21.1308 5.60437 21.0165C6.72589 24.3916 9.90839 26.873 13.6926 26.9536C10.7476 29.2219 7.00826 30.5886 2.9602 30.5886C2.25034 30.5886 1.56951 30.5574 0.888672 30.4716C4.72298 32.9062 9.26714 34.2963 14.1676 34.2963C30.0959 34.2963 38.8042 21.3049 38.8042 10.0439C38.8042 9.66714 38.791 9.30338 38.7726 8.94221C40.4905 7.7418 41.9339 6.24259 43.1109 4.51732Z" />
+    </svg>
+  );
+}
+=======
 export function ProfileUser({
   width = 23,
   height = 20,
@@ -286,6 +341,7 @@ export const CheckIcon = ({
     </svg>
   );
 };
+>>>>>>> 3a208f250fe9ea9af313717783281451a1d70321
 
 export let ICONS = {
   newPosts: NewPostsIcon,

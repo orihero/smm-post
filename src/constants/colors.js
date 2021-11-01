@@ -6,5 +6,9 @@ export let COLORS = {
     fontColors: "#102046",
     inputBorderColor: 'rgba(16, 32, 70, 0.1)',
     loginColors: '#006ED4',
+    googleBackgroundColor: '#F44336',
+    facebookBackgroundColor: '#3B5998',
+    vkontakteBackgroundColor: '#44678D',
+    twitterBackgroundColor: '#03A9F4',
 }
 

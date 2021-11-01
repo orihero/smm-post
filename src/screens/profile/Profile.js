@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { IMAGES } from "../../constants/images";
-import { ICONS, PencilIcon } from "../../constants/icons";
+import { ICONS, PencilIcon, ProfileSms, ProfileUser, ProfileCall } from "../../constants/icons";
 
 import {
   ProfileHeadr,
   ProfileInner,
   ProfileInputContainer,
   ProfileInput,
+  ProfileInput1,
   ProfileBoxOne,
   ProfileImageOne,
   ProfileInnercontainer,
@@ -55,15 +56,15 @@ export default function Profile({}) {
               </ProfileIconContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Имя пользователя</ProfileInputText>
-                <ProfileInput placeholder="Рафаэль  Рафаэль" type="text" />
+                <ProfileInput><ProfileInput1  placeholder="Рафаэль  Рафаэль  " /><ProfileUser/></ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Адресс почты</ProfileInputText>
-                <ProfileInput placeholder="rafael@gmail.com"></ProfileInput>
+                <ProfileInput><ProfileInput1  placeholder="rafael@gmail.com" /><ProfileSms/></ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Номер телефона</ProfileInputText>
-                <ProfileInput placeholder="+998 99 888 8888" type="number" />
+                <ProfileInput><ProfileInput1  placeholder="+998 99 888 8888 " /><ProfileCall/></ProfileInput>
               </ProfileInputContainer>
             </ProfileInnercontainer>
             <ProfileContainer>

@@ -3,15 +3,15 @@ import { DefaultText } from "../../components/general/text/Text.style";
 import { COLORS } from "../../constants/colors";
 
 export const Section = styled.section`
-  width: 100%;
+  /* width: 100; */
   height: 100vh;
   display: flex;
   justify-content: space-between;
 `;
 
 export const LeftSideContainer = styled.div`
-  width: 1070px;
-  height: 700px;
+  width: 1080px;
+  height: 752px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@ export const RegisterHead = styled(DefaultText)`
 
 export const RegisterSpanHead = styled.span`
   color: ${COLORS.loginColors};
-`
+`;
 
 export const RegisterHeadSecond = styled(DefaultText)`
   font-size: 17px;
@@ -60,23 +60,96 @@ export const RegisterHeadSecond = styled(DefaultText)`
 
 export const RegisterLogin = styled.span`
   cursor: pointer;
-  &:hover{
+  &:hover {
     color: ${COLORS.loginColors};
-    border-bottom: 2px solid ${COLORS.loginColors}
+    border-bottom: 2px solid ${COLORS.loginColors};
   }
-`
+`;
 
 export const NetLogin = styled.div`
-  width: 400px;
-  height: 80px;
+  /* width: 400px;
+  height: 80px; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-right: 190px;
+  margin-top: 55px;
+`;
+
+export const NetTabDiv = styled.div`
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid ${COLORS.borderGray};
+  margin-top: 5px;
+`;
+
+export const NetLoginHead = styled(DefaultText)`
+  font-size: 17px;
+  font-weight: 500;
+  /* margin-bottom: 15px; */
+  color: ${COLORS.fontColors};
+`;
+
+export const GoogleIconsBox = styled.div`
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-`
+  background-color: ${COLORS.googleBackgroundColor};
+  color: ${COLORS.white};
+  border-radius: 18px;
+  cursor: pointer;
+  margin-top: 5px;
+`;
 
-export const NetLoginHead = styled(DefaultText)`
-  font-size: 18px;
-  font-weight: 600;
+export const FaceBookIconsBox = styled.div`
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${COLORS.facebookBackgroundColor};
+  color: ${COLORS.white};
+  border-radius: 18px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 5px;
+`;
+
+export const VkontakteIconsBox = styled.div`
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${COLORS.vkontakteBackgroundColor};
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 5px;
+`;
+
+export const TwitterIconsBox = styled.div`
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${COLORS.twitterBackgroundColor};
+  color: ${COLORS.white};
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 5px;
+`;
+
+export const LanguageHead = styled(DefaultText)`
   color: ${COLORS.fontColors};
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  color: ${(props) => (props.primary ? COLORS.borderGray : COLORS.fontColors)};
 `

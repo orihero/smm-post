@@ -8,7 +8,6 @@ export const PublicationsBottom = styled.div`
 `;
 
 export const PublicationsHeader = styled.div`
-  margin-left:50px;
   width: 100%;
   height: 110vh;
   background-color: #f7fafc;

@@ -48,7 +48,7 @@ export const ProfileBoxOne = styled.div`
   margin-top: 50px;
   height: 70vh;
 `;
-export const ProfileInput = styled.input`
+export const ProfileInput = styled.div`
   width: 400px;
   height: 44px;
   color: black;
@@ -56,6 +56,19 @@ export const ProfileInput = styled.input`
   padding-left: 7px;
   font-size: 14px;
   border: 1.5px solid #e8427e;
+  align-items: center;
+  display: flex;
+`;
+export const ProfileInput1 = styled.input`
+  width: 350px;
+  height: 44px;
+  color: black;
+  outline: none;
+  border-radius: 7px;
+  padding-left: 7px;
+  font-size: 14px;
+  border: none;
+  
 `;
 export const ProfileInputContainer = styled.div`
   width: 500px;

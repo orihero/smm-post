@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { COLORS } from "../../../constants/colors";
 
 export const NavbarDiv = styled.div`
-  width: 1300px;
+  width: 1170px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -33,6 +33,7 @@ export const UserParagraph = styled.p`
 
 export const UserImg = styled.img`
   width: 70px;
+  cursor: pointer;
   height: 70px;
 `;
 

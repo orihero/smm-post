@@ -10,5 +10,6 @@ export let COLORS = {
     facebookBackgroundColor: '#3B5998',
     vkontakteBackgroundColor: '#44678D',
     twitterBackgroundColor: '#03A9F4',
+    backgroundColorIconOrange: '#FF623B'
 }
 

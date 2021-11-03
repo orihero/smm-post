@@ -208,8 +208,8 @@ export const CheckIcon = ({
   );
 };
 export const GoogleIcon = ({
-  width = 20,
-  height = 20,
+  width = 26,
+  height = 26,
   active = false,
   color,
   ...rest
@@ -222,8 +222,8 @@ export const GoogleIcon = ({
 };
 
 export const FaceBookIcon = ({
-  width = 20,
-  height = 20,
+  width = 19,
+  height = 38,
   active = false,
   color,
   ...rest
@@ -235,8 +235,8 @@ export const FaceBookIcon = ({
   );
 };
 export const TwitterIcon = ({
-  width = 20,
-  height = 20,
+  width = 52,
+  height = 32,
   active = false,
   color,
   ...rest
@@ -248,8 +248,8 @@ export const TwitterIcon = ({
   );
 };
 export const VkontakteIcon = ({
-  width = 20,
-  height = 20,
+  width = 42,
+  height = 32,
   active = false,
   color,
   ...rest
@@ -260,6 +260,38 @@ export const VkontakteIcon = ({
     </svg>
   );
 };
+export const OrangeIcons = ({
+  width = 20,
+  height = 20,
+  active = false,
+  color,
+  backgroundColor,
+  style = {},
+  ...rest
+}) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 20 20" fill={color} fill={backgroundColor} style={style} xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 0C4.4898 0 0 4.4898 0 10C0 15.5102 4.4898 20 10 20C15.5102 20 20 15.5102 20 10C20 4.4898 15.5102 0 10 0ZM13.5714 8.46939L9.4898 12.551C9.28572 12.6531 9.18367 12.7551 8.97959 12.7551C8.77551 12.7551 8.57143 12.6531 8.46939 12.551L6.42857 10.5102C6.12245 10.2041 6.12245 9.69388 6.42857 9.38776C6.73469 9.08163 7.2449 9.08163 7.55102 9.38776L9.08163 10.9184L12.6531 7.34694C12.9592 7.04082 13.4694 7.04082 13.7755 7.34694C13.8776 7.7551 13.8776 8.16327 13.5714 8.46939Z" />
+    </svg>
+  );
+};
+export const BulpIcons = ({
+  width = 20,
+  height = 20,
+  active = false,
+  color,
+  backgroundColor,
+  style = {},
+  ...rest
+}) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 15 20" fill={color} xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.8708 15.9106V16.0133C11.8708 17.8609 10.6387 19.5033 8.79055 19.9139C6.32636 20.4272 4.1702 18.5795 4.1702 16.1159V15.9106H11.8708Z" />
+      <path d="M14.951 6.87749C14.951 8.93047 13.5136 11.2914 12.8975 12.1126C12.7949 12.2152 12.7949 12.3179 12.6922 12.5232L12.1788 13.9603C12.0762 14.1656 11.9735 14.2682 11.6655 14.2682H4.17021C3.96487 14.2682 3.75952 14.1656 3.65684 13.9603L3.14347 12.5232C3.14347 12.4205 3.04079 12.3179 2.93812 12.1126C2.42475 11.2914 1.08998 8.93047 0.987305 6.87749C0.987305 5.02981 1.60335 3.28477 2.93812 2.05298C4.27289 0.718544 6.01836 0 7.96917 0C9.91999 0 11.6655 0.821193 13.0002 2.05298C14.2323 3.38742 14.951 5.02981 14.951 6.87749Z" />
+    </svg>
+
+  );
+};
 export let ICONS = {
   newPosts: NewPostsIcon,
   ScripcsIcon,
@@ -268,5 +300,4 @@ export let ICONS = {
   instruments: InstrumentsIcon,
   settings: SettingsIcon,
   profile: CallIcon,
-  // plans: ExclamatoryIcons,
 };

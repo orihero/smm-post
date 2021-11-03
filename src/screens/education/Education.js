@@ -15,8 +15,11 @@ import {
   EducationImageText,
   EducationBoxContainer,
   EducationButton,
-  // EducationContainerRight,  
+  EducationTextTwo,
+  EducationTextTwoContainer,
+  // EducationContainerRight,
 } from "./Education.styles";
+import { ICONS, EducationIcon } from "../../constants/icons";
 import { IMAGES } from "../../constants/images";
 
 export default function Education() {
@@ -25,7 +28,10 @@ export default function Education() {
     <>
       <EducationHeader>
         <EducationInner>
-          
+          <EducationTextTwoContainer>
+            <EducationIcon /> <EducationTextTwo>  Шаг 1. Расскажите немного о себе</EducationTextTwo>
+          </EducationTextTwoContainer>
+
           <EducationContainer>
             <EducationText>
               Чтобы мы знали, как обращаться к вам в Модуле А, <br /> отчётах и

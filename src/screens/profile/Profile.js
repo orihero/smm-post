@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IMAGES } from "../../constants/images";
-import { ICONS, PencilIcon, ProfileSms, ProfileUser, ProfileCall } from "../../constants/icons";
+import { ICONS, PencilIcon, ProfileSms, ProfileUser, ProfileCall, } from "../../constants/icons";
 
 import {
   ProfileHeadr,

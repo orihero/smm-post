@@ -85,7 +85,7 @@ function Loginscreens() {
                 <GoogleIcon color="#FFFFFF" />
               </GoogleIconsBox>
               <FaceBookIconsBox>
-                <FaceBookIcon color="#fff" />
+                {/* <FaceBookIcon color="#fff" /> */}
               </FaceBookIconsBox>
               <VkontakteIconsBox>
                 {/* <VkontakteIcon color="#fff" /> */}

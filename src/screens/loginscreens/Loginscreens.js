@@ -1,16 +1,21 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router";
 import { Buttons } from "../../components/general/buttons/RectangleButton.styles";
+import { COLORS } from "../../constants/colors";
 import {
+  BulpIcons,
   FaceBookIcon,
   GoogleIcon,
+  OrangeIcons,
   TwitterIcon,
   VkontakteIcon,
 } from "../../constants/icons";
-import { TextsDiv } from "../profile/Profile.styles";
 import {
+  BulpContainer,
+  BulpParagraph,
   FaceBookIconsBox,
   GoogleIconsBox,
+  InfoParagraphContainer,
   LanguageHead,
   LeftSideContainer,
   LoginInput,
@@ -23,6 +28,7 @@ import {
   RegisterSpanHead,
   RightSideContainer,
   RightSideHead,
+  RightSideInfoParagraph,
   Section,
   TwitterIconsBox,
   VkontakteIconsBox,
@@ -31,10 +37,10 @@ import {
 
 
 function Loginscreens() {
-  // const [activeTab, setActiveTab] = useState(0)
-  let history = useHistory();
-  let onNewpost = () =>{
-    history.push("/newpost")}
+  const navigation = useHistory();
+  let onStartClick = () => {
+    navigation.push("/newpost")
+  }
   return (
     <>
       <Section>
@@ -66,7 +72,7 @@ function Loginscreens() {
             <RegisterSpanHead> Лицензией </RegisterSpanHead> и <br />
             <RegisterSpanHead> Политикой обработки данных</RegisterSpanHead>
           </RegisterHead>
-          <Buttons primary active onClick={onNewpost}>
+          <Buttons primary active onClick={onStartClick}>
             Начать пользоваться
           </Buttons>
           <RegisterHeadSecond>
@@ -76,10 +82,10 @@ function Loginscreens() {
             <NetLoginHead >Войти через соцсеть</NetLoginHead>
             <NetTabDiv>
               <GoogleIconsBox>
-                {/* <GoogleIcon backgrundColor="#FFFFFF" /> */}
+                <GoogleIcon color="#FFFFFF" />
               </GoogleIconsBox>
               <FaceBookIconsBox>
-                {/* <FaceBookIcon color="#fff" /> */}
+                <FaceBookIcon color="#fff" />
               </FaceBookIconsBox>
               <VkontakteIconsBox>
                 {/* <VkontakteIcon color="#fff" /> */}
@@ -92,6 +98,35 @@ function Loginscreens() {
         </LeftSideContainer>
         <RightSideContainer>
           <LanguageHead>Uz Ру</LanguageHead>
+          <InfoParagraphContainer>
+            <OrangeIcons style={{ marginRight: "5px", }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <RightSideInfoParagraph>
+              Отложенная публикация во <br /> «ВКонтакте», Фейсбук, <br /> Инстаграм и ещё 8 <br />
+              соцсетей из одного окна
+            </RightSideInfoParagraph>
+          </InfoParagraphContainer>
+          <InfoParagraphContainer>
+            <OrangeIcons style={{ marginRight: "5px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <RightSideInfoParagraph>
+              Получайте больше трафика и <br /> охвата для постов без усилий с <br /> «Автопилотом»
+            </RightSideInfoParagraph>
+          </InfoParagraphContainer>
+          <InfoParagraphContainer>
+            <OrangeIcons style={{ marginRight: "5px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <RightSideInfoParagraph>
+              Обсуждайте, комментируйте и <br /> дорабатывайте посты с <br /> коллегами и клиентами в <br /> одном приложении
+            </RightSideInfoParagraph>
+          </InfoParagraphContainer>
+          <InfoParagraphContainer>
+            <OrangeIcons style={{ marginRight: "5px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <RightSideInfoParagraph>
+              Прямая публикация в <br /> Инстаграм
+            </RightSideInfoParagraph>
+          </InfoParagraphContainer>
+          <BulpContainer>
+            <BulpIcons style={{ marginBottom: 15 }} color={COLORS.backgroundColorIconOrange} />
+            <BulpParagraph> Мы выпускаем 60 постов в день <br /> и экономим с Амплифером 700+ <br /> часов в месяц. Без Модуль А <br /> пришлось бы нанять ещё трёх <br /> человек или сократить <br /> количество постов вдвое.</BulpParagraph>
+          </BulpContainer>
         </RightSideContainer>
       </Section>
     </>

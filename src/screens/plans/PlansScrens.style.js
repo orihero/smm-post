@@ -12,69 +12,33 @@ export const PlansScrensHeader = styled.div`
   flex-direction: column;
   background-color: #f7fafc;
   width: 100%;
-  height: 150vh;
+  height: 120vh;
+  padding: 40px;
 `;
 
 export const PlansScrensText = styled(DefaultText)`
-  font-size: 15px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 600;
+  color: ${COLORS.fontColors};
 `;
 
-export const PlansScrensContainerOne = styled.div`
-    background-color: #fff;
-    margin-left: 50px;
-    margin-top: 30px;
-    padding: 10px;
-    display: flex;
-    border-radius: 10px;
+export const PlansScreensSpan = styled.span `
+  font-size: 16px;
+  font-weight: 600;
+  color: ${COLORS.fontColors};
+  opacity: 0.7;
 `
 
-export const PlansScrensDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    border: solid 1px gray;
-    width: 310px;
-    height: 800px;
-`   
+export const PlansCardContianer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
-export const PlansScrensTextOne = styled(DefaultText)`
-    font-size: 80px;
-    margin-left: 140px;
-`
-export const PlansScrensTextTwo = styled(DefaultText)`
-    font-size: 22px;
-    display: flex;
+export const PlansScrensCard = styled.div`
     flex-direction: column;
-    font-weight: normal;
-    color: gray;
-    justify-content: center;
-    text-align: center;
 `
-export const PlansScrensTextThree = styled(DefaultText)`
+
+export const PlansScrensdiv = styled.div`
     display: flex;
-    font-size: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-`
-export const PlansScrensTextFour = styled(DefaultText)`
-    font-size: 25px;
-    font-weight: 500;
-    display: flex;
-    margin-top: 25px;
-    margin-left: 5px;
-`
-export const  PlansScrensTextFive = styled(DefaultText)`
-    font-weight: 500;
-    font-size: 17px;
-    display: flex;
-    margin-left: 40px;
-    margin-bottom: 20px;
-`
-export const PlansScrensTextSix = styled(DefaultText)`
-    color: ${COLORS.primaryPink};
-    font-weight: 500;
-    font-size: 19px;
-    margin-left: 75px;
+    justify-content: space-between;
 `

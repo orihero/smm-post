@@ -6,6 +6,14 @@ export const EducationHeader = styled.div`
   height: 150vh;
   background-color: #f7fafc;
 `;
+export const EducationTextTwoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+`;
+export const EducationTextTwo = styled.div`
+  margin-left: 7px;
+`;
 
 export const EducationInner = styled.div`
   margin-left: 70px;
@@ -91,9 +99,15 @@ export const EducationCheckText = styled.h5`
 `;
 export const EducationButton = styled.button`
   border-radius: 20px;
+<<<<<<< HEAD
   border: solid 1px ${COLORS.borderGray};
   padding: 10px 20px;
   background-color: ${COLORS.white};
+=======
+  border: solid 1px gray;
+  padding: 10px 20px;
+  background-color: #fff;
+>>>>>>> 30f5f4ff8570b7d2b89d12e3456905ed8c469893
   margin-left: 500px;
   margin-top: 20px;
 `;

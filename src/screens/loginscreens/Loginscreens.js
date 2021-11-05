@@ -35,6 +35,8 @@ import {
   VkontakteIconsBox,
 } from "./Loginscreens.elements";
 
+
+
 function Loginscreens() {
   const navigation = useHistory();
   let onStartClick = () => {
@@ -78,19 +80,19 @@ function Loginscreens() {
             Уже зарегистрированы? <RegisterLogin>Войти</RegisterLogin>
           </RegisterHeadSecond>
           <NetLogin>
-            <NetLoginHead>Войти через соцсеть</NetLoginHead>
+            <NetLoginHead >Войти через соцсеть</NetLoginHead>
             <NetTabDiv>
               <GoogleIconsBox>
                 <GoogleIcon color="#FFFFFF" />
               </GoogleIconsBox>
               <FaceBookIconsBox>
-                <FaceBookIcon color="#fff" />
+                {/* <FaceBookIcon color="#fff" /> */}
               </FaceBookIconsBox>
               <VkontakteIconsBox>
-                <VkontakteIcon color="#fff" />
+                {/* <VkontakteIcon color="#fff" /> */}
               </VkontakteIconsBox>
               <TwitterIconsBox>
-                <TwitterIcon color="#fff" />
+                {/* <TwitterIcon color="#fff" /> */}
               </TwitterIconsBox>
             </NetTabDiv>
           </NetLogin>

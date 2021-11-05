@@ -15,6 +15,7 @@ import {
   PublicationsPost,
 } from "./Publications.styles";
 import { useHistory } from "react-router-dom";
+
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
 
 export default function Publications() {

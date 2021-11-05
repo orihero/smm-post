@@ -185,7 +185,7 @@ export function PencilIcon({
   );
 }
 
-export const CheckIcon = ({
+export const ExclamatoryIcons = ({
   width = 20,
   height = 20,
   active = false,
@@ -198,20 +198,136 @@ export const CheckIcon = ({
       style={style}
       width={width}
       height={height}
-      viewBox="0 0 16 12"
+      viewBox="0 0 22 22"
       fill={color}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M15.0315 0.339844H13.8028C13.6306 0.339844 13.4671 0.418945 13.3616 0.554297L6.11415 9.73535L2.63896 5.33203C2.58639 5.26529 2.51938 5.21132 2.44296 5.17417C2.36655 5.13703 2.28271 5.11768 2.19775 5.11758H0.969034C0.851261 5.11758 0.786222 5.25293 0.858292 5.34434L5.67294 11.4439C5.89794 11.7287 6.33036 11.7287 6.55712 11.4439L15.1423 0.564844C15.2143 0.475195 15.1493 0.339844 15.0315 0.339844Z"
         fill={color}
+        stroke={color}
+        opacity="0.7"
+        d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z"
       />
     </svg>
   );
 };
-export const GoogleIcon = ({
-  width = 20,
+export function ProfileUser({
+  width = 23,
   height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      {...{ width, height, fill: color, stroke: color }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill={color}
+        stroke={color}
+        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+      ></path>
+      <circle cx="12" cy="7" r="4"></circle>
+    </svg>
+  );
+}
+export function ProfileSms({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      {...{ width, height, stroke: color }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill={color}
+        opacity="0.7"
+        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+      ></path>
+
+      <polyline points="22,6 12,13 2,6"></polyline>
+    </svg>
+  );
+}
+export function ProfileCall({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      {...{ width, height, fill: color, stroke: color }}
+      viewBox="0 0 24 24"
+      stroke={color}
+      fill={color}
+    >
+      <path
+        stroke={color}
+        fill={color}
+        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+      />
+    </svg>
+  );
+}
+export function EducationIcon({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 22 22"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z"
+        stroke="#102046"
+        stroke-width="2"
+      />
+    </svg>
+  );
+}
+export function EducationIconmark({
+  width = 23,
+  height = 20,
+  active = false,
+  ...rest
+}) {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.0003 0.666992C6.65339 0.666992 0.666992 6.65339 0.666992 14.0003C0.666992 21.3473 6.65339 27.3337 14.0003 27.3337C21.3473 27.3337 27.3337 21.3473 27.3337 14.0003C27.3337 6.65339 21.3473 0.666992 14.0003 0.666992ZM12.9119 9.23842C12.9119 8.6942 13.3201 8.14999 14.0003 8.14999C14.6806 8.14999 15.0888 8.55815 15.0888 9.23842V14.6806C15.0888 15.2248 14.6806 15.769 14.0003 15.769C13.3201 15.769 12.9119 15.3609 12.9119 14.6806V9.23842ZM14.0003 20.1228C13.3201 20.1228 12.6398 19.4425 12.6398 18.7622C12.6398 18.082 13.3201 17.4017 14.0003 17.4017C14.6806 17.4017 15.3609 18.082 15.3609 18.7622C15.3609 19.4425 14.6806 20.1228 14.0003 20.1228Z"
+        fill="#E8427E"
+      />
+    </svg>
+  );
+}
+
+export const GoogleIcon = ({
+  width = 26,
+  height = 26,
   active = false,
   color,
   ...rest
@@ -230,8 +346,8 @@ export const GoogleIcon = ({
 };
 
 export const FaceBookIcon = ({
-  width = 20,
-  height = 20,
+  width = 19,
+  height = 38,
   active = false,
   color,
   ...rest
@@ -249,8 +365,8 @@ export const FaceBookIcon = ({
   );
 };
 export const TwitterIcon = ({
-  width = 20,
-  height = 20,
+  width = 52,
+  height = 32,
   active = false,
   color,
   ...rest
@@ -268,8 +384,8 @@ export const TwitterIcon = ({
   );
 };
 export const VkontakteIcon = ({
-  width = 20,
-  height = 20,
+  width = 42,
+  height = 32,
   active = false,
   color,
   ...rest
@@ -289,6 +405,48 @@ export const VkontakteIcon = ({
     </svg>
   );
 };
+export const OrangeIcons = ({
+  width = 20,
+  height = 20,
+  active = false,
+  color,
+  backgroundColor,
+  style = {},
+  ...rest
+}) => {
+  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 16 12"
+      fill={color}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.0315 0.339844H13.8028C13.6306 0.339844 13.4671 0.418945 13.3616 0.554297L6.11415 9.73535L2.63896 5.33203C2.58639 5.26529 2.51938 5.21132 2.44296 5.17417C2.36655 5.13703 2.28271 5.11768 2.19775 5.11758H0.969034C0.851261 5.11758 0.786222 5.25293 0.858292 5.34434L5.67294 11.4439C5.89794 11.7287 6.33036 11.7287 6.55712 11.4439L15.1423 0.564844C15.2143 0.475195 15.1493 0.339844 15.0315 0.339844Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+export const BulpIcons = ({
+  width = 20,
+  height = 20,
+  active = false,
+  color,
+  backgroundColor,
+  style = {},
+  ...rest
+}) => {
+  return (
+    <svg width={width} height={height} viewBox="0 0 15 20" fill={color} style={style} xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.8708 15.9106V16.0133C11.8708 17.8609 10.6387 19.5033 8.79055 19.9139C6.32636 20.4272 4.1702 18.5795 4.1702 16.1159V15.9106H11.8708Z" />
+      <path d="M14.951 6.87749C14.951 8.93047 13.5136 11.2914 12.8975 12.1126C12.7949 12.2152 12.7949 12.3179 12.6922 12.5232L12.1788 13.9603C12.0762 14.1656 11.9735 14.2682 11.6655 14.2682H4.17021C3.96487 14.2682 3.75952 14.1656 3.65684 13.9603L3.14347 12.5232C3.14347 12.4205 3.04079 12.3179 2.93812 12.1126C2.42475 11.2914 1.08998 8.93047 0.987305 6.87749C0.987305 5.02981 1.60335 3.28477 2.93812 2.05298C4.27289 0.718544 6.01836 0 7.96917 0C9.91999 0 11.6655 0.821193 13.0002 2.05298C14.2323 3.38742 14.951 5.02981 14.951 6.87749Z" />
+    </svg>
+
+  );
+};
 export let ICONS = {
   newPosts: NewPostsIcon,
   ScripcsIcon,
@@ -297,5 +455,4 @@ export let ICONS = {
   instruments: InstrumentsIcon,
   settings: SettingsIcon,
   profile: CallIcon,
-  // plans: ExclamatoryIcons,
 };

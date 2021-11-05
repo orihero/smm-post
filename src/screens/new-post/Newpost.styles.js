@@ -33,7 +33,7 @@ export const ContainerBox = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #f7fafc;
+  background-color: ${COLORS.backgroundColor};
 `;
 
 export const UserIcon = styled.img``;
@@ -103,7 +103,7 @@ export const ButtonFirst = styled.button`
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: ${COLORS.white};
   background-color: ${COLORS.primaryPink};
   margin-top: 5%;
 `;
@@ -116,7 +116,7 @@ export const PostDivs = styled.div`
 export const TipDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(16, 32, 70, 0.1);
+  border-bottom: 1px solid ${COLORS.borderGray};
   padding-bottom: 30px;
 `;
 
@@ -133,7 +133,8 @@ export const PreviewButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${props => props.active ? COLORS.primaryPink : COLORS.white};
+  background-color: ${(props) =>
+    props.active ? COLORS.primaryPink : COLORS.white};
   color: ${(props) => (props.active ? COLORS.white : COLORS.primaryPink)};
 `;
 
@@ -249,45 +250,40 @@ export const ButtonsDiv = styled.div`
 `;
 
 export const PreviewContainer = styled.div`
-    padding: 15px;
-    margin-left: 5px;
-    /* font-size: 18px; */
-    /* line-height: none; */
-`
-export const PreviewHead = styled.h1``
+  padding: 15px;
+  margin-left: 5px;
+  /* font-size: 18px; */
+  /* line-height: none; */
+`;
+export const PreviewHead = styled.h1``;
 export const PreviewContainerOne = styled.div`
-width: 400px;
-border-radius: 20px;
-margin-bottom: 70px;
-background-color: #FCFCFC;
-
-`
-export const PreviewContainerHeader  = styled.div`
-display: flex;
-background-color: #fff;
-justify-content: space-between;
-border-radius: 20px;
-
-`
-export const PreviewContainerHeaderIcon  = styled.div`
-margin-top: 50px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-
-
-`
-export const PreviewContainerHeaderIconOne  = styled.div`
-margin-top: 80px;
-margin-bottom: 20px;
-
-`
-export const PreviewContainerHeaderText  = styled.p`
-padding: 15px 48px;
-font-weight: 400;
-&:hover {
+  width: 400px;
+  border-radius: 20px;
+  margin-bottom: 70px;
+  background-color: #fcfcfc;
+`;
+export const PreviewContainerHeader = styled.div`
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  border-radius: 20px;
+`;
+export const PreviewContainerHeaderIcon = styled.div`
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`;
+export const PreviewContainerHeaderIconOne = styled.div`
+  margin-top: 80px;
+  margin-bottom: 20px;
+`;
+export const PreviewContainerHeaderText = styled.p`
+  padding: 15px 48px;
+  font-weight: 400;
+  &:hover {
     border-bottom: 3px solid ${COLORS.primaryPink};
     color: ${COLORS.primaryPink};
   }
@@ -297,5 +293,4 @@ font-weight: 400;
         border-bottom: 3px solid ${COLORS.primaryPink};
         color: ${COLORS.primaryPink};
     }`}
-`
-
+`;

@@ -3,7 +3,6 @@ import { DefaultText } from "../../components/general/text/Text.style";
 import { COLORS } from "../../constants/colors";
 
 export const Section = styled.section`
-  /* width: 100; */
   height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -20,9 +19,12 @@ export const LeftSideContainer = styled.div`
 `;
 
 export const RightSideContainer = styled.div`
-  width: 100px;
-  height: 700px;
+  width: 500px;
+  height: 750px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const RightSideHead = styled(DefaultText)`
@@ -67,8 +69,6 @@ export const RegisterLogin = styled.span`
 `;
 
 export const NetLogin = styled.div`
-  /* width: 400px;
-  height: 80px; */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -88,7 +88,6 @@ export const NetTabDiv = styled.div`
 export const NetLoginHead = styled(DefaultText)`
   font-size: 17px;
   font-weight: 500;
-  /* margin-bottom: 15px; */
   color: ${COLORS.fontColors};
 `;
 
@@ -149,7 +148,44 @@ export const TwitterIconsBox = styled.div`
 export const LanguageHead = styled(DefaultText)`
   color: ${COLORS.fontColors};
   font-weight: 500;
-  font-size: 18px;
+  font-size: 19px;
+  margin-bottom: 55px;
+  margin-left: 300px;
   cursor: pointer;
   color: ${(props) => (props.primary ? COLORS.borderGray : COLORS.fontColors)};
-`
+`;
+
+export const InfoParagraphContainer = styled.div`
+  width: 500px;
+  margin-left: 55px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;
+
+export const RightSideInfoParagraph = styled(DefaultText)`
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: start;
+  color: ${COLORS.fontColors};
+`;
+
+export const BulpParagraph = styled.p`
+  font-weight: 500;
+  font-size: 19px;
+  color: ${COLORS.fontColors};
+`;
+
+export const BulpContainer = styled.div`
+  width: 500px;
+  display: flex;
+  margin-left: 50px;
+  border-top: 1px solid ${COLORS.borderGray};
+`;
+export const BulpIconContaier = styled.div`
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;

@@ -3,7 +3,6 @@ import { DefaultText } from "../../components/general/text/Text.style";
 import { COLORS } from "../../constants/colors";
 
 export const Section = styled.section`
-  /* width: 100; */
   height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -70,8 +69,6 @@ export const RegisterLogin = styled.span`
 `;
 
 export const NetLogin = styled.div`
-  /* width: 400px;
-  height: 80px; */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -91,7 +88,6 @@ export const NetTabDiv = styled.div`
 export const NetLoginHead = styled(DefaultText)`
   font-size: 17px;
   font-weight: 500;
-  /* margin-bottom: 15px; */
   color: ${COLORS.fontColors};
 `;
 
@@ -165,14 +161,12 @@ export const InfoParagraphContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-`
+`;
 
 export const RightSideInfoParagraph = styled(DefaultText)`
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 25px;
-  /* margin-left: 25px; */
-  /* padding: 5px 25px; */
   text-align: start;
   color: ${COLORS.fontColors};
 `;
@@ -180,17 +174,18 @@ export const RightSideInfoParagraph = styled(DefaultText)`
 export const BulpParagraph = styled.p`
   font-weight: 500;
   font-size: 19px;
-  margin-top: 10px;
   color: ${COLORS.fontColors};
-`
+`;
 
 export const BulpContainer = styled.div`
   width: 500px;
   display: flex;
-  /* margin-right: 160px; */
   margin-left: 50px;
-  /* align-items: flex-start; */
-  /* justify-content: flex-start; */
-  /* flex: start; */
   border-top: 1px solid ${COLORS.borderGray};
-`
+`;
+export const BulpIconContaier = styled.div`
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;

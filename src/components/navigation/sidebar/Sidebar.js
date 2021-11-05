@@ -13,7 +13,7 @@ import {
   LeftSideButton,
   PostsParagraph,
   RightSideButton,
-  VectorImg,
+  VectorImg
 } from "./Sidebar.styles";
 
 function Sidebar() {

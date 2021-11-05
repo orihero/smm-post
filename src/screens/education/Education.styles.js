@@ -9,7 +9,7 @@ export const EducationHeader = styled.div`
 
 export const EducationInner = styled.div`
   margin-left: 70px;
-padding-bottom: 50px;
+  padding-bottom: 50px;
 `;
 export const EducationContainer = styled.div`
   background-color: #fff;
@@ -37,9 +37,9 @@ export const EducationInput = styled.input`
   border: 1.4px solid rgba(16, 32, 70, 0.2);
 `;
 export const EducationImageText = styled.div`
-font-size: 15px;
-font-weight: normal;
-padding-top: 5px;
+  font-size: 15px;
+  font-weight: normal;
+  padding-top: 5px;
 `;
 export const EducationImage = styled.img`
   width: 130px;
@@ -60,7 +60,6 @@ export const EducationImageContainer = styled.div`
   flex-direction: column;
   &:hover {
     border: 1px solid ${COLORS.primaryPink};
-    
   }
   ${(props) =>
     props.active &&
@@ -76,32 +75,28 @@ export const EducationBoxContainer = styled.div`
   justify-content: space-between;
 `;
 export const EducationCheck = styled.input`
-width:25px ;
-height: 25px;
-border-radius: 20px;
-`
-export const  EducationCheckContainer = styled.div`
-display: flex;
-align-items: center;
-margin-bottom: 15px;
-
-`
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+`;
+export const EducationCheckContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+`;
 export const EducationCheckText = styled.h5`
-font-size: 17px;
-font-weight: normal;
-margin-left: 10px;
-
-`
+  font-size: 17px;
+  font-weight: normal;
+  margin-left: 10px;
+`;
 export const EducationButton = styled.button`
-border-radius: 20px;
-border: solid 1px gray;
-padding: 10px 20px;
-background-color: #fff;
-margin-left: 500px;
-margin-top: 20px;
-
-
-`
+  border-radius: 20px;
+  border: solid 1px ${COLORS.borderGray};
+  padding: 10px 20px;
+  background-color: ${COLORS.white};
+  margin-left: 500px;
+  margin-top: 20px;
+`;
 // export const  = styled.div``
 // export const  = styled.div``
 // export const  = styled.div``

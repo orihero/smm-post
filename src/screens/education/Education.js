@@ -1,23 +1,22 @@
 import React, { useState } from "react";
+import { IMAGES } from "../../constants/images";
 import {
-  EducationHeader,
-  EducationInner,
-  EducationContainer,
-  EducationInput,
-  EducationCheck,
-  EducationCheckText,
-  EducationCheckContainer,
-  EducationText,
-  EducationTextOne,
-  EducationImageContainer,
-  EducationImage,
-  EducationImage1,
-  EducationImageText,
   EducationBoxContainer,
   EducationButton,
-  // EducationContainerRight,  
+  EducationCheck,
+  EducationCheckContainer,
+  EducationCheckText,
+  EducationContainer,
+  EducationHeader,
+  EducationImage,
+  EducationImage1,
+  EducationImageContainer,
+  EducationImageText,
+  EducationInner,
+  EducationInput,
+  EducationText,
+  EducationTextOne,
 } from "./Education.styles";
-import { IMAGES } from "../../constants/images";
 
 export default function Education() {
   let [selectedTab, setSelectedTab] = useState();
@@ -25,7 +24,6 @@ export default function Education() {
     <>
       <EducationHeader>
         <EducationInner>
-          
           <EducationContainer>
             <EducationText>
               Чтобы мы знали, как обращаться к вам в Модуле А, <br /> отчётах и

@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { BUTTON } from "./Help.styles";
 import ModalHelp from "./ModalHelp";
-import { BUTTON, Container } from "./Help.styles";
 
 export default function Help() {
   const [openModalHelp, setOpenModalHelp] = useState(false);

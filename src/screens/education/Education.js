@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { EducationIcon } from "../../constants/icons";
+import { EducationIcon } from "../../constants/icons"
 import { useHistory } from "react-router-dom";
 import { IMAGES } from "../../constants/images";
 import {
@@ -17,8 +17,9 @@ import {
   EducationInner,
   EducationInput,
   EducationText,
-  EducationTextOne, EducationTextTwo,
-  EducationTextTwoContainer
+  EducationTextOne,
+  EducationTextTwo,
+  EducationTextTwoContainer,
 } from "./Education.styles";
 
 export default function Education() {
@@ -33,11 +34,9 @@ export default function Education() {
       <EducationHeader>
         <EducationInner>
           <EducationTextTwoContainer>
-            <EducationIcon />
-            <EducationTextTwo>
-              Шаг 1. Расскажите немного о себе
-            </EducationTextTwo>
+            <EducationIcon /> <EducationTextTwo>  Шаг 1. Расскажите немного о себе</EducationTextTwo>
           </EducationTextTwoContainer>
+
           <EducationContainer>
             <EducationText>
               Чтобы мы знали, как обращаться к вам в Модуле А, <br /> отчётах и
@@ -88,7 +87,7 @@ export default function Education() {
               <EducationCheckText>Другое</EducationCheckText>
             </EducationCheckContainer>
           </EducationContainer>
-          <EducationButton onClick={onNext}>Пропустить</EducationButton>
+          <EducationButton onClick={onNext} >Пропустить</EducationButton>
         </EducationInner>
       </EducationHeader>
     </>

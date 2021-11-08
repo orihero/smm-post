@@ -1,14 +1,8 @@
 import React from "react";
-import PlansButtonContainer from "../../components/general/buttons/PlansButton";
-import { CheckIcon } from "../../constants/icons";
+import PlanCard from "./components/PlanCard";
 import {
-  PlansScreensSpan, PlansScrensCard, PlansScrensContainer, PlansScrensContainerOne, PlansScrensdiv, PlansScrensDiv, PlansScrensHeader,
-  PlansScrensText, PlansScrensTextFive,
-  PlansScrensTextFour,
-  PlansScrensTextOne,
-  PlansScrensTextSix,
-  PlansScrensTextThree,
-  PlansScrensTextTwo
+  PlansScrensHeader,
+  PlansCardContianer
 } from "./PlansScrens.style";
 
 function PlansScrens() {
@@ -74,7 +68,7 @@ function PlansScrens() {
             ]}
           />
         </PlansCardContianer>
-      </PlansScrensHeader >
+      </PlansScrensHeader>
     </>
   );
 }

@@ -10,27 +10,26 @@ export const ModalBacgrundHelp = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding-top: 20px;
-  
 `;
 
 export const ModalVido = styled.video`
-width: 100%;
-height: 335px;
-margin-top: 20px;
-margin-bottom: 20px;
+  width: 100%;
+  height: 335px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
 
-`
 export const ModalContainerHelp = styled.div`
   width: 700px;
   height: 600px;
   padding-bottom: 40px;
-  
   border-radius: 12px;
-  background-color: #fff;
+  background-color: ${COLORS.white};
   padding: 25px;
 `;
 
 export const ModalContainerHelpIcon = styled.div``;
+
 export const ModalBoxHelp = styled.div`
   display: flex;
   flex-direction: row;
@@ -42,6 +41,7 @@ export const ModalBoxHelp = styled.div`
 export const ModalBoxHelpContainer = styled.div`
   margin-left: 12px;
 `;
+
 export const ModalExitHelp = styled.div`
   font-size: 15px;
   height: 30px;
@@ -59,7 +59,7 @@ export const ModalDescriptionHelp = styled.div`
 `;
 export const ModalTextHelp = styled.div`
   font-size: 15px;
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid #dbdbdb;
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
@@ -69,30 +69,30 @@ export const ModalTextThreeHelp = styled.div`
   font-size: 15px;
   margin-top: 9px;
   margin-left: 9px;
-  color: gray;
+  color: ${COLORS.borderGray};
 `;
 export const ModalTextTwoHelp = styled.div`
-  color: black;
+  color: ${COLORS.black};
 `;
 
 export const ModalTextIconHelp = styled.img`
   width: 80px;
 `;
+
 export const ModalTextIconTwoHelp = styled.img`
   width: 18px;
   margin-right: 12px;
   margin-left: 5px;
 `;
+
 export const ModalButtonHelp = styled.button`
   font-size: 16px;
   width: 250px;
-
   font-weight: bold;
   padding: 6px 20px;
   border-width: 2px;
   border: 1px solid ${COLORS.primaryPink};
   border-radius: 20px;
-
   opacity: ${(props) => (props.active ? 1 : 0.5)};
   color: ${(props) => (props.primary ? COLORS.white : COLORS.primaryPink)};
   background-color: ${(props) =>

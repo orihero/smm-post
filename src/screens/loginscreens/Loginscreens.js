@@ -12,6 +12,7 @@ import {
 } from "../../constants/icons";
 import {
   BulpContainer,
+  BulpIconContaier,
   BulpParagraph,
   FaceBookIconsBox,
   GoogleIconsBox,
@@ -124,8 +125,10 @@ function Loginscreens() {
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <BulpContainer>
-            <BulpIcons style={{ marginBottom: 15 }} color={COLORS.backgroundColorIconOrange} />
-            <BulpParagraph> Мы выпускаем 60 постов в день <br /> и экономим с Амплифером 700+ <br /> часов в месяц. Без Модуль А <br /> пришлось бы нанять ещё трёх <br /> человек или сократить <br /> количество постов вдвое.</BulpParagraph>
+            <BulpIconContaier>
+              <BulpIcons style={{ marginRight: "5px" }} color={COLORS.backgroundColorIconOrange} />
+              <BulpParagraph> Мы выпускаем 60 постов в день <br /> и экономим с Амплифером 700+ <br /> часов в месяц.Без Модуль А <br /> пришлось бы нанять ещё трёх <br /> человек или сократить <br /> количество постов вдвое.</BulpParagraph>
+            </BulpIconContaier>
           </BulpContainer>
         </RightSideContainer>
       </Section>

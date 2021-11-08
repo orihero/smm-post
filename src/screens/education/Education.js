@@ -1,29 +1,23 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { IMAGES } from "../../constants/images";
 import {
-  EducationHeader,
-  EducationInner,
-  EducationContainer,
-  EducationInput,
-  EducationCheck,
-  EducationCheckText,
-  EducationCheckContainer,
-  EducationText,
-  EducationTextOne,
-  EducationImageContainer,
-  EducationImage,
-  EducationImage1,
-  EducationImageText,
   EducationBoxContainer,
   EducationButton,
-  EducationTextTwo,
-  EducationTextTwoContainer,
-  // EducationContainerRight,
+  EducationCheck,
+  EducationCheckContainer,
+  EducationCheckText,
+  EducationContainer,
+  EducationHeader,
+  EducationImage,
+  EducationImage1,
+  EducationImageContainer,
+  EducationImageText,
+  EducationInner,
+  EducationInput,
+  EducationText,
+  EducationTextOne,
 } from "./Education.styles";
-import { ICONS, EducationIcon } from "../../constants/icons";
-import { IMAGES } from "../../constants/images";
-import { useHistory } from "react-router-dom";
-
-
 export default function Education() {
   let history = useHistory();
   let onNext = () => {
@@ -36,7 +30,11 @@ export default function Education() {
       <EducationHeader>
         <EducationInner>
           <EducationTextTwoContainer>
-            <EducationIcon /> <EducationTextTwo>  Шаг 1. Расскажите немного о себе</EducationTextTwo>
+            <EducationIcon />{" "}
+            <EducationTextTwo>
+              {" "}
+              Шаг 1. Расскажите немного о себе
+            </EducationTextTwo>
           </EducationTextTwoContainer>
 
           <EducationContainer>
@@ -89,7 +87,7 @@ export default function Education() {
               <EducationCheckText>Другое</EducationCheckText>
             </EducationCheckContainer>
           </EducationContainer>
-          <EducationButton onClick={onNext} >Пропустить</EducationButton>
+          <EducationButton onClick={onNext}>Пропустить</EducationButton>
         </EducationInner>
       </EducationHeader>
     </>

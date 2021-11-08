@@ -13,7 +13,7 @@ export const LeftSide = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  background-color: #fff;
+  background-color: ${COLORS.white};
   box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
 `;
 
@@ -49,7 +49,7 @@ export const LeftSideButton = styled.button`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #fff;
+  background-color: ${COLORS.white};
   align-items: center;
   justify-content: center;
   box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
@@ -70,13 +70,13 @@ export const RightSideButton = styled.button`
   margin-left: 1px;
   font-size: 20px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: ${COLORS.white};
   border: none;
   box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
 `;
 
 export const LeftSideBox = styled.div`
-  width: 90%;
+  width: 190px;
   height: 1000px;
   display: flex;
   align-items: flex-start;
@@ -97,7 +97,7 @@ export const ElementsContainer = styled.div`
 export const PostsParagraph = styled.p`
   margin-left: 10px;
   font-size: 16px;
-  color: #102046;
+  color: ${COLORS.fontColors};
   color: ${(props) => (props.active ? COLORS.primaryPink : COLORS.darkBlue)};
   font-weight: ${(props) => (props.active ? "600" : "normal")};
 `;

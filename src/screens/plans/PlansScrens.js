@@ -1,17 +1,12 @@
 import React from "react";
-import { CheckIcon, ExclamatoryIcons } from "../../constants/icons";
+import PlansButtonContainer from "../../components/general/buttons/PlansButton";
+import PlanCard from "./components/PlanCard";
 import {
+  PlansCardContianer, PlansScreensSpan, PlansScrensContainer,
   PlansScrensHeader,
-  PlansScrensContainer,
   PlansScrensText,
-  PlansScrensContainerOne,
-  PlansScrensDiv,
-  PlansScrensTextOne,
-  PlansScrensTextTwo,
-  PlansScrensTextThree,
-  PlansScrensTextFour,
-  PlansScrensTextFive,
-  PlansScrensTextSix,
+  PlansScrensdiv,
+  PlansScrensCard,
 } from "./PlansScrens.style";
 
 function PlansScrens() {
@@ -19,35 +14,77 @@ function PlansScrens() {
     <>
       <PlansScrensHeader>
         <PlansScrensContainer>
-          <PlansScrensText>
-            {/* <ExclamatoryIcons /> */}
+          <PlansScrensdiv>
+            <PlansScrensCard>
+            <PlansScrensText>
             Ваш пробный период заканчивается через 7 дней.
           </PlansScrensText>
-          <PlansScrensText>
+          <PlansScreensSpan>
             Выберите тариф, чтобы получить доступ ко всем функциям
-          </PlansScrensText>
+          </PlansScreensSpan>
+            </PlansScrensCard>
+          <PlansButtonContainer>Пригласить друга</PlansButtonContainer>
+          </PlansScrensdiv>
         </PlansScrensContainer>
-        <PlansScrensContainerOne>
-          <PlansScrensDiv>
-            <PlansScrensTextOne>S</PlansScrensTextOne>
-            <PlansScrensTextTwo>
-              сольным <br /> исполнителям
-            </PlansScrensTextTwo>
-            <PlansScrensTextThree>
-              13 $<PlansScrensTextFour>в месяц</PlansScrensTextFour>
-            </PlansScrensTextThree>
-            <PlansScrensTextFive>
-              <CheckIcon /> 1 проект
-            </PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> рабочее место</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> 5 страниц</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> Базовая аналитика</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> Автопилот</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> 2 импорта из RSS</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> По почте</PlansScrensTextFive>
-            <PlansScrensTextSix>  Все детали</PlansScrensTextSix>
-          </PlansScrensDiv>
-        </PlansScrensContainerOne>
+        <PlansCardContianer>
+          <PlanCard
+            name="S"
+            description="сольным исполнителям"
+            options={[
+              "1 проект",
+              "1 рабочее место",
+              "5 страниц",
+              "Базовая аналитика",
+              "Автопилот",
+              "2 импорта из RSS",
+              "По почте",
+            ]}
+          />
+          <PlanCard
+            name="M"
+            description="небольшим командам"
+            bonus="Все, что есть в S, плюс ..."
+            options={[
+              "2 проект",
+              "1 рабочее место",
+              "5 страниц",
+              "Базовая аналитика",
+              "Автопилот",
+              "2 импорта из RSS",
+              "По почте",
+            ]}
+          />
+
+          <PlanCard
+            name="L"
+            description="компаниям и изданиям"
+            bonus="Все, что есть в M, плюс ..."
+            options={[
+              "1 проект",
+              "1 рабочее место",
+              "5 страниц",
+              "Базовая аналитика",
+              "Автопилот",
+              "2 импорта из RSS",
+              "По почте",
+            ]}
+          />
+
+          <PlanCard
+            name="XL"
+            description="корпорациям и агентствам"
+            bonus="Все, что есть в L, плюс ..."
+            options={[
+              "1 проект",
+              "1 рабочее место",
+              "5 страниц",
+              "Базовая аналитика",
+              "Автопилот",
+              "2 импорта из RSS",
+              "По почте",
+            ]}
+          />
+        </PlansCardContianer>
       </PlansScrensHeader>
     </>
   );

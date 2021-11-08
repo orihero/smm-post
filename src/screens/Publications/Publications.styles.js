@@ -3,7 +3,7 @@ import { COLORS } from "../../constants/colors";
 
 export const PublicationsBottom = styled.div`
   background-color: #f7fafc;
-
+  padding-left: 30px;
   flex-direction: column;
 `;
 
@@ -21,6 +21,7 @@ export const PublicationsButtons = styled.div`
   justify-content: space-around;
   margin-right: 28%;
   cursor: pointer;
+  padding-left: 30px;
 `;
 
 export const ParagpaphFirst = styled.p`

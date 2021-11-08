@@ -21,8 +21,15 @@ import {
 } from "./Education.styles";
 import { ICONS, EducationIcon } from "../../constants/icons";
 import { IMAGES } from "../../constants/images";
+import { useHistory } from "react-router-dom";
+
 
 export default function Education() {
+  let history = useHistory();
+  let onNext = () => {
+    history.push("/educationtwo");
+  };
+
   let [selectedTab, setSelectedTab] = useState();
   return (
     <>
@@ -82,7 +89,7 @@ export default function Education() {
               <EducationCheckText>Другое</EducationCheckText>
             </EducationCheckContainer>
           </EducationContainer>
-          <EducationButton>Пропустить</EducationButton>
+          <EducationButton onClick={onNext} >Пропустить</EducationButton>
         </EducationInner>
       </EducationHeader>
     </>

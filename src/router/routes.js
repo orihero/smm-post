@@ -14,6 +14,7 @@ import PlansScrens from "../screens/plans/PlansScrens";
 import Settings from "../screens/settings/Settings";
 import Education from "../screens/education/Education";
 import EducationTwo from "../screens/education/EducationTwo";
+import EducationThree from "../screens/education/EducationThree";
 
 function Routes() {
     return (
@@ -52,6 +53,7 @@ function Routes() {
                             <Route exact path="/plans" component={PlansScrens} />
                             <Route exact path="/education" component={Education} />
                             <Route exact path="/educationtwo" component={EducationTwo} />
+                            <Route exact path="/educationthree" component={EducationThree} />
                         </Switch>
                     </div>
                 </div>

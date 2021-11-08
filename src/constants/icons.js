@@ -473,32 +473,32 @@ export const BulpIcons = ({
     </svg>
   );
 };
-export const CheckIcon = ({
-  width = 14,
-  height = 11,
-  active = false,
-  color,
-  backgroundColor,
-  style = {},
-  ...rest
-}) => {
-  return (
-    <svg
-      {...{ height, width, style }}
-      viewBox="0 0 16 11"
-      fill={color}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M1 5.5L5.5 10L14.5 1"
-        stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  );
-};
+// export const CheckIcon = ({
+//   width = 14,
+//   height = 11,
+//   active = false,
+//   color,
+//   backgroundColor,
+//   style = {},
+//   ...rest
+// }) => {
+//   return (
+//     <svg
+//       {...{ height, width, style }}
+//       viewBox="0 0 16 11"
+//       fill={color}
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path
+//         d="M1 5.5L5.5 10L14.5 1"
+//         stroke="white"
+//         stroke-width="2"
+//         stroke-linecap="round"
+//         stroke-linejoin="round"
+//       />
+//     </svg>
+//   );
+// };
 
 export const TelegramIcons = ({
   width = 20,

@@ -17,8 +17,9 @@ import {
   EducationInner,
   EducationInput,
   EducationText,
-  EducationTextOne, EducationTextTwo,
-  EducationTextTwoContainer
+  EducationTextOne,
+  EducationTextTwo,
+  EducationTextTwoContainer,
 } from "./Education.styles";
 
 export default function Education() {

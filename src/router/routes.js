@@ -4,6 +4,7 @@ import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
 import Analytics from "../screens/analytics/Analytics";
 import Education from "../screens/education/Education";
+import EducationThree from "../screens/education/EducationThree";
 import EducationTwo from "../screens/education/EducationTwo";
 import Help from '../screens/help/Help';
 import Instruments from "../screens/Instruments/Instruments";
@@ -15,9 +16,6 @@ import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
-import Education from "../screens/education/Education";
-import EducationTwo from "../screens/education/EducationTwo";
-import EducationThree from "../screens/education/EducationThree";
 
 function Routes() {
     return (

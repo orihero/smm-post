@@ -36,11 +36,13 @@ import {
 } from "./Loginscreens.elements";
 
 
-
 function Loginscreens() {
   const navigation = useHistory();
   let onStartClick = () => {
     navigation.push("/newpost")
+  }
+  let onComeInClick = () => {
+    navigation.push("/register")
   }
   return (
     <>
@@ -77,7 +79,7 @@ function Loginscreens() {
             Начать пользоваться
           </Buttons>
           <RegisterHeadSecond>
-            Уже зарегистрированы? <RegisterLogin>Войти</RegisterLogin>
+            Уже зарегистрированы? <RegisterLogin onClick={onComeInClick}>Войти</RegisterLogin>
           </RegisterHeadSecond>
           <NetLogin>
             <NetLoginHead >Войти через соцсеть</NetLoginHead>
@@ -86,13 +88,13 @@ function Loginscreens() {
                 <GoogleIcon color="#FFFFFF" />
               </GoogleIconsBox>
               <FaceBookIconsBox>
-                {/* <FaceBookIcon color="#fff" /> */}
+                <FaceBookIcon color="#fff" />
               </FaceBookIconsBox>
               <VkontakteIconsBox>
-                {/* <VkontakteIcon color="#fff" /> */}
+                <VkontakteIcon color="#fff" />
               </VkontakteIconsBox>
               <TwitterIconsBox>
-                {/* <TwitterIcon color="#fff" /> */}
+                <TwitterIcon color="#fff" />
               </TwitterIconsBox>
             </NetTabDiv>
           </NetLogin>
@@ -100,33 +102,33 @@ function Loginscreens() {
         <RightSideContainer>
           <LanguageHead>Uz Ру</LanguageHead>
           <InfoParagraphContainer>
-            <OrangeIcons style={{ marginRight: "5px", }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <OrangeIcons style={{ marginRight: "8px" }} />
             <RightSideInfoParagraph>
               Отложенная публикация во <br /> «ВКонтакте», Фейсбук, <br /> Инстаграм и ещё 8 <br />
               соцсетей из одного окна
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <InfoParagraphContainer>
-            <OrangeIcons style={{ marginRight: "5px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <OrangeIcons style={{ marginRight: "8px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
             <RightSideInfoParagraph>
               Получайте больше трафика и <br /> охвата для постов без усилий с <br /> «Автопилотом»
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <InfoParagraphContainer>
-            <OrangeIcons style={{ marginRight: "5px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <OrangeIcons style={{ marginRight: "8px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
             <RightSideInfoParagraph>
               Обсуждайте, комментируйте и <br /> дорабатывайте посты с <br /> коллегами и клиентами в <br /> одном приложении
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <InfoParagraphContainer>
-            <OrangeIcons style={{ marginRight: "5px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <OrangeIcons style={{ marginRight: "8px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
             <RightSideInfoParagraph>
               Прямая публикация в <br /> Инстаграм
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <BulpContainer>
             <BulpIconContaier>
-              <BulpIcons style={{ marginRight: "5px" }} color={COLORS.backgroundColorIconOrange} />
+              <BulpIcons style={{ marginRight: "8px" }} color={COLORS.backgroundColorIconOrange} />
               <BulpParagraph> Мы выпускаем 60 постов в день <br /> и экономим с Амплифером 700+ <br /> часов в месяц.Без Модуль А <br /> пришлось бы нанять ещё трёх <br /> человек или сократить <br /> количество постов вдвое.</BulpParagraph>
             </BulpIconContaier>
           </BulpContainer>

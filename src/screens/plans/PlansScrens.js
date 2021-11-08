@@ -1,17 +1,17 @@
 import React from "react";
-import { CheckIcon, ExclamatoryIcons } from "../../constants/icons";
+import { CheckIcon } from "../../constants/icons";
 import {
-  PlansScrensHeader,
   PlansScrensContainer,
-  PlansScrensText,
   PlansScrensContainerOne,
   PlansScrensDiv,
-  PlansScrensTextOne,
-  PlansScrensTextTwo,
-  PlansScrensTextThree,
-  PlansScrensTextFour,
+  PlansScrensHeader,
+  PlansScrensText,
   PlansScrensTextFive,
+  PlansScrensTextFour,
+  PlansScrensTextOne,
   PlansScrensTextSix,
+  PlansScrensTextThree,
+  PlansScrensTextTwo,
 } from "./PlansScrens.style";
 
 function PlansScrens() {
@@ -20,7 +20,6 @@ function PlansScrens() {
       <PlansScrensHeader>
         <PlansScrensContainer>
           <PlansScrensText>
-            {/* <ExclamatoryIcons /> */}
             Ваш пробный период заканчивается через 7 дней.
           </PlansScrensText>
           <PlansScrensText>
@@ -39,13 +38,25 @@ function PlansScrens() {
             <PlansScrensTextFive>
               <CheckIcon /> 1 проект
             </PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> рабочее место</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> 5 страниц</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> Базовая аналитика</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> Автопилот</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> 2 импорта из RSS</PlansScrensTextFive>
-            <PlansScrensTextFive> <CheckIcon /> По почте</PlansScrensTextFive>
-            <PlansScrensTextSix>  Все детали</PlansScrensTextSix>
+            <PlansScrensTextFive>
+              <CheckIcon /> рабочее место
+            </PlansScrensTextFive>
+            <PlansScrensTextFive>
+              <CheckIcon /> 5 страниц
+            </PlansScrensTextFive>
+            <PlansScrensTextFive>
+              <CheckIcon /> Базовая аналитика
+            </PlansScrensTextFive>
+            <PlansScrensTextFive>
+              <CheckIcon /> Автопилот
+            </PlansScrensTextFive>
+            <PlansScrensTextFive>
+              <CheckIcon /> 2 импорта из RSS
+            </PlansScrensTextFive>
+            <PlansScrensTextFive>
+              <CheckIcon /> По почте
+            </PlansScrensTextFive>
+            <PlansScrensTextSix> Все детали </PlansScrensTextSix>
           </PlansScrensDiv>
         </PlansScrensContainerOne>
       </PlansScrensHeader>

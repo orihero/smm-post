@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { EducationIcon } from "../../constants/icons";
 import { IMAGES } from "../../constants/images";
 import {
   EducationBoxContainer,
@@ -12,22 +13,12 @@ import {
   EducationImage1,
   EducationImageContainer,
   EducationImageText,
-<<<<<<< HEAD
   EducationInner,
   EducationInput,
   EducationText,
-  EducationTextOne,
+  EducationTextOne, EducationTextTwo,
+  EducationTextTwoContainer
 } from "./Education.styles";
-=======
-  EducationBoxContainer,
-  EducationButton,
-  EducationTextTwo,
-  EducationTextTwoContainer,
-  // EducationContainerRight,
-} from "./Education.styles";
-import { ICONS, EducationIcon } from "../../constants/icons";
-import { IMAGES } from "../../constants/images";
->>>>>>> 30f5f4ff8570b7d2b89d12e3456905ed8c469893
 
 export default function Education() {
   let [selectedTab, setSelectedTab] = useState();
@@ -35,13 +26,12 @@ export default function Education() {
     <>
       <EducationHeader>
         <EducationInner>
-<<<<<<< HEAD
-=======
           <EducationTextTwoContainer>
-            <EducationIcon /> <EducationTextTwo>  Шаг 1. Расскажите немного о себе</EducationTextTwo>
+            <EducationIcon />
+            <EducationTextTwo>
+              Шаг 1. Расскажите немного о себе
+            </EducationTextTwo>
           </EducationTextTwoContainer>
-
->>>>>>> 30f5f4ff8570b7d2b89d12e3456905ed8c469893
           <EducationContainer>
             <EducationText>
               Чтобы мы знали, как обращаться к вам в Модуле А, <br /> отчётах и

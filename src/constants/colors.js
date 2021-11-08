@@ -12,5 +12,6 @@ export let COLORS = {
     twitterBackgroundColor: '#03A9F4',
     backgroundColorIconOrange: '#FF623B',
     black: "#0000",
+    blue: "#006ED4"
 }
 

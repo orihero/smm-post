@@ -3,17 +3,18 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
 import Analytics from "../screens/analytics/Analytics";
+import Education from "../screens/education/Education";
+import EducationTwo from "../screens/education/EducationTwo";
 import Help from '../screens/help/Help';
 import Instruments from "../screens/Instruments/Instruments";
 import Loginscreens from "../screens/loginscreens/Loginscreens";
+import Register from "../screens/loginscreens/registerpage/Register";
 import Newpost from "../screens/new-post/Newpost";
-import Publications from "../screens/Publications/Publications"
+import PlansScrens from "../screens/plans/PlansScrens";
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
-import PlansScrens from "../screens/plans/PlansScrens";
+import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
-import Education from "../screens/education/Education";
-import EducationTwo from "../screens/education/EducationTwo";
 
 function Routes() {
     return (
@@ -21,6 +22,7 @@ function Routes() {
             <Switch>
                 <Redirect exact from="/" to="/login" />
                 <Route path="/login" component={Loginscreens} />
+                <Route path="/register" component={Register} />
                 <div
                     style={{
                         display: "flex",

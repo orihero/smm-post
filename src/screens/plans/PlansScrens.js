@@ -1,65 +1,80 @@
 import React from "react";
+import PlansButtonContainer from "../../components/general/buttons/PlansButton";
 import { CheckIcon } from "../../constants/icons";
 import {
-  PlansScrensContainer,
-  PlansScrensContainerOne,
-  PlansScrensDiv,
-  PlansScrensHeader,
-  PlansScrensText,
-  PlansScrensTextFive,
+  PlansScreensSpan, PlansScrensCard, PlansScrensContainer, PlansScrensContainerOne, PlansScrensdiv, PlansScrensDiv, PlansScrensHeader,
+  PlansScrensText, PlansScrensTextFive,
   PlansScrensTextFour,
   PlansScrensTextOne,
   PlansScrensTextSix,
   PlansScrensTextThree,
-  PlansScrensTextTwo,
+  PlansScrensTextTwo
 } from "./PlansScrens.style";
 
 function PlansScrens() {
   return (
     <>
       <PlansScrensHeader>
-        <PlansScrensContainer>
-          <PlansScrensText>
-            Ваш пробный период заканчивается через 7 дней.
-          </PlansScrensText>
-          <PlansScrensText>
-            Выберите тариф, чтобы получить доступ ко всем функциям
-          </PlansScrensText>
-        </PlansScrensContainer>
-        <PlansScrensContainerOne>
-          <PlansScrensDiv>
-            <PlansScrensTextOne>S</PlansScrensTextOne>
-            <PlansScrensTextTwo>
-              сольным <br /> исполнителям
-            </PlansScrensTextTwo>
-            <PlansScrensTextThree>
-              13 $<PlansScrensTextFour>в месяц</PlansScrensTextFour>
-            </PlansScrensTextThree>
-            <PlansScrensTextFive>
-              <CheckIcon /> 1 проект
-            </PlansScrensTextFive>
-            <PlansScrensTextFive>
-              <CheckIcon /> рабочее место
-            </PlansScrensTextFive>
-            <PlansScrensTextFive>
-              <CheckIcon /> 5 страниц
-            </PlansScrensTextFive>
-            <PlansScrensTextFive>
-              <CheckIcon /> Базовая аналитика
-            </PlansScrensTextFive>
-            <PlansScrensTextFive>
-              <CheckIcon /> Автопилот
-            </PlansScrensTextFive>
-            <PlansScrensTextFive>
-              <CheckIcon /> 2 импорта из RSS
-            </PlansScrensTextFive>
-            <PlansScrensTextFive>
-              <CheckIcon /> По почте
-            </PlansScrensTextFive>
-            <PlansScrensTextSix> Все детали </PlansScrensTextSix>
-          </PlansScrensDiv>
-        </PlansScrensContainerOne>
-      </PlansScrensHeader>
+        <PlansCardContianer>
+          <PlanCard
+            name="S"
+            description="сольным исполнителям"
+            options={[
+              "1 проект",
+              "1 рабочее место",
+              "5 страниц",
+              "Базовая аналитика",
+              "Автопилот",
+              "2 импорта из RSS",
+              "По почте",
+            ]}
+          />
+          <PlanCard
+            name="M"
+            description="небольшим командам"
+            bonus="Все, что есть в S, плюс ..."
+            options={[
+              "2 проект",
+              "1 рабочее место",
+              "5 страниц",
+              "Базовая аналитика",
+              "Автопилот",
+              "2 импорта из RSS",
+              "По почте",
+            ]}
+          />
+
+          <PlanCard
+            name="L"
+            description="компаниям и изданиям"
+            bonus="Все, что есть в M, плюс ..."
+            options={[
+              "1 проект",
+              "1 рабочее место",
+              "5 страниц",
+              "Базовая аналитика",
+              "Автопилот",
+              "2 импорта из RSS",
+              "По почте",
+            ]}
+          />
+
+          <PlanCard
+            name="XL"
+            description="корпорациям и агентствам"
+            bonus="Все, что есть в L, плюс ..."
+            options={[
+              "1 проект",
+              "1 рабочее место",
+              "5 страниц",
+              "Базовая аналитика",
+              "Автопилот",
+              "2 импорта из RSS",
+              "По почте",
+            ]}
+          />
+        </PlansCardContianer>
+      </PlansScrensHeader >
     </>
   );
 }

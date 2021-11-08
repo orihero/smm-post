@@ -105,6 +105,3 @@ export const EducationButton = styled.button`
   margin-left: 500px;
   margin-top: 20px;
 `;
-// export const  = styled.div``
-// export const  = styled.div``
-// export const  = styled.div``

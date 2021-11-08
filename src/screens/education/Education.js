@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { EducationIcon } from "../../constants/icons";
+import { useHistory } from "react-router-dom";
 import { IMAGES } from "../../constants/images";
 import {
   EducationBoxContainer,
@@ -21,6 +22,11 @@ import {
 } from "./Education.styles";
 
 export default function Education() {
+  let history = useHistory();
+  let onNext = () => {
+    history.push("/educationtwo");
+  };
+
   let [selectedTab, setSelectedTab] = useState();
   return (
     <>
@@ -82,7 +88,7 @@ export default function Education() {
               <EducationCheckText>Другое</EducationCheckText>
             </EducationCheckContainer>
           </EducationContainer>
-          <EducationButton>Пропустить</EducationButton>
+          <EducationButton onClick={onNext}>Пропустить</EducationButton>
         </EducationInner>
       </EducationHeader>
     </>

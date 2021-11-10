@@ -21,6 +21,7 @@ import {
   EducationTextTwo,
   EducationTextTwoContainer,
 } from "./Education.styles";
+import EducationcComponents from "./components/EducationcComponents";
 
 export default function Education() {
   let history = useHistory();
@@ -89,6 +90,7 @@ export default function Education() {
           </EducationContainer>
           <EducationButton onClick={onNext} >Пропустить</EducationButton>
         </EducationInner>
+        <EducationcComponents/>
       </EducationHeader>
     </>
   );

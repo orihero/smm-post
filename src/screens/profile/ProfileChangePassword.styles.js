@@ -81,7 +81,7 @@ margin-top: 20px;
 export const RoundtButton = styled.div`
   font-size: 16px;
   font-weight: bold;
-  padding: 6px 20px 2px 20px;
+  padding: 10px 20px 0px 20px;
   margin-bottom: 10px;
   background-color: ${COLORS.primaryPink} ;
   text-align: center;

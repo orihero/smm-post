@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { colors, COLORS } from "../../constants/colors";
+import { COLORS } from "../../constants/colors";
 
 export const EducationTwoText = styled.div`
   margin-left: 10px;
@@ -19,7 +19,8 @@ export const EducationTwoTextContainer = styled.div`
 
 export const EducationTwoHeader = styled.div`
   height: 120vh;
-  background-color: #f7fafc;
+  display: flex;
+  background-color: ${COLORS.backgroundColor};
 `;
 
 export const EducationTwoInner = styled.div`
@@ -51,16 +52,16 @@ export const EducationTwoTextContainerTwo = styled.div`
   border: solid 1px #e9edf1;
   border-radius: 10px;
   margin: 3px;
-  &:hover {
-    border: 1px solid ${COLORS.primaryPink};
-  }
+  cursor: pointer;
   ${(props) =>
-    props.active &&
+    props.active ?
     css`
        {
         border: 3px solid ${COLORS.primaryPink};
       }
-    `}
+    `:`&:hover {
+    border: 1px solid ${COLORS.primaryPink};
+  }`}
 `;
 export const EducationIconContainer = styled.div`
   display: flex;

@@ -122,6 +122,6 @@ export const TwitterIconsBox = styled.div`
   margin-top: 5px;
 `;
 
-export const RightSideLanguageContainer = styled.div `
+export const RightSideLanguageContainer = styled.div`
   display: flex;
-`
+`;

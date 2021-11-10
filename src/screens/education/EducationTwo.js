@@ -1,31 +1,16 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import RoundButton from "../../components/general/buttons/RoundButton";
 import {
-  EducationTwoText,
-  EducationTwoTextOne,
-  EducationTwoHeader,
-  EducationTwoInner,
-  EducationTwoContainer,
-  EducationTwoTextContainer,
-  EducationTwoTextContainerTwo,
-  EducationTwoTextTwo,
-  EducationIconContainer,
-  EducationTextTwo,
-  EducationBox,
-  EducationTextTwoContainer,
-  EducationBoxOne,
-  EducationTwoBtn,
-  ButtonsContainerOne,
-} from "./EducationTwo.styles";
-import { useHistory } from "react-router-dom";
-
-import {
-  ICONS,
-  EducationIconmark,
-  EducationIcon,
-  instagramIcons,
-  TelegramIcons,
+  EducationIcon, EducationIconmark, TelegramIcons
 } from "../../constants/icons";
+import {
+  ButtonsContainerOne, EducationBox, EducationBoxOne, EducationIconContainer,
+  EducationTextTwo, EducationTextTwoContainer, EducationTwoBtn, EducationTwoContainer, EducationTwoHeader,
+  EducationTwoInner, EducationTwoText, EducationTwoTextContainer,
+  EducationTwoTextContainerTwo, EducationTwoTextOne, EducationTwoTextTwo
+} from "./EducationTwo.styles";
+
 
 export default function EducationTwo() {
   let history = useHistory();
@@ -138,11 +123,11 @@ export default function EducationTwo() {
             </EducationBoxOne>
           </EducationTwoContainer>
           <ButtonsContainerOne>
-            <EducationTwoBtn onClick={onBack} >Назад</EducationTwoBtn>
+            <EducationTwoBtn onClick={onBack}>Назад</EducationTwoBtn>
             <RoundButton onClick={onNext} primary active={true}>
               Слудуюший шаг{" "}
             </RoundButton>
-          </ButtonsContainerOne> 
+          </ButtonsContainerOne>
         </EducationTwoInner>
       </EducationTwoHeader>
     </>

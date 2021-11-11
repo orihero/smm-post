@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PrimaryButton from "../../../components/general/buttons/PrimaryButton";
 import { CheckIcon } from "../../../constants/icons";
 import {
@@ -13,7 +13,6 @@ import {
   PlansScrensTextThree,
   PlansScrensTextTwo,
 } from "./PlanCard.style";
-
 export default function PlanCard({
   name = "S",
   description = "сольным  исполнителям",

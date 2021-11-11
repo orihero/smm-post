@@ -10,6 +10,10 @@ export const PlansButtonContainer = styled(DefaultText)`
   border: 1px solid ${COLORS.primaryPink};
   border-radius: 25px;
   cursor: pointer;
-  background-color: ${COLORS.primaryPink}
-  margin-left: 30px;
+  background-color: ${COLORS.primaryPink};
+  color: #FFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 75px;
 `

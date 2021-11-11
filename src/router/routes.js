@@ -16,6 +16,7 @@ import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
+import Whatsnew from "../screens/what'snew/Whatsnew";
 
 function Routes() { 
   return (
@@ -24,6 +25,7 @@ function Routes() {
         <Redirect exact from="/" to="/login" />
         <Route path="/login" component={Loginscreens} />
         <Route path="/register" component={Register} />
+        <Route path="/whatsnew" component={Whatsnew} />
         <div
           style={{
             display: "flex",

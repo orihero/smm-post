@@ -4,7 +4,7 @@ import { COLORS } from "../../constants/colors";
 export const ProfileHeadr = styled.div`
   width: 100%;
   height: 110vh;
-  background-color: #f7fafc;
+  background-color: ${COLORS.backgroundColor};
 `;
 export const ProfileInner = styled.div`
   margin-left: 80px;
@@ -72,6 +72,7 @@ export const ProfileInput1 = styled.input`
 `;
 export const ProfileInputContainer = styled.div`
   width: 500px;
+  margin-top: 10px;
 `;
 export const ProfileInnercontainer = styled.div`
   display: flex;
@@ -84,9 +85,6 @@ export const ProfileInnercontainer = styled.div`
 `;
 export const ProfileImageOne = styled.img`
 width: 120px;
-margin-bottom: 25px;
-
-
 `;
 
 export const ProfileInputText = styled.h5`
@@ -120,4 +118,13 @@ align-items: center;
 width: 160px;
 justify-content: space-between;
 `
+export const IconContainer = styled.div`
+background-color: ${COLORS.backgroundColor};
+padding: 7px;
+border-radius: 10px;
+cursor: pointer;
+margin-left: 10px;
+`
+// export const  = styled.div``
+// export const  = styled.div``
 // export const  = styled.div``

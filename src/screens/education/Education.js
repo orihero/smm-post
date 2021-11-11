@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { EducationIcon } from "../../constants/icons"
+import { useHistory } from "react-router-dom";
 import { IMAGES } from "../../constants/images";
 import {
   EducationBoxContainer,
@@ -12,36 +14,30 @@ import {
   EducationImage1,
   EducationImageContainer,
   EducationImageText,
-<<<<<<< HEAD
   EducationInner,
   EducationInput,
   EducationText,
   EducationTextOne,
-} from "./Education.styles";
-=======
-  EducationBoxContainer,
-  EducationButton,
   EducationTextTwo,
   EducationTextTwoContainer,
-  // EducationContainerRight,
 } from "./Education.styles";
-import { ICONS, EducationIcon } from "../../constants/icons";
-import { IMAGES } from "../../constants/images";
->>>>>>> 30f5f4ff8570b7d2b89d12e3456905ed8c469893
+import EducationcComponents from "./components/EducationcComponents";
 
 export default function Education() {
+  let history = useHistory();
+  let onNext = () => {
+    history.push("/educationtwo");
+  };
+
   let [selectedTab, setSelectedTab] = useState();
   return (
     <>
       <EducationHeader>
         <EducationInner>
-<<<<<<< HEAD
-=======
           <EducationTextTwoContainer>
             <EducationIcon /> <EducationTextTwo>  Шаг 1. Расскажите немного о себе</EducationTextTwo>
           </EducationTextTwoContainer>
 
->>>>>>> 30f5f4ff8570b7d2b89d12e3456905ed8c469893
           <EducationContainer>
             <EducationText>
               Чтобы мы знали, как обращаться к вам в Модуле А, <br /> отчётах и
@@ -92,8 +88,9 @@ export default function Education() {
               <EducationCheckText>Другое</EducationCheckText>
             </EducationCheckContainer>
           </EducationContainer>
-          <EducationButton>Пропустить</EducationButton>
+          <EducationButton onClick={onNext} >Пропустить</EducationButton>
         </EducationInner>
+        <EducationcComponents/>
       </EducationHeader>
     </>
   );

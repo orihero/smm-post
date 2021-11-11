@@ -51,6 +51,7 @@ export const InstrumentsBoxTextTwo = styled.div`
 
 export const InstrumentsBoxTextThree = styled.button`
   display: inline;
+  cursor: pointer;
   color: #e8427e;
   background: #${COLORS.white};
   border: none;
@@ -75,6 +76,7 @@ export const InstrumentsBoxContainerImage = styled.div`
 
 export const InstrumentsBoxContainerImageText = styled.h1`
   padding: 5px 15px;
+  cursor: pointer;
   border-radius: 20px;
   font-size: 15px;
   margin-left: 90px;
@@ -85,6 +87,8 @@ export const InstrumentsBoxContainerImageText = styled.h1`
 export const InstrumentsBoxContainerImageTextOne = styled.div`
   padding: 5px 15px;
   border-radius: 20px;
+  cursor: pointer;
+
   font-size: 15px;
   margin-left: 90px;
   width: 30px;

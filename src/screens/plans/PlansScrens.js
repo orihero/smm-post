@@ -1,31 +1,10 @@
 import React from "react";
-import PlansButtonContainer from "../../components/general/buttons/PlansButton";
+import { PlansCardContianer, PlansScrensHeader } from "./PlansScrens.style";
 import PlanCard from "./components/PlanCard";
-import {
-  PlansCardContianer, PlansScreensSpan, PlansScrensContainer,
-  PlansScrensHeader,
-  PlansScrensText,
-  PlansScrensdiv,
-  PlansScrensCard,
-} from "./PlansScrens.style";
-
 function PlansScrens() {
   return (
     <>
       <PlansScrensHeader>
-        <PlansScrensContainer>
-          <PlansScrensdiv>
-            <PlansScrensCard>
-            <PlansScrensText>
-            Ваш пробный период заканчивается через 7 дней.
-          </PlansScrensText>
-          <PlansScreensSpan>
-            Выберите тариф, чтобы получить доступ ко всем функциям
-          </PlansScreensSpan>
-            </PlansScrensCard>
-          <PlansButtonContainer>Пригласить друга</PlansButtonContainer>
-          </PlansScrensdiv>
-        </PlansScrensContainer>
         <PlansCardContianer>
           <PlanCard
             name="S"

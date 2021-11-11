@@ -5,6 +5,7 @@ export const EducationHeader = styled.div`
   width: 100%;
   height: 150vh;
   background-color: #f7fafc;
+  display: flex;
 `;
 export const EducationTextTwoContainer = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ export const EducationInner = styled.div`
   padding-bottom: 50px;
 `;
 export const EducationContainer = styled.div`
-  background-color: #fff;
+  background-color: ${COLORS.white};
   width: 550px;
   height: 700px;
   margin-top: 40px;
@@ -66,16 +67,18 @@ export const EducationImageContainer = styled.div`
   align-items: center;
   height: 150px;
   flex-direction: column;
-  &:hover {
-    border: 1px solid ${COLORS.primaryPink};
-  }
+  cursor: pointer;
+
   ${(props) =>
-    props.active &&
-    css`
-       {
-        border: 3px solid ${COLORS.primaryPink};
-      }
-    `}
+    props.active
+      ? css`
+           {
+            border: 3px solid ${COLORS.primaryPink};
+          }
+        `
+      : `&:hover {
+    border: 1px solid ${COLORS.primaryPink};
+  }`}
 `;
 export const EducationBoxContainer = styled.div`
   margin-top: 20px;
@@ -99,18 +102,9 @@ export const EducationCheckText = styled.h5`
 `;
 export const EducationButton = styled.button`
   border-radius: 20px;
-<<<<<<< HEAD
   border: solid 1px ${COLORS.borderGray};
   padding: 10px 20px;
   background-color: ${COLORS.white};
-=======
-  border: solid 1px gray;
-  padding: 10px 20px;
-  background-color: #fff;
->>>>>>> 30f5f4ff8570b7d2b89d12e3456905ed8c469893
   margin-left: 500px;
   margin-top: 20px;
 `;
-// export const  = styled.div``
-// export const  = styled.div``
-// export const  = styled.div``

@@ -6,7 +6,7 @@ export default function Help() {
   const [openModalHelp, setOpenModalHelp] = useState(false);
   return (
     <>
-      {openModalHelp && <ModalHelp claseModal={setOpenModalHelp} />}
+      {openModalHelp && <ModalHelp setOpenModalHelp={setOpenModalHelp} />}
 
       <BUTTON
         onClick={() => {

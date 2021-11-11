@@ -15,13 +15,13 @@ import {
 } from "./ModalHelp.styles";
 import vido from "../../Vido/Vido.mp4"
 
-export default function ModalHelp({ claseModalHelp }) {
+export default function ModalHelp({ setOpenModalHelp }) {
   return (
     <ModalBacgrundHelp>
       <ModalContainerHelp>
         <ModalBoxHelp>
           Посмотрите обучающее видео, чтобы узнать, как пользоваться Амплифером
-          <ModalExitHelp onClick={() => claseModalHelp(false)}>x</ModalExitHelp>
+          <ModalExitHelp onClick={() => setOpenModalHelp(false)}>x</ModalExitHelp>
         </ModalBoxHelp>
         <ModalVido autoPlay loop muted src={vido} type="vido/mp4" />
         <ModalTextHelp>

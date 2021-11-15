@@ -1,36 +1,33 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { IMAGES } from "../../constants/images";
-import { ICONS, PencilIcon, ProfileSms, ProfileUser, ProfileCall, } from "../../constants/icons";
-
 import {
-  ProfileHeadr,
-  ProfileInner,
-  ProfileInputContainer,
-  ProfileInput,
-  ProfileInput1,
+  ParagpaphFirst,
   ProfileBoxOne,
-  ProfileImageOne,
-  ProfileInnercontainer,
-  ProfileInputText,
   ProfileContainer,
   ProfileDelete,
-  ProfileIcon,
-  ProfileTextTwo,
-  ParagpaphFirst,
-  TextsDiv,
+  ProfileHeadr,
   ProfileIconContainer,
+  ProfileImageOne,
+  ProfileInner,
+  ProfileInnercontainer,
+  ProfileInput,
+  ProfileInput1,
+  ProfileInputContainer,
+  ProfileInputText,
+  ProfileTextTwo,
+  TextsDiv,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
-import { useHistory } from "react-router-dom";
 
 let tabs = ["Запланированные", "Уведомления"];
 
 export default function Profile({}) {
   let history = useHistory();
   const [activeTab, setActiveTab] = useState(0);
-  let onNavigate = ()=>{
-    history.push("/changePassword")
-  }
+  let onNavigate = () => {
+    history.push("/changePassword");
+  };
   return (
     <>
       <ProfileHeadr>
@@ -56,20 +53,28 @@ export default function Profile({}) {
               </ProfileIconContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Имя пользователя</ProfileInputText>
-                <ProfileInput><ProfileInput1  placeholder="Рафаэль  Рафаэль  " /></ProfileInput>
+                <ProfileInput>
+                  <ProfileInput1 placeholder="Рафаэль  Рафаэль  " />
+                </ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Адресс почты</ProfileInputText>
-                <ProfileInput><ProfileInput1  placeholder="rafael@gmail.com" /></ProfileInput>
+                <ProfileInput>
+                  <ProfileInput1 placeholder="rafael@gmail.com" />
+                </ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Номер телефона</ProfileInputText>
-                <ProfileInput><ProfileInput1  placeholder="+998 99 888 8888 " /></ProfileInput>
+                <ProfileInput>
+                  <ProfileInput1 placeholder="+998 99 888 8888 " />
+                </ProfileInput>
               </ProfileInputContainer>
             </ProfileInnercontainer>
             <ProfileContainer>
               <ProfileDelete> Удалить профиль</ProfileDelete>
-              <ProfileTextTwo onClick={onNavigate}>Сменить пароль</ProfileTextTwo>
+              <ProfileTextTwo onClick={onNavigate}>
+                Сменить пароль
+              </ProfileTextTwo>
             </ProfileContainer>
           </ProfileBoxOne>
         </ProfileInner>

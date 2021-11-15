@@ -3,18 +3,49 @@ import { DefaultText } from "../../../components/general/text/Text.style";
 import { COLORS } from "../../../constants/colors";
 
 export const SectionContainer = styled.div`
-  width: 1000px;
-  height: 100vh;
+  /* width: 1000px; */
+  /* height: 100vh; */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center\; */
+  /* flex-direction: column; */
 `;
+
+export const LeftSideContainer = styled.div`
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 420px;
+  margin-top: 65px;
+`
+
+export const RightSideContainer = styled.div`
+  padding: 10px;
+  margin-left: 300px;
+  margin-top: 35px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+`
+
+export const RightSideLanguageBox = styled(DefaultText)`
+  color: ${COLORS.fontColors};
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 15px;
+  display: flex;
+`
+export const RightSideRuBox = styled(DefaultText)`
+  margin-left: 20px;
+  color: ${COLORS.fontColors};
+  font-size: 19px;
+  font-weight: 500;
+`
 
 export const ComeInHead = styled(DefaultText)`
   font-size: 60px;
   font-weight: 600;
-  margin-left: 15px;
   color: ${COLORS.fontColors};
 `;
 
@@ -57,7 +88,6 @@ export const NetLogin = styled.div`
 export const NetTabDiv = styled.div`
   width: 500px;
   display: flex;
-  justify-content: space-between;
   border-top: 1px solid ${COLORS.borderGray};
   margin-top: 5px;
 `;
@@ -120,8 +150,4 @@ export const TwitterIconsBox = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-top: 5px;
-`;
-
-export const RightSideLanguageContainer = styled.div`
-  display: flex;
 `;

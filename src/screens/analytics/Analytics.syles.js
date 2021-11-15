@@ -2,16 +2,17 @@ import styled from "styled-components";
 import { COLORS } from "../../constants/colors";
 
 export const BarContainer = styled.div`
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-`
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+`;
 
-export const AnalyticTextContainer = styled.div`
+export const AnalyticTextContainer = styled.p`
   font-size: 18px;
-  margin-top: 35px 35px;
-  padding-bottom: 10px;
-  ${(props) => props.active && `{
+  margin-left: 18px;
+  ${(props) =>
+    props.active &&
+    `{
    border-bottom: 3px solid ${COLORS.primaryPink};
    color: ${COLORS.primaryPink};
     }`}

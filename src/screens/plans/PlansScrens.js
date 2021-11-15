@@ -1,15 +1,6 @@
 import React from "react";
-import PlansButtonContainer from "../../components/general/buttons/PlansButton";
-import { CheckIcon } from "../../constants/icons";
-import {
-  PlansScreensSpan, PlansScrensCard, PlansScrensContainer, PlansScrensContainerOne, PlansScrensdiv, PlansScrensDiv, PlansScrensHeader,
-  PlansScrensText, PlansScrensTextFive,
-  PlansScrensTextFour,
-  PlansScrensTextOne,
-  PlansScrensTextSix,
-  PlansScrensTextThree,
-  PlansScrensTextTwo
-} from "./PlansScrens.style";
+import { PlansScrensHeader, PlansCardContianer } from "./PlansScrens.style";
+import PlanCard  from './components/PlanCard'
 
 function PlansScrens() {
   return (

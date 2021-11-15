@@ -4,7 +4,14 @@ import scripka from "../../assets/scripka.svg";
 import smile from "../../assets/smile.svg";
 import RoundButton from "../../components/general/buttons/RoundButton";
 import { COLORS } from "../../constants/colors";
-import { EyeIcon } from "../../constants/icons";
+import {
+  EyeIcon,
+  NewpostFacebook,
+  NewpostInstagram,
+  NewpostTwitter,
+  NewpostVkontakte,
+} from "../../constants/icons";
+import Modal from "./newpost-modal/ModalNewpost";
 import {
   AttachmantsDiv,
   ButtonsContainer,
@@ -14,39 +21,113 @@ import {
   DataDiv,
   DataHead,
   DataImg,
+  MBContainer,
+  MBPlusContainer,
+  MBPlusParagraph,
+  NetsContainer,
+  NewpostFacebookIcon,
+  NewpostInstagramIcon,
+  NewpostTwitterIcon,
+  NewpostVkontakteIcon,
   OptionsDiv,
-  ParagpaphFirst,
   PostContainer,
   PostDivs,
   Preview,
   PreviewButton,
+  PreviewContainerHeader,
+  PreviewContainerHeaderIcon,
+  PreviewContainerHeaderIconOne,
+  PreviewContainerHeaderText,
+  PreviewContainerOne,
   PreviewHead,
   ScripcsIcon,
   SmileIcon,
   TemasButton,
   Textarea,
   TextareaContainer,
-  PreviewContainerHeader,
-  TextsDiv,
-  PreviewContainerHeaderText,
-  PreviewContainerHeaderIcon,
   TipDiv,
   TipHead,
-  PreviewContainerOne,
-  PreviewContainerHeaderIconOne,
 } from "./Newpost.styles";
 
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState(0);
   const [previewing, setPreviewing] = useState(false);
+  const [activeTab, setActiveTab] = useState(0);
+  const [openModalNewpost, setOpenModalNewpost] = useState(false);
   return (
     <>
       <Container>
         <ContainerBox>
           <PostDivs>
             <PostContainer>
+              <NetsContainer>
+                <MBContainer>
+                  MB
+                  <NewpostFacebookIcon>
+                    <NewpostFacebook
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginLeft: "1px",
+                        marginTop: "8px",
+                      }}
+                    />
+                  </NewpostFacebookIcon>
+                </MBContainer>
+                <MBContainer>
+                  MB
+                  <NewpostVkontakteIcon>
+                    <NewpostVkontakte
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginLeft: "1px",
+                        marginTop: "11px",
+                      }}
+                    />
+                  </NewpostVkontakteIcon>
+                </MBContainer>
+                <MBContainer>
+                  MB
+                  <NewpostTwitterIcon>
+                    <NewpostTwitter
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginLeft: "1px",
+                        marginTop: "9px",
+                      }}
+                    />
+                  </NewpostTwitterIcon>
+                </MBContainer>
+                <MBContainer>
+                  MB
+                  <NewpostInstagramIcon>
+                    <NewpostInstagram
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginLeft: "0.5px",
+                        marginTop: "5px",
+                      }}
+                    />
+                  </NewpostInstagramIcon>
+                </MBContainer>
+                <MBPlusContainer
+                  onClick={() => {
+                    setOpenModalNewpost(true);
+                  }}
+                >
+                  <MBPlusParagraph>
+                    +
+                  </MBPlusParagraph>
+                </MBPlusContainer>
+              </NetsContainer>
               <TipDiv>
                 <OptionsDiv>
                   <TipHead>Тип:</TipHead>
@@ -94,9 +175,9 @@ export default function Home() {
                 </DataButton>
               </DataDiv>
               <DataDiv>
-                <DataHead>Темы:</DataHead>{" "}
-                <TemasButton>Образовательный</TemasButton>{" "}
-                <TemasButton>Продающий</TemasButton>
+                <DataHead>Темы:</DataHead>
+                <TemasButton>Образовательный</TemasButton>
+                <TemasButton primary>Продающий</TemasButton>
               </DataDiv>
               <ButtonsContainer>
                 <RoundButton primary active={true}>
@@ -114,13 +195,13 @@ export default function Home() {
                     <PreviewContainerHeaderText active>
                       Предпросмотр
                     </PreviewContainerHeaderText>
-                    <PreviewContainerHeaderText  >
-                    Обсуждения
+                    <PreviewContainerHeaderText>
+                      Обсуждения
                     </PreviewContainerHeaderText>
                   </PreviewContainerHeader>
                   <PreviewContainerHeaderIcon>
-                  <PreviewContainerHeaderIconOne>
-                    <EyeIcon />
+                    <PreviewContainerHeaderIconOne>
+                      <EyeIcon />
                     </PreviewContainerHeaderIconOne>
                     Выберите страницы в Инстаграме, <br />
                     чтобы посмотреть, как будет выглядеть <br />
@@ -133,6 +214,7 @@ export default function Home() {
           </PostDivs>
         </ContainerBox>
       </Container>
+      {openModalNewpost && <Modal claseModal={setOpenModalNewpost} />}
     </>
   );
 }

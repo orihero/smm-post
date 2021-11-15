@@ -43,7 +43,6 @@ export const ParagpaphFirst = styled.p`
 export const PublicationsButton = styled.h1`
   font-size: 20px;
   font-weight: 500;
-
   color: ${COLORS.primaryPink};
 `;
 
@@ -60,17 +59,19 @@ export const PublicationsBtn = styled.h1`
   color: black;
   margin-left: 7px;
 `;
+
 export const PublicationsContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 20px 0px 20px 0px;
   margin-left: 45px;
 `;
+
 export const PublicationsSizeNo = styled.div`
   padding: 80px 80px;
   border-radius: 7px;
   margin-left: 14px;
-  background-color: #fff;
+  background-color: ${COLORS.white};
 `;
 
 export const PlusIcon = styled.img`
@@ -87,6 +88,7 @@ export const PublicationsSize = styled.div`
   background-color: #fff;
   border-radius: 7px;
 `;
+
 export const PublicationsPost = styled.h1`
   font-size: 13px;
   color: #828284;

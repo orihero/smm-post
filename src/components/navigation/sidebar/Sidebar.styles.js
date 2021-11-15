@@ -13,8 +13,8 @@ export const LeftSide = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  background-color: ${COLORS.white};
-  box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
+  background-color: ${COLORS.backgroundColor};
+  box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);  
 `;
 
 export const EmailImg = styled.img`
@@ -79,19 +79,22 @@ export const LeftSideBox = styled.div`
   width: 190px;
   height: 1000px;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   color: ${COLORS.fontColors};
 `;
 
 export const ElementsContainer = styled.div`
-  height: 50px;
+  padding: 15px 15px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-top: 25px;
   margin-left: 8px;
   cursor: pointer;
+  &:hover{
+    background-color: ${COLORS.white};
+    box-shadow: 0px 1px 17px rgba(232, 66, 126, 0.07); 
+  }
 `;
 
 export const PostsParagraph = styled.p`

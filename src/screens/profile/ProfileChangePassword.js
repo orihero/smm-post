@@ -35,7 +35,7 @@ export default function ProfileChangePassword() {
             <ProfileBoxLeft>
               <ProfileBoxLeftText>Уведомление</ProfileBoxLeftText>
               <ProfileBoxLeftInputContiner>
-                <ProfileBoxLeftInput type={"checkbox"} />
+                <ProfileBoxLeftInput type={"checkbox"}  />
                 <ProfileBoxLeftInputText>
                   Ошибки публикации и аккаунта
                 </ProfileBoxLeftInputText>

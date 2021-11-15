@@ -28,6 +28,8 @@ import Hand from "../assets/Hand_image.png"
 import ProfileImage from '../assets/ProfileImage.png'; 
 import Iworkmyself from  "../assets/I-work-myself.png";
 import Team from "../assets/Team.png"
+import Whatsnew from "../assets/Whatsnew.png"
+import Whatsnewimage from "../assets/Whatsnewimage.png"
  
 
 export let IMAGES = {
@@ -79,6 +81,10 @@ export let IMAGES = {
   education:{
     Iworkmyself,
     Team,
-    
-  }
+  },
+  Whatsnew:{
+    Whatsnew,
+    Whatsnewimage,
+  },
+
 };

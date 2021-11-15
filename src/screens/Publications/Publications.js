@@ -39,7 +39,6 @@ export default function Publications() {
             );
           })}
         </PublicationsButtons>
-
         <PublicationsBottom>
           <PublicationsBox>
             <PublicationsButton>Сегодня </PublicationsButton>

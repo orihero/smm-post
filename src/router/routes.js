@@ -16,6 +16,7 @@ import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
+import Moredetails from "../screens/what'snew/moredetails/Moredetails";
 import Whatsnew from "../screens/what'snew/Whatsnew";
 
 function Routes() { 
@@ -26,6 +27,7 @@ function Routes() {
         <Route path="/login" component={Loginscreens} />
         <Route path="/register" component={Register} />
         <Route path="/whatsnew" component={Whatsnew} />
+        <Route path="/moredetails" component={Moredetails} />
         <div
           style={{
             display: "flex",

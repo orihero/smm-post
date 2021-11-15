@@ -1,6 +1,28 @@
 import React from "react";
 import { COLORS } from "../constants/colors";
 
+export let HeartIcon = ({ active = false, onClick = () => {} }) => {
+  let fill = active ? "rgba(244, 67, 54, 1)" : "transparent";
+  let stroke = active ? "red" : "gray";
+  return (
+    <svg
+      width="22"
+      height="20"
+      viewBox="-2 -3 28 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
+    >
+      <path
+        d="M16 0C13.9 0 12.05 1.05 11 2.7C9.95 1.05 8.1 0 6 0C2.7 0 0 2.7 0 6C0 11.95 11 18 11 18C11 18 22 12 22 6C22 2.7 19.3 0 16 0Z"
+        fill={fill}
+        stroke={stroke}
+        strokeWidth={1.5}
+      />
+    </svg>
+  );
+};
+
 function NewPostsIcon({ width = 32, height = 32, active = false, ...rest }) {
   let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
@@ -249,10 +271,11 @@ export function ProfileUser({
       fill="none"
     >
       <path
-       stroke="grey" stroke-width="2" 
+        stroke="grey"
+        stroke-width="2"
         d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
       ></path>
-      <circle stroke-width="2"  stroke="grey" cx="12" cy="7" r="4"></circle>
+      <circle stroke-width="2" stroke="grey" cx="12" cy="7" r="4"></circle>
     </svg>
   );
 }
@@ -272,8 +295,11 @@ export function ProfileSms({
       stroke="currentColor"
       stroke-width="2"
     >
-      <path  stroke="grey" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-      <polyline  stroke="grey" points="22,6 12,13 2,6"></polyline>
+      <path
+        stroke="grey"
+        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+      ></path>
+      <polyline stroke="grey" points="22,6 12,13 2,6"></polyline>
     </svg>
   );
 }
@@ -286,7 +312,7 @@ export function ProfileCall({
   let color = active ? COLORS.primaryPink : COLORS.darkBlue;
   return (
     <svg
-    {...{ width, height, fill: color, stroke: color }}
+      {...{ width, height, fill: color, stroke: color }}
       viewBox="0 0 22 22"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -311,13 +337,13 @@ export function EducationIcon({
       width={width}
       height={height}
       viewBox="0 0 22 22"
-      fill={color}
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M11 5V7M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 16.523 5.477 21 11 21ZM11 9V17V9Z"
         stroke="#102046"
-        stroke-width="2"
+        stroke-width="1"
       />
     </svg>
   );

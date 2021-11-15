@@ -30,6 +30,7 @@ import {
   RightSideContainer,
   RightSideHead,
   RightSideInfoParagraph,
+  RightSideRuBox,
   Section,
   TwitterIconsBox,
   VkontakteIconsBox,
@@ -100,7 +101,7 @@ function Loginscreens() {
           </NetLogin>
         </LeftSideContainer>
         <RightSideContainer>
-          <LanguageHead>Uz Ру</LanguageHead>
+          <LanguageHead>Uz <RightSideRuBox>Ру</RightSideRuBox></LanguageHead>
           <InfoParagraphContainer>
             <OrangeIcons style={{ marginRight: "8px" }} />
             <RightSideInfoParagraph>

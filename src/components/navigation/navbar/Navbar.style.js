@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import { COLORS } from "../../../constants/colors";
+import { DefaultText } from "../../general/text/Text.style";
 
 export const NavbarDiv = styled.div`
-  width: 1170px;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: ${COLORS.white};
   box-shadow: 0px 1px 17px rgba(87, 87, 87, 0.06);
+  padding-right: 20px;
+  padding-top:20px;
+  padding-bottom: 20px;
 `;
 
 export const NavbarHead = styled.h1`
@@ -27,17 +29,18 @@ export const UserDiv = styled.div`
 
 export const UserParagraph = styled.p`
   font-weight: 500;
-  margin-right: 4px;
+  margin-right: 10px;
   color: ${COLORS.primaryPink};
 `;
 
 export const UserImg = styled.img`
-  width: 70px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
-  height: 70px;
 `;
 
 export const Vector = styled.img`
-  margin-right: 5px;
-  width: 16px;
+  /* margin-right: 15px; */
+  width: 12px;
+  cursor: pointer;
 `;

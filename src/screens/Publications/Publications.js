@@ -1,29 +1,23 @@
 import React, { useState } from "react";
-import Plus from "../../assets/plus.svg";
-import {
-  PublicationsHeader,
-  PublicationsBottom,
-  PublicationsButtons,
-  ParagpaphFirst,
-  PublicationsButton,
-  PublicationsBox,
-  PublicationsBtn,
-  PublicationsContainer,
-  PublicationsSize,
-  PublicationsSizeNo,
-  PlusIcon,
-  PublicationsPost,
-} from "./Publications.styles";
 import { useHistory } from "react-router-dom";
+import Planned from "./modules/Planned";
+import Published from "./modules/Published";
+import {
+  ParagpaphFirst,
+  PublicationsButtons,
+  PublicationsHeader,
+} from "./Publications.styles";
 
-let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
+let tabs = [
+  { title: "Запланированные", Content: Planned },
+  { title: "Опубликованные", Content: Published },
+  { title: "Избранное", Content: null },
+  { title: "Черновики", Content: null },
+];
 
 export default function Publications() {
-  let history = useHistory();
-  let onNewpost = () =>{
-    history.push("/newpost")
-  }
   const [activeTab, setActiveTab] = useState(0);
+  let Content = tabs[activeTab].Content;
   return (
     <>
       <PublicationsHeader>
@@ -34,7 +28,7 @@ export default function Publications() {
                 active={i === activeTab}
                 onClick={() => setActiveTab(i)}
               >
-                {e}
+                {e.title}
               </ParagpaphFirst>
             );
           })}
@@ -46,8 +40,8 @@ export default function Publications() {
           </PublicationsBox>
           <PublicationsContainer>
             <PublicationsSize>
-              <PlusIcon onClick={onNewpost}  src={Plus} />
-              <PublicationsPost>Запланировать пост</PublicationsPost> 
+              <PlusIcon onClick={onNewpost} src={Plus} />
+              <PublicationsPost>Запланировать пост</PublicationsPost>
             </PublicationsSize>
             <PublicationsSizeNo />
             <PublicationsSizeNo />
@@ -62,8 +56,8 @@ export default function Publications() {
           </PublicationsBox>
           <PublicationsContainer>
             <PublicationsSize>
-              <PlusIcon onClick={onNewpost}  src={Plus} />
-              <PublicationsPost>Запланировать пост</PublicationsPost> 
+              <PlusIcon onClick={onNewpost} src={Plus} />
+              <PublicationsPost>Запланировать пост</PublicationsPost>
             </PublicationsSize>
             <PublicationsSizeNo />
             <PublicationsSizeNo />
@@ -71,6 +65,7 @@ export default function Publications() {
             <PublicationsSizeNo />
           </PublicationsContainer>
         </PublicationsBottom>
+        {Content && <Content />}
       </PublicationsHeader>
     </>
   );

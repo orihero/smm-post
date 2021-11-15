@@ -1,3 +1,5 @@
+import { instagramIcons } from "./icons";
+
 export let COLORS = {
     primaryPink: "#E8427E",
     white: "#fff",
@@ -12,6 +14,7 @@ export let COLORS = {
     twitterBackgroundColor: '#03A9F4',
     backgroundColorIconOrange: '#FF623B',
     black: "#0000",
-    blue: "#006ED4"
+    blue: "#006ED4",
+    instagramBackgroundColor: "#FFDD55 7%, #FF543E 50.26%, #C837AB",
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { IMAGES } from "../../constants/images";
 import {
   ICONS,
@@ -9,30 +10,29 @@ import {
 } from "../../constants/icons";
 
 import {
-  ProfileHeadr,
-  ProfileInner,
-  ProfileInputContainer,
-  ProfileInput,
-  ProfileInput1,
+  ParagpaphFirst,
   ProfileBoxOne,
-  ProfileImageOne,
-  ProfileInnercontainer,
-  ProfileInputText,
   ProfileContainer,
   ProfileDelete,
-  ProfileIcon,
+  ProfileHeadr,
+  ProfileIconContainer,
+  ProfileImageOne,
+  ProfileInner,
+  ProfileInnercontainer,
+  ProfileInput,
+  ProfileInput1,
+  ProfileInputContainer,
+  ProfileInputText,
   ProfileTextTwo,
-  ParagpaphFirst,
   TextsDiv,
   ProfileIconContainer,
   IconContainer,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
-import { useHistory } from "react-router-dom";
 
 let tabs = ["Запланированные", "Уведомления"];
 
-export default function Profile({}) {
+export default function Profile({ }) {
   let history = useHistory();
   const [activeTab, setActiveTab] = useState(0);
   let onNavigate = () => {
@@ -60,7 +60,7 @@ export default function Profile({}) {
               <ProfileIconContainer>
                 <ProfileImageOne src={IMAGES.profile.ProfileImage} />
                 <IconContainer>
-                <PencilIcon />
+                  <PencilIcon />
                 </IconContainer>
 
               </ProfileIconContainer>
@@ -68,21 +68,21 @@ export default function Profile({}) {
                 <ProfileInputText>Имя пользователя</ProfileInputText>
                 <ProfileInput>
                   <ProfileInput1 placeholder="Рафаэль  Рафаэль" />
-                  <ProfileUser/>
+                  <ProfileUser />
                 </ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Адресс почты</ProfileInputText>
                 <ProfileInput>
                   <ProfileInput1 placeholder="rafael@gmail.com" />
-                  <ProfileSms/>
+                  <ProfileSms />
                 </ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Номер телефона</ProfileInputText>
                 <ProfileInput>
                   <ProfileInput1 placeholder="+998 99 888 8888 " />
-                  <ProfileCall/>
+                  <ProfileCall />
                 </ProfileInput>
               </ProfileInputContainer>
             </ProfileInnercontainer>

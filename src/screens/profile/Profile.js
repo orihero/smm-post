@@ -25,7 +25,7 @@ import {
   ProfileInputText,
   ProfileTextTwo,
   TextsDiv,
-  ProfileIconContainer,
+  
   IconContainer,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";

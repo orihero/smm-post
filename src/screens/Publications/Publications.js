@@ -2,10 +2,21 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Planned from "./modules/Planned";
 import Published from "./modules/Published";
+import { ICONS, Plus } from "../../constants/icons";
+
 import {
   ParagpaphFirst,
+  PlusIcon,
+  PublicationsBottom,
+  PublicationsBox,
+  PublicationsBtn,
+  PublicationsButton,
   PublicationsButtons,
+  PublicationsContainer,
   PublicationsHeader,
+  PublicationsPost,
+  PublicationsSize,
+  PublicationsSizeNo,
 } from "./Publications.styles";
 
 let tabs = [
@@ -18,6 +29,10 @@ let tabs = [
 export default function Publications() {
   const [activeTab, setActiveTab] = useState(0);
   let Content = tabs[activeTab].Content;
+  let history = useHistory();
+  let onNewpost = () => {
+    history.push("/newpost");
+  };
   return (
     <>
       <PublicationsHeader>
@@ -33,38 +48,6 @@ export default function Publications() {
             );
           })}
         </PublicationsButtons>
-        <PublicationsBottom>
-          <PublicationsBox>
-            <PublicationsButton>Сегодня </PublicationsButton>
-            <PublicationsBtn>понедельник </PublicationsBtn>
-          </PublicationsBox>
-          <PublicationsContainer>
-            <PublicationsSize>
-              <PlusIcon onClick={onNewpost} src={Plus} />
-              <PublicationsPost>Запланировать пост</PublicationsPost>
-            </PublicationsSize>
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-          </PublicationsContainer>
-        </PublicationsBottom>
-        <PublicationsBottom>
-          <PublicationsBox>
-            <PublicationsButton>Завтра </PublicationsButton>
-            <PublicationsBtn>вторник </PublicationsBtn>
-          </PublicationsBox>
-          <PublicationsContainer>
-            <PublicationsSize>
-              <PlusIcon onClick={onNewpost} src={Plus} />
-              <PublicationsPost>Запланировать пост</PublicationsPost>
-            </PublicationsSize>
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-          </PublicationsContainer>
-        </PublicationsBottom>
         {Content && <Content />}
       </PublicationsHeader>
     </>

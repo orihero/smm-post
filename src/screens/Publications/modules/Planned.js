@@ -1,4 +1,5 @@
 import React from "react";
+import { ICONS, Plus } from "../../../constants/icons";
 import {
   PlusIcon,
   PublicationsBottom,
@@ -10,7 +11,6 @@ import {
   PublicationsSize,
   PublicationsSizeNo,
 } from "../Publications.styles";
-import Plus from "../../../assets/plus.svg";
 import { useHistory } from "react-router";
 
 export default function Planned() {
@@ -27,7 +27,9 @@ export default function Planned() {
         </PublicationsBox>
         <PublicationsContainer>
           <PublicationsSize>
-            <PlusIcon onClick={onNewpost} src={Plus} />
+            <PlusIcon onClick={onNewpost}>
+              <Plus />
+            </PlusIcon>
             <PublicationsPost>Запланировать пост</PublicationsPost>
           </PublicationsSize>
           <PublicationsSizeNo />
@@ -43,7 +45,9 @@ export default function Planned() {
         </PublicationsBox>
         <PublicationsContainer>
           <PublicationsSize>
-            <PlusIcon onClick={onNewpost} src={Plus} />
+          <PlusIcon onClick={onNewpost}>
+              <Plus />
+            </PlusIcon>
             <PublicationsPost>Запланировать пост</PublicationsPost>
           </PublicationsSize>
           <PublicationsSizeNo />

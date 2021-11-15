@@ -245,13 +245,14 @@ export function ProfileUser({
       {...{ width, height, fill: color, stroke: color }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
+      stroke="grey"
+      fill="none"
     >
       <path
-        fill={color}
-        stroke={color}
+       stroke="grey" stroke-width="2" 
         d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
       ></path>
-      <circle cx="12" cy="7" r="4"></circle>
+      <circle stroke-width="2"  stroke="grey" cx="12" cy="7" r="4"></circle>
     </svg>
   );
 }
@@ -264,17 +265,15 @@ export function ProfileSms({
   let color = active ? COLORS.primaryPink : COLORS.darkBlue;
   return (
     <svg
-      {...{ width, height, stroke: color }}
+      {...{ width, height, fill: color, stroke: color }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
     >
-      <path
-        fill={color}
-        opacity="0.7"
-        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-      ></path>
-
-      <polyline points="22,6 12,13 2,6"></polyline>
+      <path  stroke="grey" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+      <polyline  stroke="grey" points="22,6 12,13 2,6"></polyline>
     </svg>
   );
 }
@@ -287,16 +286,15 @@ export function ProfileCall({
   let color = active ? COLORS.primaryPink : COLORS.darkBlue;
   return (
     <svg
+    {...{ width, height, fill: color, stroke: color }}
+      viewBox="0 0 22 22"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...{ width, height, fill: color, stroke: color }}
-      viewBox="0 0 24 24"
-      stroke={color}
-      fill={color}
     >
       <path
-        stroke={color}
-        fill={color}
-        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+        d="M1.99033 3.87254C2.30665 3.34878 4.0495 1.44376 5.29322 1.50127C5.665 1.53208 5.99364 1.75699 6.26067 2.01784C6.87379 2.61656 8.62897 4.88101 8.72859 5.35753C8.97096 6.52621 7.57833 7.1999 8.00454 8.37783C9.09112 11.0366 10.9634 12.9088 13.6233 13.9943C14.8003 14.4205 15.474 13.0279 16.6428 13.2713C17.1183 13.3709 19.3839 15.126 19.9826 15.7391C20.2425 16.0051 20.4684 16.3347 20.4992 16.7065C20.5454 18.0159 18.5222 19.7833 18.1278 20.0092C17.1974 20.6747 15.9834 20.6634 14.5035 19.9753C10.3739 18.2572 3.77426 11.7822 2.02422 7.49669C1.35461 6.02505 1.30839 4.80297 1.99033 3.87254Z"
+        stroke="grey"
+        stroke-width="1.5"
       />
     </svg>
   );
@@ -305,15 +303,15 @@ export function EducationIcon({
   width = 23,
   height = 20,
   active = false,
+  color,
   ...rest
 }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
   return (
     <svg
-      width="22"
-      height="22"
+      width={width}
+      height={height}
       viewBox="0 0 22 22"
-      fill="none"
+      fill='none'
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -330,11 +328,10 @@ export function EducationIconmark({
   active = false,
   ...rest
 }) {
-  let color = active ? COLORS.primaryPink : COLORS.darkBlue;
   return (
     <svg
-      width="28"
-      height="28"
+      width={width}
+      height={height}
       viewBox="0 0 28 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

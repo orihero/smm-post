@@ -32,6 +32,8 @@ import {
  
 } from "./EducationThree.styles";
 import { useHistory } from "react-router-dom";
+import EducationcComponents from "./components/EducationcComponents";
+
 
 
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
@@ -117,10 +119,11 @@ export default function Home() {
           <ButtonsContainerOne>
             <EducationTwoBtn  onClick={onNext} >Назад</EducationTwoBtn>
             <RoundButton  primary active={true}>
-              Слудуюший шаг{" "}
+              Слудуюший шаг
             </RoundButton>
           </ButtonsContainerOne>
         </ContainerBox>
+        <EducationcComponents/>
       </Container>
     </>
   );

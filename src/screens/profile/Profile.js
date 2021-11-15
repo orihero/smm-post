@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { IMAGES } from "../../constants/images";
 import {
+  ICONS,
+  PencilIcon,
+  ProfileSms,
+  ProfileUser,
+  ProfileCall,
+} from "../../constants/icons";
+
+import {
   ParagpaphFirst,
   ProfileBoxOne,
   ProfileContainer,
@@ -17,12 +25,14 @@ import {
   ProfileInputText,
   ProfileTextTwo,
   TextsDiv,
+  ProfileIconContainer,
+  IconContainer,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
 
 let tabs = ["Запланированные", "Уведомления"];
 
-export default function Profile({}) {
+export default function Profile({ }) {
   let history = useHistory();
   const [activeTab, setActiveTab] = useState(0);
   let onNavigate = () => {
@@ -49,24 +59,30 @@ export default function Profile({}) {
             <ProfileInnercontainer>
               <ProfileIconContainer>
                 <ProfileImageOne src={IMAGES.profile.ProfileImage} />
-                {/* <PencilIcon /> */}
+                <IconContainer>
+                  <PencilIcon />
+                </IconContainer>
+
               </ProfileIconContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Имя пользователя</ProfileInputText>
                 <ProfileInput>
-                  <ProfileInput1 placeholder="Рафаэль  Рафаэль  " />
+                  <ProfileInput1 placeholder="Рафаэль  Рафаэль" />
+                  <ProfileUser />
                 </ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Адресс почты</ProfileInputText>
                 <ProfileInput>
                   <ProfileInput1 placeholder="rafael@gmail.com" />
+                  <ProfileSms />
                 </ProfileInput>
               </ProfileInputContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Номер телефона</ProfileInputText>
                 <ProfileInput>
                   <ProfileInput1 placeholder="+998 99 888 8888 " />
+                  <ProfileCall />
                 </ProfileInput>
               </ProfileInputContainer>
             </ProfileInnercontainer>

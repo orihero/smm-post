@@ -3,13 +3,15 @@ import { COLORS } from "../../constants/colors";
 
 export const ModalBacgrundHelp = styled.div`
   width: 100%;
-  height: 140vh;
+  height: 90vh;
   background-color: rgba(200, 200, 200, 0.5);
   position: fixed;
   display: flex;
+  overflow-y: scroll;
   justify-content: center;
   align-items: flex-start;
   padding-top: 20px;
+  padding-bottom: 40px;
 `;
 
 export const ModalVido = styled.video`
@@ -21,7 +23,7 @@ export const ModalVido = styled.video`
 
 export const ModalContainerHelp = styled.div`
   width: 700px;
-  height: 600px;
+  height: auto;
   padding-bottom: 40px;
   border-radius: 12px;
   background-color: ${COLORS.white};

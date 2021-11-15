@@ -10,6 +10,8 @@ import {
   EducationTwoInner, EducationTwoText, EducationTwoTextContainer,
   EducationTwoTextContainerTwo, EducationTwoTextOne, EducationTwoTextTwo
 } from "./EducationTwo.styles";
+import EducationcComponents from "./components/EducationcComponents";
+
 
 
 export default function EducationTwo() {
@@ -129,6 +131,7 @@ export default function EducationTwo() {
             </RoundButton>
           </ButtonsContainerOne>
         </EducationTwoInner>
+        <EducationcComponents/>
       </EducationTwoHeader>
     </>
   );

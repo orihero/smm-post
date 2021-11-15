@@ -14,6 +14,7 @@ export const PlansScrensHeader = styled.div`
   width: 100%;
   height: 120vh;
   padding: 40px;
+  color: ${COLORS.fontColors};
 `;
 
 export const PlansScrensText = styled(DefaultText)`
@@ -22,12 +23,12 @@ export const PlansScrensText = styled(DefaultText)`
   color: ${COLORS.fontColors};
 `;
 
-export const PlansScreensSpan = styled.span `
+export const PlansScreensSpan = styled.span`
   font-size: 16px;
   font-weight: 600;
   color: ${COLORS.fontColors};
   opacity: 0.7;
-`
+`;
 
 export const PlansCardContianer = styled.div`
   display: flex;
@@ -35,10 +36,31 @@ export const PlansCardContianer = styled.div`
 `;
 
 export const PlansScrensCard = styled.div`
-    flex-direction: column;
-`
+  flex-direction: column;
+`;
 
 export const PlansScrensdiv = styled.div`
-    display: flex;
-    justify-content: space-between;
-`
+  display: flex;
+  justify-content: space-between;
+`;
+export const PlansScrensTextContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const PlansScrensTextContainerOne = styled.p`
+  display: flex;
+  align-items: center;
+`;
+export const IconContainer = styled.div`
+  margin-right: 10px;
+`;
+export const PlansScrensTextSpan = styled.span`
+  opacity: 0.7;
+  margin-left: 33px;
+`;

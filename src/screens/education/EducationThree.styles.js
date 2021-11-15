@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 100%;
   height: 105vh;
   display: flex;
+  background-color: #f7fafc;
 `;
 
 export const OptionsDiv = styled.div`
@@ -30,11 +31,10 @@ export const PostContainer = styled.div`
 `;
 
 export const ContainerBox = styled.div`
-  width: 100%;
+ width: 55%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  background-color: #f7fafc;
+flex-direction: column;
 `;
 
 export const UserIcon = styled.img``;
@@ -317,8 +317,9 @@ export const EducationTwoBtn = styled.button`
 `;
 export const EducationTextTwoContainer = styled.div`
   display: flex;
+  width: 500px;
   align-items: center;
-   margin: 20px 0px -40px 45px;
+  margin: 20px 0px -40px 45px;
 `;
 export const EducationTextTwo = styled.div`
   margin-left: 7px;

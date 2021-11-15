@@ -5,6 +5,7 @@ export const EducationHeader = styled.div`
   width: 100%;
   height: 150vh;
   background-color: #f7fafc;
+  display: flex;
 `;
 export const EducationTextTwoContainer = styled.div`
   display: flex;
@@ -66,16 +67,18 @@ export const EducationImageContainer = styled.div`
   align-items: center;
   height: 150px;
   flex-direction: column;
-  &:hover {
-    border: 1px solid ${COLORS.primaryPink};
-  }
+  cursor: pointer;
+
   ${(props) =>
-    props.active &&
-    css`
-       {
-        border: 3px solid ${COLORS.primaryPink};
-      }
-    `}
+    props.active
+      ? css`
+           {
+            border: 3px solid ${COLORS.primaryPink};
+          }
+        `
+      : `&:hover {
+    border: 1px solid ${COLORS.primaryPink};
+  }`}
 `;
 export const EducationBoxContainer = styled.div`
   margin-top: 20px;

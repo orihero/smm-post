@@ -23,10 +23,20 @@ import {
   MoredetailsTextOne,
   WhatsnewContainerOne,
   WhatnewImage,
+  MoredetailsContainer,
+  MoredetailsButtonContainer,
+  MoredetailsButton,
+  MoredetailsImages,
+  MoredetailsImagesContainer,
 } from "./Moredetails.styles";
 import { HeartIcon } from "../../../constants/icons";
+import { useHistory } from "react-router-dom";
 
 function Moredetails() {
+  let history = useHistory();
+  let onCollapse = () => {
+    history.push("/whatsnew");
+  };
   const [active, setActive] = useState(false);
   let onHeartPress = () => {
     setActive((e) => !e);
@@ -43,7 +53,11 @@ function Moredetails() {
             <WhatsnewText>
               Гиперссылки во «ВКонтакте»
               <WhatsnewIconContainer>
-                <HeartIcon onClick={onHeartPress} active={active} />{" "}
+                <HeartIcon
+                  style={{ cursor: "pointer" }}
+                  onClick={onHeartPress}
+                  active={active}
+                />{" "}
                 <WhatsnewNuber>+185</WhatsnewNuber>
               </WhatsnewIconContainer>
             </WhatsnewText>
@@ -71,19 +85,33 @@ function Moredetails() {
               Раковский, фронтенд-разработчик
             </MoredetailsText>
             <MoredetailsText>
-              ↓ Понравилось улучшение? Отметьте лайком, нам будет приятно. Нашли <br/>
-              ошибку или есть идеи для других улучшений? Пишите на<br/> <br/>
-              <MoredetailsTextRed>
-              help@amplifr.com.
-              </MoredetailsTextRed>
+              ↓ Понравилось улучшение? Отметьте лайком, нам будет приятно. Нашли{" "}
+              <br />
+              ошибку или есть идеи для других улучшений? Пишите на
+              <br /> <br />
+              <MoredetailsTextRed>help@amplifr.com.</MoredetailsTextRed>
             </MoredetailsText>
-
             <WhatsnewButtonContainer>
-              <PrimaryButton primary active={true}>
-                Подробнее
+              <PrimaryButton onClick={onCollapse} primary active={true}>
+                Свернуть
               </PrimaryButton>
             </WhatsnewButtonContainer>
           </WhatsnewContainerOne>
+          <MoredetailsContainer>
+            <MoredetailsImagesContainer>
+              <MoredetailsTextOne>
+                Публикуйте во все соцсети из одного <br /> окна, оценивайте
+                показатели и делайте <br /> СММ эффективнее <br />{" "}
+              </MoredetailsTextOne>
+              <MoredetailsImages src={IMAGES.Whatsnew.WhatsnewMacbook} />
+            </MoredetailsImagesContainer>
+            <MoredetailsButtonContainer>
+              <PrimaryButton onClick={onCollapse} primary active={true}>
+                Начать пользоваться
+              </PrimaryButton>{" "}
+              <MoredetailsButton>Об программе</MoredetailsButton>
+            </MoredetailsButtonContainer>
+          </MoredetailsContainer>
         </WhatsnewInner>
       </WhatsnewHeader>
     </>

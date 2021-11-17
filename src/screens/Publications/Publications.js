@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Planned from "./modules/Planned";
 import Published from "./modules/Published";
+import { ICONS, Plus } from "../../constants/icons";
+
 import {
   ParagpaphFirst,
   PlusIcon,
@@ -16,17 +18,22 @@ import {
   PublicationsSize,
   PublicationsSizeNo,
 } from "./Publications.styles";
+import Drafts from "./Drafts/Drafts";
 
 let tabs = [
   { title: "Запланированные", Content: Planned },
   { title: "Опубликованные", Content: Published },
   { title: "Избранное", Content: null },
-  { title: "Черновики", Content: null },
+  { title: "Черновики", Content: Drafts },
 ];
 
 export default function Publications() {
   const [activeTab, setActiveTab] = useState(0);
   let Content = tabs[activeTab].Content;
+  let history = useHistory();
+  let onNewpost = () => {
+    history.push("/newpost");
+  };
   return (
     <>
       <PublicationsHeader>
@@ -42,38 +49,6 @@ export default function Publications() {
             );
           })}
         </PublicationsButtons>
-        <PublicationsBottom>
-          <PublicationsBox>
-            <PublicationsButton>Сегодня </PublicationsButton>
-            <PublicationsBtn>понедельник </PublicationsBtn>
-          </PublicationsBox>
-          <PublicationsContainer>
-            <PublicationsSize>
-              {/* <PlusIcon onClick={onNewpost} src={PlusIcon} /> */}
-              <PublicationsPost>Запланировать пост</PublicationsPost>
-            </PublicationsSize>
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-          </PublicationsContainer>
-        </PublicationsBottom> 
-        <PublicationsBottom>
-          <PublicationsBox>
-            <PublicationsButton>Завтра </PublicationsButton>
-            <PublicationsBtn>вторник </PublicationsBtn>
-          </PublicationsBox>
-          <PublicationsContainer>
-            <PublicationsSize>
-              {/* <PlusIcon onClick={onNewpost} src={PlusIcon} /> */}
-              <PublicationsPost>Запланировать пост</PublicationsPost>
-            </PublicationsSize>
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-            <PublicationsSizeNo />
-          </PublicationsContainer>
-        </PublicationsBottom>
         {Content && <Content />}
       </PublicationsHeader>
     </>

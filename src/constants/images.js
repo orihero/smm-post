@@ -30,6 +30,9 @@ import Iworkmyself from  "../assets/I-work-myself.png";
 import Team from "../assets/Team.png"
 import Whatsnew from "../assets/Whatsnew.png"
 import Whatsnewimage from "../assets/Whatsnewimage.png"
+import WhatsnewMacbook from "../assets/whatsnewMacbook.png"
+import DraftsLogo from "../assets/DraftsLogo.png"
+
  
 
 export let IMAGES = {
@@ -74,6 +77,9 @@ export let IMAGES = {
     ModalhelpOperator,
     Modalhelpsms,
   },
+  Drafts:{
+    DraftsLogo
+  },
   profile:{
     Hand,
     ProfileImage
@@ -85,6 +91,7 @@ export let IMAGES = {
   Whatsnew:{
     Whatsnew,
     Whatsnewimage,
+    WhatsnewMacbook
   },
 
 };

@@ -23,6 +23,8 @@ import {
   ProfileInputContainer,
   ProfileInputText,
   ProfileTextTwo,
+  TextsDiv,
+  IconContainer,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
 
@@ -32,7 +34,7 @@ export default function Profile({}) {
   let history = useHistory();
   const [activeTab, setActiveTab] = useState(0);
   let onNavigate = () => {
-    history.push("/changePassword");
+    history.push("/changepassword");
   };
   return (
     <>

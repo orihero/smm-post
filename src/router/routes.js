@@ -24,10 +24,12 @@ import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 import Moredetails from "../screens/what'snew/moredetails/Moredetails";
 import Whatsnew from "../screens/what'snew/Whatsnew";
+import Drafts from "../screens/Publications/Drafts/Drafts"
 
 let routes = [
   { key: "Новый пост", path: "/newpost", component: Newpost },
   { key: "Публикации", path: "/publications", component: Publications },
+  { key: "Публикации", path: "/drafts", component: Drafts },
   { key: "Аналитика", path: "/analytics", component: Analytics },
   { key: "Инструменты", path: "/instruments", component: Instruments },
   { key: "Настройки", path: "/settings", component: Settings },

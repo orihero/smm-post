@@ -68,7 +68,7 @@ export default function Whatsnew() {
               Научили предпросмотр распознавать гиперссылки во «ВКонтакте».
             </WhatsnewTextOne>
             <WhatsnewButtonContainer>
-              <PrimaryButton primary active={true}>
+              <PrimaryButton primary active={true} onClick={onMoredetails}>
                 Подробнее
               </PrimaryButton>
             </WhatsnewButtonContainer>
@@ -87,7 +87,7 @@ export default function Whatsnew() {
               Научили предпросмотр распознавать гиперссылки во «ВКонтакте».
             </WhatsnewTextOne>
             <WhatsnewButtonContainer>
-              <PrimaryButton primary active={true}>
+              <PrimaryButton primary active={true} onClick={onMoredetails}>
                 Подробнее
               </PrimaryButton>
             </WhatsnewButtonContainer>

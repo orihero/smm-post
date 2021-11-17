@@ -46,15 +46,14 @@ export const InstrumentsBoxTextOne = styled.div`
 export const InstrumentsBoxTextTwo = styled.div`
   margin-top: 20px;
   font-size: 10px;
-  color: ${COLORS.borderGray};
+  color: grey;
 `;
 
 export const InstrumentsBoxTextThree = styled.button`
-  display: inline;
-  cursor: pointer;
   color: #e8427e;
-  background: #${COLORS.white};
-  border: none;
+  border:none ;
+  background-color: ${COLORS.white};
+  cursor: pointer;
 `;
 
 export const InstrumentsBoxImage = styled.img`

@@ -74,7 +74,7 @@ export const PublicationsSizeNo = styled.div`
   background-color: ${COLORS.white};
 `;
 
-export const PlusIcon = styled.img`
+export const PlusIcon = styled.div`
   width: 55px;
   cursor: pointer;
   height: 70px;

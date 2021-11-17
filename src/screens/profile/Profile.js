@@ -7,7 +7,7 @@ import {
   ProfileUser,
 } from "../../constants/icons";
 import { IMAGES } from "../../constants/images";
-import { ParagpaphFirst, TextsDiv } from "../new-post/Newpost.styles";
+import { ParagpaphFirst } from "../new-post/Newpost.styles";
 import {
   IconContainer,
   ProfileBoxOne,
@@ -24,7 +24,6 @@ import {
   ProfileInputText,
   ProfileTextTwo,
   TextsDiv,
-  IconContainer,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
 

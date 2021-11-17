@@ -84,6 +84,7 @@ export const ProfileInnercontainer = styled.div`
   height: 60vh;
   padding: 10px 15px;
 `;
+
 export const ProfileImageOne = styled.img`
   width: 120px;
 `;
@@ -121,6 +122,7 @@ export const ProfileIconContainer = styled.div`
   width: 160px;
   justify-content: space-between;
 `;
+
 export const IconContainer = styled.div`
   background-color: ${COLORS.backgroundColor};
   padding: 7px;

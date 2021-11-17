@@ -45,7 +45,7 @@ export default function Planned() {
         </PublicationsBox>
         <PublicationsContainer>
           <PublicationsSize>
-          <PlusIcon onClick={onNewpost}>
+            <PlusIcon onClick={onNewpost}>
               <Plus />
             </PlusIcon>
             <PublicationsPost>Запланировать пост</PublicationsPost>

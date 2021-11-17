@@ -18,12 +18,13 @@ import {
   PublicationsSize,
   PublicationsSizeNo,
 } from "./Publications.styles";
+import Drafts from "./Drafts/Drafts";
 
 let tabs = [
   { title: "Запланированные", Content: Planned },
   { title: "Опубликованные", Content: Published },
   { title: "Избранное", Content: null },
-  { title: "Черновики", Content: null },
+  { title: "Черновики", Content: Drafts },
 ];
 
 export default function Publications() {

@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { IMAGES } from "../../constants/images";
 import {
-  ICONS,
   PencilIcon,
+  ProfileCall,
   ProfileSms,
   ProfileUser,
-  ProfileCall,
 } from "../../constants/icons";
-
+import { IMAGES } from "../../constants/images";
+import { ParagpaphFirst, TextsDiv } from "../new-post/Newpost.styles";
 import {
-  ParagpaphFirst,
+  IconContainer,
   ProfileBoxOne,
   ProfileContainer,
   ProfileDelete,
@@ -24,15 +23,12 @@ import {
   ProfileInputContainer,
   ProfileInputText,
   ProfileTextTwo,
-  TextsDiv,
-  ProfileIconContainer,
-  IconContainer,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
 
 let tabs = ["Запланированные", "Уведомления"];
 
-export default function Profile({ }) {
+export default function Profile({}) {
   let history = useHistory();
   const [activeTab, setActiveTab] = useState(0);
   let onNavigate = () => {
@@ -62,7 +58,6 @@ export default function Profile({ }) {
                 <IconContainer>
                   <PencilIcon />
                 </IconContainer>
-
               </ProfileIconContainer>
               <ProfileInputContainer>
                 <ProfileInputText>Имя пользователя</ProfileInputText>

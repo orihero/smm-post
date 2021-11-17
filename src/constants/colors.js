@@ -16,5 +16,6 @@ export let COLORS = {
     black: "#0000",
     blue: "#006ED4",
     instagramBackgroundColor: "#FFDD55 7%, #FF543E 50.26%, #C837AB",
+    exitColor: "#F7FAFC"
 }
 

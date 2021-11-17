@@ -32,8 +32,12 @@ let routes = [
   { key: "Инструменты", path: "/instruments", component: Instruments },
   { key: "Настройки", path: "/settings", component: Settings },
   { key: "Мой профиль", path: '/profile', component: Profile },
+  { key: "Мой профиль", path: '/publicationchangepasswort', component: ProfileChangePassword },
   { key: "Оплатить", path: '/plans', component: PlansScrens },
   { key: "Обучение", path: '/education', component: Education },
+  { key: "Обучение", path: '/educationtwo', component: EducationTwo },
+  { key: "Обучение", path: '/educationthree', component: EducationThree },
+  { key: "Помощ", path: '/help', component: Help },
 ];
 
 function Routes() {

@@ -1,5 +1,10 @@
 import React from "react";
-import { ModalFacebookIcon, ModalInstagramIcon, ModalTelegramIcon, ModalVkontakteIcon } from "../../../constants/icons";
+import {
+  ModalFacebookIcon,
+  ModalInstagramIcon,
+  ModalTelegramIcon,
+  ModalVkontakteIcon,
+} from "../../../constants/icons";
 import {
   ActiveContainer,
   ModalBackgrundHelp,
@@ -7,7 +12,7 @@ import {
   ModalBoxHelp,
   ModalContainerHelp,
   ModalExitHelp,
-  ModalInfoParagraph
+  ModalInfoParagraph,
 } from "./ModalNewpost.style";
 
 function ModalNewpost({ claseModal }) {

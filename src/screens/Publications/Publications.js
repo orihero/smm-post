@@ -4,8 +4,17 @@ import Planned from "./modules/Planned";
 import Published from "./modules/Published";
 import {
   ParagpaphFirst,
+  PlusIcon,
+  PublicationsBottom,
+  PublicationsBox,
+  PublicationsBtn,
+  PublicationsButton,
   PublicationsButtons,
+  PublicationsContainer,
   PublicationsHeader,
+  PublicationsPost,
+  PublicationsSize,
+  PublicationsSizeNo,
 } from "./Publications.styles";
 
 let tabs = [
@@ -40,7 +49,7 @@ export default function Publications() {
           </PublicationsBox>
           <PublicationsContainer>
             <PublicationsSize>
-              <PlusIcon onClick={onNewpost} src={Plus} />
+              {/* <PlusIcon onClick={onNewpost} src={PlusIcon} /> */}
               <PublicationsPost>Запланировать пост</PublicationsPost>
             </PublicationsSize>
             <PublicationsSizeNo />
@@ -48,7 +57,7 @@ export default function Publications() {
             <PublicationsSizeNo />
             <PublicationsSizeNo />
           </PublicationsContainer>
-        </PublicationsBottom>
+        </PublicationsBottom> 
         <PublicationsBottom>
           <PublicationsBox>
             <PublicationsButton>Завтра </PublicationsButton>
@@ -56,7 +65,7 @@ export default function Publications() {
           </PublicationsBox>
           <PublicationsContainer>
             <PublicationsSize>
-              <PlusIcon onClick={onNewpost} src={Plus} />
+              {/* <PlusIcon onClick={onNewpost} src={PlusIcon} /> */}
               <PublicationsPost>Запланировать пост</PublicationsPost>
             </PublicationsSize>
             <PublicationsSizeNo />

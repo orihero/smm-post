@@ -4,6 +4,7 @@ import scripka from "../../assets/scripka.svg";
 import smile from "../../assets/smile.svg";
 import RoundButton from "../../components/general/buttons/RoundButton";
 import { COLORS } from "../../constants/colors";
+import Calendar from "react-calendar";
 import {
   EyeIcon,
   NewpostFacebook,
@@ -45,16 +46,19 @@ import {
   TemasButton,
   Textarea,
   TextareaContainer,
+  TextsDiv,
   TipDiv,
   TipHead,
 } from "./Newpost.styles";
+import ModalCalendar from "./calendar-modal/ModalCalendar";
 
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
 
 export default function Home() {
   const [previewing, setPreviewing] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
   const [openModalNewpost, setOpenModalNewpost] = useState(false);
+  let [selectedTab, setSelectedTab] = useState();
+  const [openModalCalendar, setOpanModalCalendar] = useState(false);
   return (
     <>
       <Container>
@@ -123,9 +127,7 @@ export default function Home() {
                     setOpenModalNewpost(true);
                   }}
                 >
-                  <MBPlusParagraph>
-                    +
-                  </MBPlusParagraph>
+                  <MBPlusParagraph>+</MBPlusParagraph>
                 </MBPlusContainer>
               </NetsContainer>
               <TipDiv>
@@ -169,7 +171,11 @@ export default function Home() {
               </TextareaContainer>
               <DataDiv>
                 <DataHead>Время:</DataHead>
-                <DataButton>
+                <DataButton
+                  onClick={() => {
+                    setOpanModalCalendar(true);
+                  }}
+                >
                   Сейчас
                   <DataImg src={databutton} />
                 </DataButton>
@@ -192,10 +198,16 @@ export default function Home() {
               {previewing ? (
                 <PreviewContainerOne>
                   <PreviewContainerHeader>
-                    <PreviewContainerHeaderText active>
+                    <PreviewContainerHeaderText
+                      onClick={() => setSelectedTab(0)}
+                      active={selectedTab === 0}
+                    >
                       Предпросмотр
                     </PreviewContainerHeaderText>
-                    <PreviewContainerHeaderText>
+                    <PreviewContainerHeaderText
+                      onClick={() => setSelectedTab(1)}
+                      active={selectedTab === 1}
+                    >
                       Обсуждения
                     </PreviewContainerHeaderText>
                   </PreviewContainerHeader>
@@ -214,6 +226,7 @@ export default function Home() {
           </PostDivs>
         </ContainerBox>
       </Container>
+      {openModalCalendar && <ModalCalendar claseModal={setOpanModalCalendar} />}
       {openModalNewpost && <Modal claseModal={setOpenModalNewpost} />}
     </>
   );

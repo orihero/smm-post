@@ -190,8 +190,8 @@ export const DataDiv = styled.div`
   align-items: center;
   color: #102046;
   flex: 1;
-  /* margin-bottom: 25px; */
-  border-bottom: 1px solid rgba(16, 32, 70, 0.1);
+  margin-top: 25px;
+  border-top: 1px solid rgba(16, 32, 70, 0.1);
 `;
 
 export const DataButton = styled.div`
@@ -207,12 +207,13 @@ export const DataButton = styled.div`
   padding-left: 8px;
   padding-right: 8px;
   cursor: pointer;
-  /* margin-bottom: 15px; */
+  margin-top: 15px;
 `;
 
 export const DataHead = styled.h1`
   font-size: 16px;
   font-weight: 500;
+  margin-top: 15px;
 `;
 
 export const DataImg = styled.img`
@@ -230,6 +231,7 @@ export const TemasButton = styled.div`
   color: ${COLORS.primaryPink};
   font-weight: 500;
   margin-left: 15px;
+  margin-top: 15px;
   cursor: pointer;
 `;
 
@@ -238,6 +240,7 @@ export const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 25px;
 `;
 
 export const ButtonsDiv = styled.div`
@@ -289,6 +292,7 @@ export const PreviewContainerHeaderIconOne = styled.div`
 export const PreviewContainerHeaderText = styled.p`
   padding: 15px 48px;
   font-weight: 400;
+  cursor: pointer;
   &:hover {
     border-bottom: 3px solid ${COLORS.primaryPink};
     color: ${COLORS.primaryPink};

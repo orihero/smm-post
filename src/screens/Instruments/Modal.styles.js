@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../../constants/colors";
 
-export const ModalBacgrund = styled.div`
+export const ModalBackground = styled.div`
   width: 100%;
   height: 100vh;
   background-color: rgba(200, 200, 200, 0.5);

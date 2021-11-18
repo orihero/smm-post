@@ -28,6 +28,8 @@ import Hand from "../assets/Hand_image.png"
 import ProfileImage from '../assets/ProfileImage.png'; 
 import Iworkmyself from  "../assets/I-work-myself.png";
 import Team from "../assets/Team.png"
+import Click from "../assets/click.png"
+import Pyme from "../assets/pyme.png"
  
 
 export let IMAGES = {
@@ -80,5 +82,9 @@ export let IMAGES = {
     Iworkmyself,
     Team,
     
+  },
+  plans: {
+    Click,
+    Pyme,
   }
 };

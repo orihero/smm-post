@@ -1,14 +1,23 @@
 import React from "react";
 import { IMAGES } from "../../constants/images";
 import {
-  ModalBacgrund, ModalBox, ModalButton, ModalContainer, ModalDescription, ModalExit, ModalText, ModalTextIcon,
-  ModalTextIconTwo, ModalTextThree, ModalTextTwo
+  ModalBackground,
+  ModalBox,
+  ModalButton,
+  ModalContainer,
+  ModalDescription,
+  ModalExit,
+  ModalText,
+  ModalTextIcon,
+  ModalTextIconTwo,
+  ModalTextThree,
+  ModalTextTwo,
 } from "./Modal.styles";
 
 export default function Modal({ claseModal }) {
   return (
     <>
-      <ModalBacgrund>
+      <ModalBackground>
         <ModalContainer>
           <ModalBox>
             Считайте клики по ссылкам из постов
@@ -37,7 +46,7 @@ export default function Modal({ claseModal }) {
             Включить сокращение
           </ModalButton>
         </ModalContainer>
-      </ModalBacgrund>
+      </ModalBackground>
     </>
   );
 }

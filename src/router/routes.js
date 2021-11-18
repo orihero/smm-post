@@ -17,6 +17,7 @@ import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 import Whatsnew from "../screens/what'snew/Whatsnew";
+import PlanModalTwo from "../screens/plans/plans-modal/PlanModalTwo";
 
 function Routes() { 
   return (
@@ -53,6 +54,7 @@ function Routes() {
               <Route exact path="/settings" component={Settings} />
               <Route exact path="/help" component={Help} />
               <Route exact path="/profile" component={Profile} />
+              <Route exact path="/planmodaltwo" component={PlanModalTwo} />
               <Route
                 exact
                 path="/changePassword"

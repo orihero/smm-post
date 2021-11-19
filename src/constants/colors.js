@@ -1,3 +1,4 @@
+
 export let COLORS = {
     primaryPink: "#E8427E",
     white: "#fff",
@@ -13,6 +14,7 @@ export let COLORS = {
     backgroundColorIconOrange: '#FF623B',
     black: "#0000",
     blue: "#006ED4",
-    red: "#FF0000"
+    instagramBackgroundColor: "#FFDD55 7%, #FF543E 50.26%, #C837AB",
+    exitColor: "#F7FAFC"
 }
 

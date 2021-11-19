@@ -12,6 +12,6 @@ export const Container = styled.div`
   opacity: ${(props) => (props.active ? 1 : 0.5)};
   color: ${(props) => (props.primary ? COLORS.white : COLORS.primaryPink)};
   background-color: ${(props) =>
-        props.primary ? COLORS.primaryPink : COLORS.white};
+    props.primary ? COLORS.primaryPink : COLORS.white};
   margin: 0px 3px;
 `;

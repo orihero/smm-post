@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DefaultText } from "../../components/general/text/Text.style";
 import { COLORS } from "../../constants/colors";
 
 export const Container = styled.div`
@@ -147,7 +148,6 @@ export const TextareaContainer = styled.div`
   border-radius: 10px;
   padding: 17px;
   flex: 1;
-  /* margin-top: 15px; */
 `;
 
 export const Textarea = styled.textarea`
@@ -159,14 +159,12 @@ export const Textarea = styled.textarea`
   font-size: 16px;
   flex: 1;
   border-bottom: 1px solid rgba(16, 32, 70, 0.1);
-  /* margin-top: 40px; */
 `;
 
 export const AttachmantsDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 50px; */
 `;
 
 export const ScripcsIcon = styled.img`
@@ -175,6 +173,7 @@ export const ScripcsIcon = styled.img`
   left: 456px;
   top: 544px;
   border-radius: 10px;
+  cursor: pointer;
 `;
 
 export const SmileIcon = styled.img`
@@ -183,6 +182,7 @@ export const SmileIcon = styled.img`
   left: 3px;
   top: 3px;
   border-radius: 0px;
+  cursor: pointer;
 `;
 
 export const DataDiv = styled.div`
@@ -190,8 +190,8 @@ export const DataDiv = styled.div`
   align-items: center;
   color: #102046;
   flex: 1;
-  margin-bottom: 25px;
-  border-bottom: 1px solid rgba(16, 32, 70, 0.1);
+  margin-top: 25px;
+  border-top: 1px solid rgba(16, 32, 70, 0.1);
 `;
 
 export const DataButton = styled.div`
@@ -206,11 +206,14 @@ export const DataButton = styled.div`
   margin-left: 15px;
   padding-left: 8px;
   padding-right: 8px;
+  cursor: pointer;
+  margin-top: 15px;
 `;
 
 export const DataHead = styled.h1`
   font-size: 16px;
   font-weight: 500;
+  margin-top: 15px;
 `;
 
 export const DataImg = styled.img`
@@ -228,6 +231,8 @@ export const TemasButton = styled.div`
   color: ${COLORS.primaryPink};
   font-weight: 500;
   margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
 `;
 
 export const ButtonsContainer = styled.div`
@@ -235,6 +240,7 @@ export const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 25px;
 `;
 
 export const ButtonsDiv = styled.div`
@@ -246,28 +252,29 @@ export const ButtonsDiv = styled.div`
   border: 1px solid ${COLORS.primaryPink};
   color: ${COLORS.primaryPink};
   font-weight: 500;
-  /* margin-left: 5px; */
 `;
 
 export const PreviewContainer = styled.div`
   padding: 15px;
   margin-left: 5px;
-  /* font-size: 18px; */
-  /* line-height: none; */
 `;
+
 export const PreviewHead = styled.h1``;
+
 export const PreviewContainerOne = styled.div`
   width: 400px;
   border-radius: 20px;
   margin-bottom: 70px;
   background-color: #fcfcfc;
 `;
+
 export const PreviewContainerHeader = styled.div`
   display: flex;
-  background-color: #fff;
+  background-color: ${COLORS.white};
   justify-content: space-between;
   border-radius: 20px;
 `;
+
 export const PreviewContainerHeaderIcon = styled.div`
   margin-top: 50px;
   display: flex;
@@ -276,13 +283,16 @@ export const PreviewContainerHeaderIcon = styled.div`
   align-items: center;
   text-align: center;
 `;
+
 export const PreviewContainerHeaderIconOne = styled.div`
   margin-top: 80px;
   margin-bottom: 20px;
 `;
+
 export const PreviewContainerHeaderText = styled.p`
   padding: 15px 48px;
   font-weight: 400;
+  cursor: pointer;
   &:hover {
     border-bottom: 3px solid ${COLORS.primaryPink};
     color: ${COLORS.primaryPink};
@@ -294,3 +304,98 @@ export const PreviewContainerHeaderText = styled.p`
         color: ${COLORS.primaryPink};
     }`}
 `;
+
+export const NetsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  margin-right: 25px;
+`;
+
+export const MBContainer = styled.div`
+  padding: 22px;
+  border-radius: 35px;
+  position: relative;
+  background-color: ${COLORS.backgroundColor};
+  border: 2px solid ${COLORS.borderGray};
+  color: ${COLORS.fontColors};   
+  cursor: pointer;
+  margin-left: 15px;
+`;
+
+export const NewpostFacebookIcon = styled.div`
+  width: 20px;
+  height: 30px;
+  background-color: ${COLORS.facebookBackgroundColor};
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 2px 7px;
+  margin: -8px -2px;
+  cursor: pointer;
+`; 
+
+export const NewpostVkontakteIcon = styled.div`
+  width: 20px;
+  height: 30px;
+  background-color: ${COLORS.vkontakteBackgroundColor};
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 2px 7px;
+  margin: -8px -2px;
+  cursor: pointer;
+`;
+
+export const NewpostTwitterIcon = styled.div`
+  width: 20px;
+  height: 30px;
+  background-color: ${COLORS.twitterBackgroundColor};
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 2px 7px;
+  margin: -8px -2px;
+  cursor: pointer;
+`;
+
+export const NewpostInstagramIcon = styled.div`
+  width: 20px;
+  height: 30px;
+  background: linear-gradient(
+    49.33deg,
+    #ffdd55 7%,
+    #ff543e 50.26%,
+    #c837ab 93.53%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 2px 7px;
+  margin: -8px -2px;
+  cursor: pointer;
+`;
+
+export const MBPlusContainer = styled.div`
+  padding: 15px 23px;
+  border-radius: 35px;
+  position: relative;
+  background-color: ${COLORS.backgroundColor};
+  border: 2px solid ${COLORS.borderGray};
+  cursor: pointer;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const MBPlusParagraph = styled(DefaultText)`
+  font-size: 25px;
+  opacity: 0.7;
+  margin-top: 5px;
+  color: ${COLORS.fontColors};
+`

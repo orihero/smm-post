@@ -28,8 +28,16 @@ import Hand from "../assets/Hand_image.png"
 import ProfileImage from '../assets/ProfileImage.png'; 
 import Iworkmyself from  "../assets/I-work-myself.png";
 import Team from "../assets/Team.png"
+<<<<<<< HEAD
 import Click from "../assets/click.png"
 import Pyme from "../assets/pyme.png"
+=======
+import Whatsnew from "../assets/Whatsnew.png"
+import Whatsnewimage from "../assets/Whatsnewimage.png"
+import WhatsnewMacbook from "../assets/whatsnewMacbook.png"
+import DraftsLogo from "../assets/DraftsLogo.png"
+
+>>>>>>> b5655f22f2b0f696a371ecc294f3b330671e7767
  
 
 export let IMAGES = {
@@ -74,6 +82,9 @@ export let IMAGES = {
     ModalhelpOperator,
     Modalhelpsms,
   },
+  Drafts:{
+    DraftsLogo
+  },
   profile:{
     Hand,
     ProfileImage
@@ -81,10 +92,11 @@ export let IMAGES = {
   education:{
     Iworkmyself,
     Team,
-    
   },
-  plans: {
-    Click,
-    Pyme,
-  }
+  Whatsnew:{
+    Whatsnew,
+    Whatsnewimage,
+    WhatsnewMacbook
+  },
+
 };

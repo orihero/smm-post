@@ -152,8 +152,16 @@ export const LanguageHead = styled(DefaultText)`
   margin-bottom: 55px;
   margin-left: 300px;
   cursor: pointer;
+  display: flex;
   color: ${(props) => (props.primary ? COLORS.borderGray : COLORS.fontColors)};
 `;
+
+export const RightSideRuBox = styled(DefaultText)`
+  color: ${COLORS.fontColors};
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 20px;
+`
 
 export const InfoParagraphContainer = styled.div`
   width: 500px;

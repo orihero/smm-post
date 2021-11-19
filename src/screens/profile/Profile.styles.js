@@ -6,6 +6,7 @@ export const ProfileHeadr = styled.div`
   height: 110vh;
   background-color: ${COLORS.backgroundColor};
 `;
+
 export const ProfileInner = styled.div`
   margin-left: 80px;
   margin-top: 30px;
@@ -13,14 +14,14 @@ export const ProfileInner = styled.div`
 `;
 
 export const TextsDiv = styled.div`
-  width: 400px;
-  height: 20%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   margin-right: 28%;
   cursor: pointer;
   margin-bottom: 20px;
+  padding: 5px 25px;
+  /* background-color: ${COLORS.backgroundColor}; */
 `;
 
 export const ParagpaphFirst = styled.p`
@@ -39,15 +40,13 @@ export const ParagpaphFirst = styled.p`
     }`}
 `;
 
-
-
-
 export const ProfileBoxOne = styled.div`
   background-color: #fff;
   border-radius: 20px;
   margin-top: 50px;
   height: 70vh;
 `;
+
 export const ProfileInput = styled.div`
   width: 400px;
   height: 44px;
@@ -59,6 +58,7 @@ export const ProfileInput = styled.div`
   align-items: center;
   display: flex;
 `;
+
 export const ProfileInput1 = styled.input`
   width: 350px;
   height: 44px;
@@ -68,12 +68,13 @@ export const ProfileInput1 = styled.input`
   padding-left: 7px;
   font-size: 14px;
   border: none;
-  
 `;
+
 export const ProfileInputContainer = styled.div`
   width: 500px;
   margin-top: 10px;
 `;
+
 export const ProfileInnercontainer = styled.div`
   display: flex;
   justify-content: center;
@@ -83,8 +84,9 @@ export const ProfileInnercontainer = styled.div`
   height: 60vh;
   padding: 10px 15px;
 `;
+
 export const ProfileImageOne = styled.img`
-width: 120px;
+  width: 120px;
 `;
 
 export const ProfileInputText = styled.h5`
@@ -93,38 +95,38 @@ export const ProfileInputText = styled.h5`
   margin-bottom: 5px;
   font-weight: normal;
 `;
+
 export const ProfileContainer = styled.div`
-margin-left: 150px;
-margin-right: 150px ;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
+
 export const ProfileDelete = styled.div`
-cursor: pointer;
-
-
+  cursor: pointer;
 `;
+
 export const ProfileTextTwo = styled.div`
-color: ${COLORS.primaryPink};
-cursor: pointer;
-`
-export const ProfileIcon = styled.div``
+  color: ${COLORS.primaryPink};
+  cursor: pointer;
+`;
+
+export const ProfileIcon = styled.div``;
+
 export const ProfileIconContainer = styled.div`
-display: flex;
-margin-left: -90px;
-align-items: center;
-width: 160px;
-justify-content: space-between;
-`
+  display: flex;
+  margin-left: -90px;
+  align-items: center;
+  width: 160px;
+  justify-content: space-between;
+`;
+
 export const IconContainer = styled.div`
-background-color: ${COLORS.backgroundColor};
-padding: 7px;
-border-radius: 10px;
-cursor: pointer;
-margin-left: 10px;
-`
-// export const  = styled.div``
-// export const  = styled.div``
-// export const  = styled.div``
+  background-color: ${COLORS.backgroundColor};
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+`;

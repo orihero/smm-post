@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
 import Analytics from "../screens/analytics/Analytics";
@@ -16,10 +21,27 @@ import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
+import Moredetails from "../screens/what'snew/moredetails/Moredetails";
 import Whatsnew from "../screens/what'snew/Whatsnew";
-import PlanModalTwo from "../screens/plans/plans-modal/PlanModalTwo";
+// import PlanModalTwo from "../screens/plans/plans-modal/PlanModalTwo";
 
-function Routes() { 
+let routes = [
+  { key: "Новый пост", path: "/newpost", component: Newpost },
+  { key: "Публикации", path: "/publications", component: Publications },
+  // { key: "Публикации", path: "/drafts", component: Drafts },
+  { key: "Аналитика", path: "/analytics", component: Analytics },
+  { key: "Инструменты", path: "/instruments", component: Instruments },
+  { key: "Настройки", path: "/settings", component: Settings },
+  { key: "Мой профиль", path: '/profile', component: Profile },
+  { key: "Мой профиль", path: '/publicationchangepasswort', component: ProfileChangePassword },
+  { key: "Оплатить", path: '/plans', component: PlansScrens },
+  { key: "Обучение", path: '/education', component: Education },
+  { key: "Обучение", path: '/educationtwo', component: EducationTwo },
+  { key: "Обучение", path: '/educationthree', component: EducationThree },
+  { key: "Помощ", path: '/help', component: Help },
+];
+
+function Routes() {
   return (
     <BrowserRouter>
       <Switch>
@@ -27,6 +49,7 @@ function Routes() {
         <Route path="/login" component={Loginscreens} />
         <Route path="/register" component={Register} />
         <Route path="/whatsnew" component={Whatsnew} />
+        <Route path="/moredetails" component={Moredetails} />
         <div
           style={{
             display: "flex",
@@ -42,28 +65,14 @@ function Routes() {
               display: "flex",
               flex: 1,
               flexDirection: "column",
-              marginLeft: "14%",
+              marginLeft: "212px",
             }}
           >
-            <NavBar />
+            <NavBar routes={routes} />
             <Switch>
-              <Route exact path="/newpost" component={Newpost} />
-              <Route exact path="/analytics" component={Analytics} />
-              <Route exact path="/publications" component={Publications} />
-              <Route exact path="/instruments" component={Instruments} />
-              <Route exact path="/settings" component={Settings} />
-              <Route exact path="/help" component={Help} />
-              <Route exact path="/profile" component={Profile} />
-              <Route exact path="/planmodaltwo" component={PlanModalTwo} />
-              <Route
-                exact
-                path="/changePassword"
-                component={ProfileChangePassword}
-              />
-              <Route exact path="/plans" component={PlansScrens} />
-              <Route exact path="/education" component={Education} />
-              <Route exact path="/educationtwo" component={EducationTwo} />
-              <Route exact path="/educationthree" component={EducationThree} />
+              {routes.map((e) => (
+                <Route exact {...e} />
+              ))}
             </Switch>
           </div>
         </div>

@@ -24,7 +24,7 @@ import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 import Moredetails from "../screens/what'snew/moredetails/Moredetails";
 import Whatsnew from "../screens/what'snew/Whatsnew";
-import Drafts from "../screens/Publications/Drafts/Drafts"
+import Drafts from "../screens/Publications/drafts/Drafts"
 
 let routes = [
   { key: "Новый пост", path: "/newpost", component: Newpost },

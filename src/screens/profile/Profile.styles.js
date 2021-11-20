@@ -42,6 +42,7 @@ export const ParagpaphFirst = styled.p`
 
 export const ProfileBoxOne = styled.div`
   background-color: #fff;
+  box-shadow: 0px 1px 17px rgba(124, 124, 124, 0.08);
   border-radius: 20px;
   margin-top: 50px;
   height: 70vh;
@@ -111,6 +112,7 @@ export const ProfileDelete = styled.div`
 export const ProfileTextTwo = styled.div`
   color: ${COLORS.primaryPink};
   cursor: pointer;
+  text-decoration: underline;
 `;
 
 export const ProfileIcon = styled.div``;

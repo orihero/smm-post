@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const ProfileBox = styled.div`
   padding: 0px 5px;
+  box-shadow: 0px 1px 17px rgba(124, 124, 124, 0.08);
   background-color: #fff;
   border-radius: 20px;
   display: flex;

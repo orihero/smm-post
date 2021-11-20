@@ -18,7 +18,7 @@ import {
   PublicationsSize,
   PublicationsSizeNo,
 } from "./Publications.styles";
-import Drafts from "./Drafts/Drafts";
+import Drafts from "./drafts/Drafts";
 
 let tabs = [
   { title: "Запланированные", Content: Planned },

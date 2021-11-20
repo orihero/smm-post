@@ -4,7 +4,7 @@ import scripka from "../../assets/scripka.svg";
 import smile from "../../assets/smile.svg";
 import RoundButton from "../../components/general/buttons/RoundButton";
 import { COLORS } from "../../constants/colors";
-import Calendar from "react-calendar";
+// import Calendar from "react-calendar";
 import {
   EyeIcon,
   NewpostFacebook,

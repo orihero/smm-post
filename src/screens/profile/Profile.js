@@ -33,7 +33,7 @@ export default function Profile({}) {
   let history = useHistory();
   const [activeTab, setActiveTab] = useState(0);
   let onNavigate = () => {
-    history.push("/changepassword");
+    history.push("/publicationchangepasswort");
   };
   return (
     <>

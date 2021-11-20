@@ -40,6 +40,7 @@ let routes = [
   { key: "Обучение", path: '/educationtwo', component: EducationTwo },
   { key: "Обучение", path: '/educationthree', component: EducationThree },
   { key: "Помощ", path: '/help', component: Help },
+  
 ];
 
 function Routes() {

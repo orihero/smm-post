@@ -33,7 +33,7 @@ export const ButtonsContainer = styled.div`
 
 export const VectorImg = styled.img`
   color: ${COLORS.fontColors};
-  margin-left: 2px;
+  margin-right: 2px;
   margin-top: 2px;
   width: 14.04px;
   height: 8px;
@@ -73,6 +73,9 @@ export const RightSideButton = styled.button`
   background-color: ${COLORS.white};
   border: none;
   box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const LeftSideBox = styled.div`

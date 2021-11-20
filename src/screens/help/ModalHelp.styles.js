@@ -53,6 +53,7 @@ export const ModalExitHelp = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 7px;
+  cursor: pointer;
 `;
 
 export const ModalDescriptionHelp = styled.div`

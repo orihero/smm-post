@@ -70,6 +70,7 @@ export const PlansScrensTextSix = styled(DefaultText)`
   font-weight: 500;
   font-size: 19px;
   margin-left: 40px;
+  cursor: pointer;
 `;
 
 export const PlansScrensTextEyt = styled(DefaultText)`

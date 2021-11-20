@@ -5,6 +5,7 @@ import smile from "../../assets/smile.svg";
 import RoundButton from "../../components/general/buttons/RoundButton";
 import { COLORS } from "../../constants/colors";
 // import Calendar from "react-calendar";
+
 import {
   EyeIcon,
   NewpostFacebook,
@@ -12,6 +13,7 @@ import {
   NewpostTwitter,
   NewpostVkontakte,
 } from "../../constants/icons";
+import ModalCalendar from "./calendar-modal/ModalCalendar";
 import Modal from "./newpost-modal/ModalNewpost";
 import {
   AttachmantsDiv,
@@ -46,11 +48,9 @@ import {
   TemasButton,
   Textarea,
   TextareaContainer,
-  TextsDiv,
   TipDiv,
   TipHead,
 } from "./Newpost.styles";
-import ModalCalendar from "./calendar-modal/ModalCalendar";
 
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
 
@@ -226,7 +226,7 @@ export default function Home() {
           </PostDivs>
         </ContainerBox>
       </Container>
-      {openModalCalendar && <ModalCalendar claseModal={setOpanModalCalendar} />}
+      {openModalCalendar && <ModalCalendar claseModal={setOpanModalCalendar} openModal={openModalCalendar} />}
       {openModalNewpost && <Modal claseModal={setOpenModalNewpost} />}
     </>
   );

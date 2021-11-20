@@ -26,7 +26,6 @@ export const ModalContainerHelp = styled.div`
 
 export const ModalBoxHelp = styled.div`
   display: flex;
-  flex-direction: row;
   font-size: 19px;
   font-weight: 600;
   justify-content: space-between;

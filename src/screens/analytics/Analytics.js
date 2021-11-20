@@ -5,6 +5,8 @@ import {
   AnalyticsParagraph,
   AnalyticTextContainer,
   BarContainer,
+  DateChangeContainer,
+  HeadsBox,
 } from "./Analytics.syles";
 
 let tabs = ["Вовлечённость", "Лучшие посты", "Лучшее время"];
@@ -14,18 +16,18 @@ function Analytics() {
   return (
     <>
       <BarContainer>
-        <TextsDiv>
-          {tabs.map((e, i) => {
-            return (
-              <AnalyticTextContainer
-                active={i === activeTab}
-                onClick={() => setActiveTab(i)}
-              >
-                {e}
-              </AnalyticTextContainer>
-            );
-          })}
-        </TextsDiv>
+          <TextsDiv>
+            {tabs.map((e, i) => {
+              return (
+                <AnalyticTextContainer
+                  active={i === activeTab}
+                  onClick={() => setActiveTab(i)}
+                >
+                  {e}
+                </AnalyticTextContainer>
+              );
+            })}
+          </TextsDiv>
         <AnalyticsParagraph>
           Взаимодействие аудитории с вашими постами. <br /> Данные обновляются
           несколько раз в день.
@@ -37,3 +39,4 @@ function Analytics() {
 }
 
 export default Analytics;
+ 

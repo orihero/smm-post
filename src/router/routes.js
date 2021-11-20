@@ -4,7 +4,6 @@ import {
   Redirect,
   Route,
   Switch,
-  useLocation,
 } from "react-router-dom";
 import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
@@ -25,6 +24,7 @@ import Settings from "../screens/settings/Settings";
 import Moredetails from "../screens/what'snew/moredetails/Moredetails";
 import Whatsnew from "../screens/what'snew/Whatsnew";
 import Drafts from "../screens/Publications/drafts/Drafts"
+import PlanModalTwo from "../screens/plans/plans-modal/PlanModalTwo";
 
 let routes = [
   { key: "Новый пост", path: "/newpost", component: Newpost },
@@ -40,6 +40,7 @@ let routes = [
   { key: "Обучение", path: '/educationtwo', component: EducationTwo },
   { key: "Обучение", path: '/educationthree', component: EducationThree },
   { key: "Помощ", path: '/help', component: Help },
+  
 ];
 
 function Routes() {

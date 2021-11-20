@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   PlansCardContianer,
   PlansScrensHeader,
@@ -11,25 +11,29 @@ import {
 import PlanCard from "./components/PlanCard";
 import PlansButton from "../../components/general/buttons/PlansButton";
 import { EducationIcon } from "../../constants/icons";
+import PlansModal from "./plans-modal/PlansModal";
+import PlanModalTwo from "./plans-modal/PlanModalTwo";
+
 function PlansScrens() {
+  const [openPlanModal, setOpanPlanModal] = useState(false);
+  const [openPlanModalTwo, setOpanPlanModalTwo] = useState(false);
   return (
     <>
       <PlansScrensHeader>
-        
         <PlansScrensTextContainer>
           <TextContainer>
             <PlansScrensTextContainerOne>
-            <IconContainer>
-          <EducationIcon/>
-            </IconContainer>
-             Ваш пробный период заканчивается через 7 дней.
+              <IconContainer>
+                <EducationIcon />
+              </IconContainer>
+              Ваш пробный период заканчивается через 7 дней.
             </PlansScrensTextContainerOne>
             <PlansScrensTextSpan>
               Выберите тариф, чтобы получить доступ ко всем функциям
             </PlansScrensTextSpan>
           </TextContainer>
           <PlansButton>Пригласить друга</PlansButton>
-         </PlansScrensTextContainer>
+        </PlansScrensTextContainer>
         <PlansCardContianer>
           <PlanCard
             name="S"
@@ -43,6 +47,8 @@ function PlansScrens() {
               "2 импорта из RSS",
               "По почте",
             ]}
+            onSelect={setOpanPlanModal}
+            onDetails={setOpanPlanModalTwo}
           />
           <PlanCard
             name="M"
@@ -57,6 +63,8 @@ function PlansScrens() {
               "2 импорта из RSS",
               "По почте",
             ]}
+            onSelect={setOpanPlanModal}
+            onDetails={setOpanPlanModalTwo}
           />
 
           <PlanCard
@@ -72,6 +80,8 @@ function PlansScrens() {
               "2 импорта из RSS",
               "По почте",
             ]}
+            onSelect={setOpanPlanModal}
+            onDetails={setOpanPlanModalTwo}
           />
 
           <PlanCard
@@ -87,9 +97,13 @@ function PlansScrens() {
               "2 импорта из RSS",
               "По почте",
             ]}
+            onSelect={setOpanPlanModal}
+            onDetails={setOpanPlanModalTwo}
           />
         </PlansCardContianer>
       </PlansScrensHeader>
+      {openPlanModal && <PlansModal clasePlanModal={setOpanPlanModal} />}
+      {openPlanModalTwo && <PlanModalTwo claseModal={setOpanPlanModalTwo} />}
     </>
   );
 }

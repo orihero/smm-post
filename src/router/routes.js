@@ -4,7 +4,6 @@ import {
   Redirect,
   Route,
   Switch,
-  useLocation,
 } from "react-router-dom";
 import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
@@ -24,12 +23,12 @@ import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 import Moredetails from "../screens/what'snew/moredetails/Moredetails";
 import Whatsnew from "../screens/what'snew/Whatsnew";
-import Drafts from "../screens/Publications/Drafts/Drafts"
+// import PlanModalTwo from "../screens/plans/plans-modal/PlanModalTwo";
 
 let routes = [
   { key: "Новый пост", path: "/newpost", component: Newpost },
   { key: "Публикации", path: "/publications", component: Publications },
-  { key: "Публикации", path: "/drafts", component: Drafts },
+  // { key: "Публикации", path: "/drafts", component: Drafts },
   { key: "Аналитика", path: "/analytics", component: Analytics },
   { key: "Инструменты", path: "/instruments", component: Instruments },
   { key: "Настройки", path: "/settings", component: Settings },

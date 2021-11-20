@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import {
   DraftsButtonContainer,
   DraftsHeader,
@@ -13,6 +14,10 @@ import { IMAGES } from "../../../constants/images";
 import PrimaryButton from "../../../components/general/buttons/RoundButton";
 
 export default function Drafts() {
+  let history = useHistory();
+  let onNewpost = () => {
+    history.push("/newpost");
+  };
   return (
     <>
       <DraftsHeader>
@@ -25,10 +30,10 @@ export default function Drafts() {
           </DraftsTextOne>
         </DraftsInner>
         <DraftsButtonContainer>
-          <DraftsContainer primary active={true}>
+          <DraftsContainer onClick={onNewpost} primary active={true}>
             Создать
           </DraftsContainer>
-          <DraftsContainer primary active={true}>
+          <DraftsContainer  onClick={onNewpost} primary active={true}>
             Создать
           </DraftsContainer>
         </DraftsButtonContainer>

@@ -135,15 +135,14 @@ export const CheckIcon = ({
   width = 20,
   height = 20,
   active = false,
+  style = {},
+  color,
   ...rest
 }) => {
-  let color = active ? COLORS.primaryPink : COLORS.fontColors;
   return (
     <svg
-      width={width}
-      height={height}
+      {...{ width, height, fill: color, stroke: color }}
       viewBox="0 0 16 12"
-      fill={color}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

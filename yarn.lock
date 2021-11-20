@@ -4946,11 +4946,14 @@ execa@^4.0.0:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
+<<<<<<< HEAD
 exenv@^1.2.0:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
   integrity sha1-KueOhdmJQVhnCwPUe+wfA72Ru50=
 
+=======
+>>>>>>> 063408af324a85f4a339f24e770a2b6f9c2f9c6a
 exit@^0.1.2:
   version "0.1.2"
   resolved "https://registry.npmjs.org/exit/-/exit-0.1.2.tgz"
@@ -9279,7 +9282,11 @@ react-app-polyfill@^2.0.0:
 
 react-calendar@^3.5.0:
   version "3.5.0"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/react-calendar/-/react-calendar-3.5.0.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/react-calendar/-/react-calendar-3.5.0.tgz#ba7bc0b76e389ec91b385f34328f02457998678c"
+>>>>>>> 063408af324a85f4a339f24e770a2b6f9c2f9c6a
   integrity sha512-WrDOON59188ciC7jw5YrlM/EgLTWM9TD9dflRWjgd9rlMxPScX8dNG4tJGE+z8d4xaEVccJmHbiYGCGsYdXdxQ==
   dependencies:
     "@wojtekmaj/date-utils" "^1.0.2"
@@ -9367,6 +9374,7 @@ react-is@^17.0.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.1.tgz"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+<<<<<<< HEAD
 react-lifecycles-compat@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -9382,6 +9390,8 @@ react-modal@^3.14.4:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
+=======
+>>>>>>> 063408af324a85f4a339f24e770a2b6f9c2f9c6a
 react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
@@ -9535,10 +9545,17 @@ react-scroll@^1.8.4:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
 
+<<<<<<< HEAD
 react-select@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-5.2.1.tgz#416c25c6b79b94687702374e019c4f2ed9d159d6"
   integrity sha512-OOyNzfKrhOcw/BlembyGWgdlJ2ObZRaqmQppPFut1RptJO423j+Y+JIsmxkvsZ4D/3CpOmwIlCvWbbAWEdh12A==
+=======
+react-select@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/react-select/-/react-select-5.1.0.tgz"
+  integrity sha512-SkEBD1AYsSXrIdNj5HBt7+Ehe+jxdiB448J0atJqR6lE3l/GcFlRf4JYB3NlHe/02jrW4AnIQLo1t0IqWrxXOw==
+>>>>>>> 063408af324a85f4a339f24e770a2b6f9c2f9c6a
   dependencies:
     "@babel/runtime" "^7.12.0"
     "@emotion/cache" "^11.4.0"
@@ -11481,7 +11498,11 @@ walker@^1.0.7, walker@~1.0.5:
   dependencies:
     makeerror "1.0.x"
 
+<<<<<<< HEAD
 warning@^4.0.1, warning@^4.0.3:
+=======
+warning@^4.0.1:
+>>>>>>> 063408af324a85f4a339f24e770a2b6f9c2f9c6a
   version "4.0.3"
   resolved "https://registry.npmjs.org/warning/-/warning-4.0.3.tgz"
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==

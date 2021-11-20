@@ -1,4 +1,3 @@
-import { instagramIcons } from "./icons";
 
 export let COLORS = {
     primaryPink: "#E8427E",

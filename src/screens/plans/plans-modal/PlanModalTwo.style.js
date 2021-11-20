@@ -150,10 +150,11 @@ export const PlanModalSectionBox = styled.div`
 `;
 export const PlanModalSectionBoxes = styled.img``;
 export const PlanModalSec = styled.div`
+  
   width: 200px;
   height: 150px;
   display: flex;
   border-radius: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 `;

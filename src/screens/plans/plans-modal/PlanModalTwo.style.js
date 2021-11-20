@@ -147,14 +147,46 @@ export const PlanModalSectionBox = styled.div`
   width: 1000px;
   height: 200px;
   margin-top: 20px;
+  border: 1px solid "#000";
 `;
-export const PlanModalSectionBoxes = styled.img``;
+export const PlanModalSectionBoxes = styled.img`
+  width: 200px;
+  height: 80px;
+`;
 export const PlanModalSec = styled.div`
-  
   width: 200px;
   height: 150px;
   display: flex;
   border-radius: 20px;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  border: 1px solid ${COLORS.fontColors};
+  cursor: pointer;
+  &:hover {
+    border: 3px solid ${COLORS.primaryPink};
+  }
+`;
+
+export const PlanModalButtonBoxess = styled.div`
+  width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 10px;
+`;
+
+export const PlanModalButtonTwo = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 35px;
+  margin-left: 60px;
+  border: 1px solid ${COLORS.borderGray};
+  background-color: #fff;
 `;

@@ -32,6 +32,8 @@ import Whatsnew from "../assets/Whatsnew.png"
 import Whatsnewimage from "../assets/Whatsnewimage.png"
 import WhatsnewMacbook from "../assets/whatsnewMacbook.png"
 import DraftsLogo from "../assets/DraftsLogo.png"
+import Click from "../assets/click.png"
+import Payme from '../assets/pyme.png'
 
  
 
@@ -92,6 +94,11 @@ export let IMAGES = {
     Whatsnew,
     Whatsnewimage,
     WhatsnewMacbook
+  },
+
+  plans:{
+    Click,
+    Payme
   },
 
 };

@@ -4,7 +4,6 @@ import {
   PlanModalHeader,
   ModalBoxHelp,
   PlanModalContainerBox,
-  ModalExitHelp,
   PlanModalContainerBoxOne,
   PlanModalContainer,
   PlanModalParagraph,
@@ -20,6 +19,8 @@ import {
   PlanModalSectionBox,
   PlanModalSectionBoxes,
   PlanModalSec,
+  PlanModalButtonBoxess,
+  PlanModalButtonTwo,
 } from "./PlanModalTwo.style";
 
 function PlanModalTwo({ claseModal }) {
@@ -27,10 +28,7 @@ function PlanModalTwo({ claseModal }) {
     <>
       <PlanModalHeader>
         <PlanModalContainerBox>
-          <ModalBoxHelp>
-            Оплата на тариф L
-            <ModalExitHelp onClick={() => claseModal(false)}>x</ModalExitHelp>
-          </ModalBoxHelp>
+          <ModalBoxHelp>Оплата на тариф L</ModalBoxHelp>
           <PlanModalContainer>
             <PlanModalContainerBoxOne>
               <PlanModalParagraph>Помесячно</PlanModalParagraph>
@@ -58,12 +56,26 @@ function PlanModalTwo({ claseModal }) {
               <PlanModalSectionBoxes src={IMAGES.plans.Click} />
             </PlanModalSec>
             <PlanModalSec>
-              <PlanModalSectionBoxes src={IMAGES.plans.Pyme} />
+              <PlanModalSectionBoxes src={IMAGES.plans.Payme} />
             </PlanModalSec>
             <PlanModalSec>
               <PlanModalSectionBoxes src={IMAGES.plans.Click} />
             </PlanModalSec>
           </PlanModalSectionBox>
+          <PlanModalButtonBoxess>
+            <PlanModalButtonTwo onClick={() => claseModal(false)}>
+              отмена
+            </PlanModalButtonTwo>
+            <PlanModalButtonTwo
+              style={{
+                backgroundColor: "#E8427E",
+                color: "#fff",
+                border: "none",
+              }}
+            >
+              Оплатить
+            </PlanModalButtonTwo>
+          </PlanModalButtonBoxess>
         </PlanModalContainerBox>
       </PlanModalHeader>
     </>

@@ -24,8 +24,7 @@ function PlansModal({ clasePlanModal }) {
               </ModalExitHelp>
             </ModalBoxHelp>
             <ModalContainerParagraf>
-              <ModalContainerBoxOne> 5 проектов</ModalContainerBoxOne>
-              <CheckIcon style={{  marginBottom: "15px" }} />
+              <ModalContainerBoxOne>5 проектов</ModalContainerBoxOne>
               <ModalContainerBoxOne>
                 5 рабочих мест
                 <ModalContainerBoxSpan>

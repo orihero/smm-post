@@ -1,24 +1,13 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import Drafts from "./Drafts/Drafts";
 import Planned from "./modules/Planned";
 import Published from "./modules/Published";
-import { ICONS, Plus } from "../../constants/icons";
-
 import {
   ParagpaphFirst,
-  PlusIcon,
-  PublicationsBottom,
-  PublicationsBox,
-  PublicationsBtn,
-  PublicationsButton,
   PublicationsButtons,
-  PublicationsContainer,
   PublicationsHeader,
-  PublicationsPost,
-  PublicationsSize,
-  PublicationsSizeNo,
 } from "./Publications.styles";
-import Drafts from "./drafts/Drafts";
 
 let tabs = [
   { title: "Запланированные", Content: Planned },

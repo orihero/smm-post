@@ -3,7 +3,7 @@ import {
   BrowserRouter,
   Redirect,
   Route,
-  Switch,
+  Switch
 } from "react-router-dom";
 import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
@@ -24,8 +24,6 @@ import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 import Moredetails from "../screens/what'snew/moredetails/Moredetails";
 import Whatsnew from "../screens/what'snew/Whatsnew";
-import Drafts from "../screens/Publications/drafts/Drafts"
-import PlanModalTwo from "../screens/plans/plans-modal/PlanModalTwo";
 
 let routes = [
   { key: "Новый пост", path: "/newpost", component: Newpost },

@@ -29,7 +29,7 @@ export default function NavBar({ routes = [] }) {
     setMenuVisible((e) => !e);
   };
   let [selectedTab, setSelectedTab] = useState();
-  const navigation = useHistory();
+  const navigation = useHistory();     
   let onProfileClick = () => {
     navigation.push('/profile')
   }

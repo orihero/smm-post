@@ -19,6 +19,7 @@ import Newpost from "../screens/new-post/Newpost";
 import PlansScrens from "../screens/plans/PlansScrens";
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
+import Drafts from "../screens/Publications/Drafts/Drafts";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 import Moredetails from "../screens/what'snew/moredetails/Moredetails";

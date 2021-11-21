@@ -10,7 +10,7 @@ export const Section = styled.section`
 
 export const LeftSideContainer = styled.div`
   width: 1080px;
-  height: 752px;
+  /* height: 752px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +19,6 @@ export const LeftSideContainer = styled.div`
 `;
 
 export const RightSideContainer = styled.div`
-  width: 500px;
-  height: 750px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +35,8 @@ export const RightSideHead = styled(DefaultText)`
 export const LoginInput = styled.input`
   width: 460px;
   font-size: 18px;
-  padding: 16px 15px;
-  margin: 25px 15px;
+  padding: 15px 15px;
+  margin: 15px 15px;
   border-radius: 15px;
   color: ${COLORS.fontColors};
   outline: none;
@@ -82,12 +80,11 @@ export const NetTabDiv = styled.div`
   display: flex;
   justify-content: space-between;
   border-top: 1px solid ${COLORS.borderGray};
-  margin-top: 5px;
 `;
 
 export const NetLoginHead = styled(DefaultText)`
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
   color: ${COLORS.fontColors};
 `;
 
@@ -101,7 +98,7 @@ export const GoogleIconsBox = styled.div`
   color: ${COLORS.white};
   border-radius: 18px;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 15px;
 `;
 
 export const FaceBookIconsBox = styled.div`
@@ -115,7 +112,7 @@ export const FaceBookIconsBox = styled.div`
   border-radius: 18px;
   cursor: pointer;
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 15px;
 `;
 
 export const VkontakteIconsBox = styled.div`
@@ -128,7 +125,7 @@ export const VkontakteIconsBox = styled.div`
   border-radius: 15px;
   cursor: pointer;
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 15px;
 `;
 
 export const TwitterIconsBox = styled.div`
@@ -142,7 +139,7 @@ export const TwitterIconsBox = styled.div`
   border-radius: 15px;
   cursor: pointer;
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 15px;
 `;
 
 export const LanguageHead = styled(DefaultText)`
@@ -161,7 +158,7 @@ export const RightSideRuBox = styled(DefaultText)`
   font-size: 19px;
   font-weight: 500;
   margin-left: 20px;
-`
+`;
 
 export const InfoParagraphContainer = styled.div`
   width: 500px;
@@ -191,6 +188,7 @@ export const BulpContainer = styled.div`
   margin-left: 50px;
   border-top: 1px solid ${COLORS.borderGray};
 `;
+
 export const BulpIconContaier = styled.div`
   margin-top: 15px;
   display: flex;

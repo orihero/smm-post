@@ -21,10 +21,10 @@ export const NavbarHead = styled.h1`
 `;
 
 export const UserDiv = styled.div`
-  width: 230px;
+  /* width: 230px; */
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
 `;
 
 export const UserParagraph = styled.p`

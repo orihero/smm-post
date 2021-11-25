@@ -14,7 +14,7 @@ export const ProfileInner = styled.div`
 `;
 
 export const TextsDiv = styled.div`
-width: 1200px;
+width: 100%;
   display: flex;
   align-items: center;
   margin-right: 28%;

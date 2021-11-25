@@ -58,7 +58,9 @@ export default function NavBar({ routes = [] }) {
           {menuVisible && (
             <OptionsContainer>
               <Option active onClick={() => setSelectedTab(0)} active={selectedTab === 0} onClick={onProfileClick}>
-                <UserProfileIcon style={{ marginRight: "15px" }} /> Мой профиль
+                <UserProfileIcon style={{
+                   marginRight: "15px"
+                    }} /> Мой профиль
               </Option>
               <Option onClick={onPlansClick}>
                 <NoteBookICon style={{ marginRight: "15px" }} />

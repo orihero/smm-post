@@ -6,6 +6,7 @@ export const InstrumentsHeader = styled.div`
   height: 100vh;
   background-color: #f7fafc;
 `;
+
 export const InstrumentsHeaderContainer = styled.div`
   margin-left: 75px;
   margin-top: 40px;
@@ -29,6 +30,8 @@ export const InstrumentsBox = styled.div`
   display: flex;
   width: 484px;
   height: 29vh;
+  border-radius: 12px;
+  box-shadow: 0px 1px 20px rgba(124, 124, 124, 0.08);
 `;
 
 export const InstrumentsBoxText = styled.div`
@@ -43,6 +46,7 @@ export const InstrumentsBoxTextOne = styled.div`
   font-size: 14px;
   font-weight: normal;
 `;
+
 export const InstrumentsBoxTextTwo = styled.div`
   margin-top: 20px;
   font-size: 10px;
@@ -83,11 +87,11 @@ export const InstrumentsBoxContainerImageText = styled.h1`
   color: ${COLORS.white};
   background-color: #f9d0df;
 `;
+
 export const InstrumentsBoxContainerImageTextOne = styled.div`
   padding: 5px 15px;
   border-radius: 20px;
   cursor: pointer;
-
   font-size: 15px;
   margin-left: 90px;
   width: 30px;

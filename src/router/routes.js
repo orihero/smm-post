@@ -40,10 +40,7 @@ let routes = [
   { key: "Обучение", path: "/educationtwo", component: EducationTwo },
   { key: "Обучение", path: "/educationthree", component: EducationThree },
   { key: "Помощ", path: "/help", component: Help },
-<<<<<<< HEAD
-=======
   { key: "Аналитика", path: "/analyticsdemo", component: Analyticsdemo },
->>>>>>> 4d3bc7c7b18a4ae25ae7b67d290978f0b7308d60
 ];
 
 function Routes() {

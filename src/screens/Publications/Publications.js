@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import Drafts from "./Drafts/Drafts";
+import Drafts from "./drafts/Drafts";
 import Planned from "./modules/Planned";
 import {
   ParagpaphFirst,

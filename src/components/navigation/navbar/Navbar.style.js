@@ -41,7 +41,6 @@ export const UserImg = styled.img`
 `;
 
 export const ArrowDownButton = styled.button`
-  /* padding: 15px 5px; */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -108,7 +108,7 @@ export const GoogleIconsBox = styled.div`
   color: ${COLORS.white};
   border-radius: 18px;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 15px;
 `;
 
 export const FaceBookIconsBox = styled.div`
@@ -122,7 +122,7 @@ export const FaceBookIconsBox = styled.div`
   border-radius: 18px;
   cursor: pointer;
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 15px;
 `;
 
 export const VkontakteIconsBox = styled.div`
@@ -135,7 +135,7 @@ export const VkontakteIconsBox = styled.div`
   border-radius: 15px;
   cursor: pointer;
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 15px;
 `;
 
 export const TwitterIconsBox = styled.div`
@@ -149,5 +149,5 @@ export const TwitterIconsBox = styled.div`
   border-radius: 15px;
   cursor: pointer;
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 15px;
 `;

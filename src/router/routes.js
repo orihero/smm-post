@@ -1,13 +1,10 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Redirect,
-  Route,
-  Switch
-} from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
 import Analytics from "../screens/analytics/Analytics";
+import Analyticsdemo from "../screens/analytics/analyticsdemo/Analyticsdemo";
+// import DatanotCollected from "../screens/analytics/datanotcollectedfiles/DatanotCollected";
 import Education from "../screens/education/Education";
 import EducationThree from "../screens/education/EducationThree";
 import EducationTwo from "../screens/education/EducationTwo";
@@ -32,14 +29,18 @@ let routes = [
   { key: "Аналитика", path: "/analytics", component: Analytics },
   { key: "Инструменты", path: "/instruments", component: Instruments },
   { key: "Настройки", path: "/settings", component: Settings },
-  { key: "Мой профиль", path: '/profile', component: Profile },
-  { key: "Мой профиль", path: '/publicationchangepasswort', component: ProfileChangePassword },
-  { key: "Оплатить", path: '/plans', component: PlansScrens },
-  { key: "Обучение", path: '/education', component: Education },
-  { key: "Обучение", path: '/educationtwo', component: EducationTwo },
-  { key: "Обучение", path: '/educationthree', component: EducationThree },
-  { key: "Помощ", path: '/help', component: Help },
-  
+  { key: "Мой профиль", path: "/profile", component: Profile },
+  {
+    key: "Мой профиль",
+    path: "/publicationchangepasswort",
+    component: ProfileChangePassword,
+  },
+  { key: "Оплатить", path: "/plans", component: PlansScrens },
+  { key: "Обучение", path: "/education", component: Education },
+  { key: "Обучение", path: "/educationtwo", component: EducationTwo },
+  { key: "Обучение", path: "/educationthree", component: EducationThree },
+  { key: "Помощ", path: "/help", component: Help },
+  { key: "Аналитика", path: "/analyticsdemo", component: Analyticsdemo },
 ];
 
 function Routes() {

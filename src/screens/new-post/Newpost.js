@@ -4,7 +4,6 @@ import scripka from "../../assets/scripka.svg";
 import smile from "../../assets/smile.svg";
 import RoundButton from "../../components/general/buttons/RoundButton";
 import { COLORS } from "../../constants/colors";
-// import Calendar from "react-calendar";
 
 import {
   EyeIcon,
@@ -16,6 +15,7 @@ import {
 import ModalCalendar from "./calendar-modal/ModalCalendar";
 import Modal from "./newpost-modal/ModalNewpost";
 import {
+  AddPLusBox,
   AttachmantsDiv,
   ButtonsContainer,
   Container,
@@ -183,7 +183,9 @@ export default function Home() {
               <DataDiv>
                 <DataHead>Темы:</DataHead>
                 <TemasButton>Образовательный</TemasButton>
-                <TemasButton primary>Продающий</TemasButton>
+                <TemasButton active onClick={() => setSelectedTab(2)}
+                  active={selectedTab === 2}>Продающий</TemasButton>
+                <TemasButton>+</TemasButton>
               </DataDiv>
               <ButtonsContainer>
                 <RoundButton primary active={true}>

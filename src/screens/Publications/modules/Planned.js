@@ -1,5 +1,6 @@
 import React from "react";
-import { ICONS, Plus } from "../../../constants/icons";
+import { useHistory } from "react-router";
+import { Plus } from "../../../constants/icons";
 import {
   PlusIcon,
   PublicationsBottom,
@@ -9,9 +10,8 @@ import {
   PublicationsContainer,
   PublicationsPost,
   PublicationsSize,
-  PublicationsSizeNo,
+  PublicationsSizeNo
 } from "../Publications.styles";
-import { useHistory } from "react-router";
 
 export default function Planned() {
   let history = useHistory();

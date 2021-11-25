@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Drafts from "./Drafts/Drafts";
 import Planned from "./modules/Planned";
-import Published from "./modules/Published";
 import {
   ParagpaphFirst,
   PublicationsButtons,
@@ -11,8 +10,8 @@ import {
 
 let tabs = [
   { title: "Запланированные", Content: Planned },
-  { title: "Опубликованные", Content: Published },
-  { title: "Избранное", Content: null },
+  { title: "Опубликованные", Content: Drafts },
+  { title: "Избранное", Content: Drafts },
   { title: "Черновики", Content: Drafts },
 ];
 

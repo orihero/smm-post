@@ -10,7 +10,6 @@ export const Section = styled.section`
 
 export const LeftSideContainer = styled.div`
   width: 1080px;
-  /* height: 752px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +63,7 @@ export const RegisterLogin = styled.span`
     color: ${COLORS.loginColors};
     border-bottom: 2px solid ${COLORS.loginColors};
   }
-`;
+`;                                   
 
 export const NetLogin = styled.div`
   display: flex;

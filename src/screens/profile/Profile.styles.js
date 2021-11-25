@@ -16,7 +16,6 @@ export const ProfileInner = styled.div`
 export const TextsDiv = styled.div`
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
   margin-right: 28%;
   cursor: pointer;
   margin-bottom: 20px;

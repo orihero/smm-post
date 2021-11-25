@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Redirect,
-  Route,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
 import Analytics from "../screens/analytics/Analytics";
@@ -19,29 +14,30 @@ import Newpost from "../screens/new-post/Newpost";
 import PlansScrens from "../screens/plans/PlansScrens";
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
-import Drafts from "../screens/Publications/Drafts/Drafts";
+import Drafts from "../screens/Publications/drafts/Drafts";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 import Moredetails from "../screens/what'snew/moredetails/Moredetails";
 import Whatsnew from "../screens/what'snew/Whatsnew";
-import Drafts from "../screens/Publications/drafts/Drafts"
-import PlanModalTwo from "../screens/plans/plans-modal/PlanModalTwo";
 
-let routes = [
+let routes = [ 
   { key: "Новый пост", path: "/newpost", component: Newpost },
   { key: "Публикации", path: "/publications", component: Publications },
   { key: "Публикации", path: "/drafts", component: Drafts },
   { key: "Аналитика", path: "/analytics", component: Analytics },
   { key: "Инструменты", path: "/instruments", component: Instruments },
   { key: "Настройки", path: "/settings", component: Settings },
-  { key: "Мой профиль", path: '/profile', component: Profile },
-  { key: "Мой профиль", path: '/publicationchangepasswort', component: ProfileChangePassword },
-  { key: "Оплатить", path: '/plans', component: PlansScrens },
-  { key: "Обучение", path: '/education', component: Education },
-  { key: "Обучение", path: '/educationtwo', component: EducationTwo },
-  { key: "Обучение", path: '/educationthree', component: EducationThree },
-  { key: "Помощ", path: '/help', component: Help },
-  
+  { key: "Мой профиль", path: "/profile", component: Profile },
+  {
+    key: "Мой профиль",
+    path: "/publicationchangepasswort",
+    component: ProfileChangePassword,
+  },
+  { key: "Оплатить", path: "/plans", component: PlansScrens },
+  { key: "Обучение", path: "/education", component: Education },
+  { key: "Обучение", path: "/educationtwo", component: EducationTwo },
+  { key: "Обучение", path: "/educationthree", component: EducationThree },
+  { key: "Помощ", path: "/help", component: Help },
 ];
 
 function Routes() {

@@ -59,6 +59,7 @@ export const TextsDiv = styled.div`
 
 export const ParagpaphFirst = styled.p`
   padding-bottom: 6px;
+  margin-right: 40px;
   font-size: 17px;
   font-weight: 400;
   &:hover {

@@ -13,13 +13,18 @@ export const InstrumentsHeaderContainer = styled.div`
 
 export const InstrumentsInner = styled.div`
   margin-bottom: 30px;
+display: flex;
 `;
 
 export const InstrumentsContainer = styled.div`
   display: flex;
 `;
 
-export const InstrumentsText = styled.div``;
+export const InstrumentsText = styled.div`
+align-items: center;
+display: flex;
+margin-left: 5px;
+`;
 
 export const InstrumentsBox = styled.div`
   border-radius: 7px;

@@ -19,6 +19,7 @@ import {
   InstrumentsBoxImag,
 } from "./Instruments.styles";
 import Modal from "./Modal";
+import { EducationIcon } from "../../constants/icons";
 
 export default function Instruments() {
   const [openModal, setOpenModal] = useState(false);
@@ -28,8 +29,8 @@ export default function Instruments() {
       <InstrumentsHeader>
         <InstrumentsHeaderContainer>
           <InstrumentsInner>
-            <InstrumentsText>
-              Используйте Модуль А по максимуму с полезными инструментами, чтобы{" "}
+            
+            <EducationIcon /> <InstrumentsText> Используйте Модуль А по максимуму с полезными инструментами, чтобы{" "}
               <br /> экономить время при работе с соцсетями и успевать больше
             </InstrumentsText>
           </InstrumentsInner>

@@ -72,6 +72,7 @@ export const PublicationsSizeNo = styled.div`
   border-radius: 7px;
   margin-left: 14px;
   background-color: ${COLORS.white};
+  box-shadow: 0px 5px 15px -2px rgba(2, 2, 2, 0.2);
 `;
 
 export const PlusIcon = styled.div`
@@ -87,6 +88,11 @@ export const PublicationsSize = styled.div`
   flex-direction: column;
   background-color: #fff;
   border-radius: 7px;
+  box-shadow: 0px 5px 15px -2px rgba(2, 2, 2, 0.2);
+  &:hover{
+    box-shadow: 0px 5px 15px 2px rgba(242, 30, 58, 0.2);
+
+  }
 `;
 
 export const PublicationsPost = styled.h1`

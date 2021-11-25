@@ -24,23 +24,18 @@ function Sidebar() {
       history.push(link);
     };
   };
-  const [menuVisible, setMenuVisible] = useState(false);
-  let toggleMenu = () => {
-    setMenuVisible((e) => !e);
-  };
   return (
     <>
       <Container>
         <LeftSide>   
           <EmailImg src={IMAGES.sidebar.emailimg} />
-          <ButtonsContainer active={menuVisible} onClick={toggleMenu}>
+          <ButtonsContainer>
             <LeftSideButton>
               <ButtonParagpraph>Первый проект</ButtonParagpraph>
               <VectorImg src={IMAGES.sidebar.vektor} />
             </LeftSideButton>
             <RightSideButton>+</RightSideButton>
           </ButtonsContainer> 
-          {menuVisible && (
             <LeftSideBox>
               {MENUS.map(({ link, text, image: Icon }, i) => {
                 return (
@@ -53,7 +48,6 @@ function Sidebar() {
                 );
               })}
             </LeftSideBox>
-          )}
         </LeftSide>
       </Container>
     </>

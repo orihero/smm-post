@@ -25,8 +25,8 @@ import ModalhelpLike from "../assets/ModalhelpLike.png";
 import Modalhelpsms from "../assets/Modalhelpsms.png";
 import ModalhelpOperator from "../assets/ModalhelOperator.png";
 import Hand from "../assets/Hand_image.png"
-import ProfileImage from '../assets/ProfileImage.png'; 
-import Iworkmyself from  "../assets/I-work-myself.png";
+import ProfileImage from '../assets/ProfileImage.png';
+import Iworkmyself from "../assets/I-work-myself.png";
 import Team from "../assets/Team.png"
 import Whatsnew from "../assets/Whatsnew.png"
 import Whatsnewimage from "../assets/Whatsnewimage.png"
@@ -34,8 +34,7 @@ import WhatsnewMacbook from "../assets/whatsnewMacbook.png"
 import DraftsLogo from "../assets/DraftsLogo.png"
 import Click from "../assets/click.png"
 import Payme from '../assets/pyme.png'
-
- 
+import SandTime from '../assets/SandTimeimage.png'
 
 export let IMAGES = {
   loginscreens: {
@@ -79,26 +78,27 @@ export let IMAGES = {
     ModalhelpOperator,
     Modalhelpsms,
   },
-  Drafts:{
+  Drafts: {
     DraftsLogo
   },
-  profile:{
+  profile: {
     Hand,
     ProfileImage
   },
-  education:{
+  education: {
     Iworkmyself,
     Team,
   },
-  Whatsnew:{
+  Whatsnew: {
     Whatsnew,
     Whatsnewimage,
     WhatsnewMacbook
   },
-
-  plans:{
+  plans: {
     Click,
     Payme
   },
-
+  datanotcollected: {
+    SandTime,
+  }
 };

@@ -234,7 +234,23 @@ export const TemasButton = styled.div`
   margin-left: 15px;
   margin-top: 15px;
   cursor: pointer;
+  opacity: 0.6;
+  ${(props) =>
+    props.active &&
+    `{
+       color: ${COLORS.primaryPink};
+       border: 1px solid ${COLORS.primaryPink};
+       opacity: none;
+    }`}
 `;
+
+export const AddPLusBox = styled.div`
+  border-radius: 25px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 export const ButtonsContainer = styled.div`
   flex: 1;
@@ -335,7 +351,7 @@ export const NewpostFacebookIcon = styled.div`
   padding: 2px 7px;
   margin: -8px -2px;
   cursor: pointer;
-`; 
+`;
 
 export const NewpostVkontakteIcon = styled.div`
   width: 20px;

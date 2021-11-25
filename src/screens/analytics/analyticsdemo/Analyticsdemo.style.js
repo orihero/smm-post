@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import { COLORS } from "../../constants/colors";
+import { COLORS } from "../../../constants/colors";
 
 export const BarContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px 25px;
   background-color: ${COLORS.backgroundColor};
+`;
+
+export const HeadsBox = styled.div`
+  padding: 15px 10px;
+  display: flex;
 `;
 
 export const AnalyticTextContainer = styled.p`

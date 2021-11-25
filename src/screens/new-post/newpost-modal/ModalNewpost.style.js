@@ -75,7 +75,13 @@ export const ModalBoxContainer = styled.div`
   border-radius: 8px;
   background-color: ${COLORS.backgroundColor};
   border: 1px solid ${COLORS.borderGray};
+  ${(props) =>
+    props.active &&
+    `{
+    border: 3px solid ${COLORS.primaryPink};
+  }`}
   &:hover{
-    border: 2px solid ${COLORS.primaryPink};
+    /* border-color: solid ${COLORS.primaryPink}; */
+    text-decoration: underline;
   } 
 `

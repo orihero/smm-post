@@ -3,6 +3,8 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
 import Analytics from "../screens/analytics/Analytics";
+import Analyticsdemo from "../screens/analytics/analyticsdemo/Analyticsdemo";
+// import DatanotCollected from "../screens/analytics/datanotcollectedfiles/DatanotCollected";
 import Education from "../screens/education/Education";
 import EducationThree from "../screens/education/EducationThree";
 import EducationTwo from "../screens/education/EducationTwo";
@@ -38,6 +40,10 @@ let routes = [
   { key: "Обучение", path: "/educationtwo", component: EducationTwo },
   { key: "Обучение", path: "/educationthree", component: EducationThree },
   { key: "Помощ", path: "/help", component: Help },
+<<<<<<< HEAD
+=======
+  { key: "Аналитика", path: "/analyticsdemo", component: Analyticsdemo },
+>>>>>>> 4d3bc7c7b18a4ae25ae7b67d290978f0b7308d60
 ];
 
 function Routes() {

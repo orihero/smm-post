@@ -14,13 +14,12 @@ export const ProfileInner = styled.div`
 `;
 
 export const TextsDiv = styled.div`
+width: 1200px;
   display: flex;
   align-items: center;
   margin-right: 28%;
-  cursor: pointer;
   margin-bottom: 20px;
   padding: 5px 25px;
-  /* background-color: ${COLORS.backgroundColor}; */
 `;
 
 export const ParagpaphFirst = styled.p`

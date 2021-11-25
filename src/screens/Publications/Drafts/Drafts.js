@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
+import { IMAGES } from "../../../constants/images";
 import {
   DraftsButtonContainer,
-  DraftsHeader,
   DraftsContainer,
-  DraftsBox,
+  DraftsHeader,
   DraftsInner,
   DraftsLogo,
   DraftsText,
   DraftsTextOne,
 } from "./Drafts.styles";
-import { IMAGES } from "../../../constants/images";
-import PrimaryButton from "../../../components/general/buttons/RoundButton";
 
 export default function Drafts() {
   let history = useHistory();
@@ -33,7 +31,7 @@ export default function Drafts() {
           <DraftsContainer onClick={onNewpost} primary active={true}>
             Создать
           </DraftsContainer>
-          <DraftsContainer  onClick={onNewpost} primary active={true}>
+          <DraftsContainer onClick={onNewpost} primary active={true}>
             Создать
           </DraftsContainer>
         </DraftsButtonContainer>

@@ -67,7 +67,7 @@ function Routes() {
               display: "flex",
               flex: 1,
               flexDirection: "column",
-              marginLeft: "212px",
+              marginLeft: "212px",  
             }}
           >
             <NavBar routes={routes} />

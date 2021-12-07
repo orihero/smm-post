@@ -25,6 +25,7 @@ export const NextMothBox = styled.div`
   cursor: pointer;
   background-color: ${COLORS.white};
 `;
+
 export const BackMonthBox = styled.div`
   padding: 10px 12px;
   display: flex;
@@ -67,13 +68,15 @@ export const DateBoxs = styled(DefaultText)`
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 10px;
   ${(props) =>
-        props.active &&
-        `{
+    props.active &&
+    `{
       background-color: ${COLORS.primaryPink};
       color: ${COLORS.white};
-      border-radius: 10px;
-      padding: 8px 10px; 
+      // padding: 8px 10px; 
   }`}
 `;
 
@@ -83,21 +86,21 @@ export const DateSpan = styled.div`
   color: ${COLORS.fontColors};
   opacity: 0.7;
   cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
   ${(props) =>
-        props.active &&
-        `{
+    props.active &&
+    `{
       background-color: ${COLORS.primaryPink};
       color: ${COLORS.white};
-      border-radius: 10px;
-      padding: 8px 10px; 
   }`}
 `;
 
 export const DaysBox = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const NowBox = styled(DefaultText)`
   font-size: 18px;
@@ -106,9 +109,9 @@ export const NowBox = styled(DefaultText)`
   margin-bottom: 15px;
   cursor: pointer;
   ${(props) =>
-        props.active &&
-        `{
-            opacity: 0.7;
+    props.active &&
+    `{
+       opacity: 0.7;
   }`}
 `;
 
@@ -120,9 +123,9 @@ export const TomorrowBox = styled(DefaultText)`
   margin-left: 15px;
   cursor: pointer;
   ${(props) =>
-        props.active &&
-        `{
-            opacity: 0.7;
+    props.active &&
+    `{
+      opacity: 0.7;
   }`}
 `;
 

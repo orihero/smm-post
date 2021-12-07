@@ -12,14 +12,16 @@ import {
   OptionsHeads,
 } from "./Analytics.syles";
 import DatanotCollected from "./datanotcollectedfiles/DatanotCollected";
+import Analyticsdemo from './analyticsdemo/Analyticsdemo'
 
-let tabs = [
-  { title: "Вовлечённость", Content: DatanotCollected },
-  { title: "Лучшие посты", Content: DatanotCollected },
-  { title: "Лучшее время", Content: DatanotCollected },
-];
 
 function Analytics() {
+
+  let [tabs, setTabs] = useState([
+    { title: "Вовлечённость", Content: DatanotCollected },
+    { title: "Лучшие посты", Content: DatanotCollected },
+    { title: "Лучшее время", Content: DatanotCollected },
+  ]);
   const [activeTab, setActiveTab] = useState(0);
   let Content = tabs[activeTab].Content;
   const [menuVisible, setMenuVisible] = useState(false);
@@ -27,8 +29,16 @@ function Analytics() {
     setMenuVisible((e) => !e);
   };
   let history = useHistory();
-  let onBarChart = () => {
-    history.push("/analyticsdemo")
+  let onBarChart = (i) => {
+    let newTabs = tabs.map((tab, index) => {
+      if (index == i) {
+        return { ...tab, Content: Analyticsdemo }
+      }
+      return tab
+    })
+
+    setTabs(newTabs)
+
   }
   return (
     <>
@@ -50,7 +60,7 @@ function Analytics() {
               <ArrowDownIcon style={{ marginLeft: "15px", color: "#102046" }} />
               {menuVisible && (
                 <OptionBox>
-                  <OptionsHeads onClick={onBarChart}>Последние</OptionsHeads>
+                  <OptionsHeads onClick={() => onBarChart(0)}>Последние</OptionsHeads>
                   <OptionsHeads>За всё время</OptionsHeads>
                 </OptionBox>
               )}

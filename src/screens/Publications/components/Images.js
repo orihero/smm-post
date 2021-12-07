@@ -1,5 +1,5 @@
 import React from "react";
-import {ImagesContainer, Imagesimg} from "./Images.styles";
+import { ImagesContainer, Imagesimg } from "./Images.styles";
 
 export default function Images({ images = [] }) {
   return (

@@ -6,7 +6,7 @@ export default function RoundButton({
   primary = false,
   active = false,
   children,
-  onClick = () => {},
+  onClick = () => { },
 }) {
   return (
     <Container active={active} primary={primary} onClick={onClick}>

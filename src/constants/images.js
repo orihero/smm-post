@@ -35,6 +35,19 @@ import DraftsLogo from "../assets/DraftsLogo.png"
 import Click from "../assets/click.png"
 import Payme from '../assets/pyme.png'
 import SandTime from '../assets/SandTimeimage.png'
+import laptop from '../assets/Laptopimage.png'
+import laptopTable from '../assets/Laptoptableimage.png'
+import cameraImage from '../assets/Cameraimage.png'
+import cupImage from '../assets/Cupimage.png'
+import tableLaptop from '../assets/TableLaptopimage.png'
+import picnic from '../assets/Picnikimage.png'
+import instasposts from '../assets/InstasPostImage.png'
+import massage from '../assets/MassageImage.png'
+import closemodalimg from '../assets/CloseModalImage.png'
+import handphoneimage from '../assets/HandPhoneImg.png'
+import handandmassageimg from '../assets/HandAndMassageImg.png'
+import headphoneimg from '../assets/HeadPhoneImg.png'
+import likehandimg from '../assets/LikeHeadImg.png'
 
 export let IMAGES = {
   loginscreens: {
@@ -100,5 +113,24 @@ export let IMAGES = {
   },
   datanotcollected: {
     SandTime,
+  },
+  planned: {
+    laptop,
+    laptopTable,
+    cameraImage,
+    cupImage,
+    tableLaptop,
+    picnic
+  },
+  newpost: {
+    instasposts,
+    massage,
+    closemodalimg
+  },
+  turnon: {
+    handphoneimage,
+    handandmassageimg,
+    headphoneimg,
+    likehandimg
   }
 };

@@ -20,8 +20,8 @@ export default function PlanCard({
   price = "13 $",
   options = ["1 проект", "1 рабочее место", "5 страниц"],
   bonus,
-  onSelect = () => {},
-  onDetails = () => {},
+  onSelect = () => { },
+  onDetails = () => { },
 }) {
   return (
     <>
@@ -52,7 +52,7 @@ export default function PlanCard({
           </CardContent>
           <PrimaryButton onClick={onDetails}>Выбрать</PrimaryButton>
         </PlansScrensDiv>
-      </PlansScrensContainerOne>
+      </PlansScrensContainerOne>          
     </>
   );
 }

@@ -11,6 +11,7 @@ export const ModalBackgrundHelp = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding-top: 20px;
+  /* background-color: pink; */
 `;
 
 export const ModalContainerHelp = styled.div`
@@ -34,10 +35,8 @@ export const ModalBoxHelp = styled.div`
 `;
 
 export const ModalExitHelp = styled.div`
-  font-size: 15px;
-  height: 30px;
-  width: 40px;
-  background-color: #f7fafc;
+  padding: 10px 10px;
+  background-color: ${COLORS.backgroundColor};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,13 +74,7 @@ export const ModalBoxContainer = styled.div`
   border-radius: 8px;
   background-color: ${COLORS.backgroundColor};
   border: 1px solid ${COLORS.borderGray};
-  ${(props) =>
-    props.active &&
-    `{
-    border: 3px solid ${COLORS.primaryPink};
-  }`}
   &:hover{
-    /* border-color: solid ${COLORS.primaryPink}; */
-    text-decoration: underline;
+    border: 1px solid ${COLORS.primaryPink};
   } 
 `

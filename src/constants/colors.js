@@ -1,4 +1,3 @@
-
 export let COLORS = {
     primaryPink: "#E8427E",
     white: "#fff",
@@ -17,5 +16,7 @@ export let COLORS = {
     instagramBackgroundColor: "#FFDD55 7%, #FF543E 50.26%, #C837AB",
     exitColor: "#F7FAFC",
     blueColor: "#007FFF",
+    sellingbutton: "#7770F5",
+    instaborderColor: 'rgba(16, 32, 70, 0.15)'
 }
 

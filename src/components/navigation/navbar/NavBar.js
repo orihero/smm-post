@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
+import { COLORS } from "../../../constants/colors";
 import {
   ChangeAccountIcon,
   ExitIcon,
@@ -19,32 +20,41 @@ import {
   Vector,
   OptionsContainer,
   Option,
+  OptionHovered,
 } from ".././navbar/Navbar.style";
 
 export default function NavBar({ routes = [] }) {
   let location = useLocation();
+  let hoveredStyle = {
+    color: COLORS.white,
+    backgroundColor: COLORS.primaryPink,
+    borderRadius: "15px",
+  };
   let route = routes.find((e) => e.path === location.pathname);
+
   const [menuVisible, setMenuVisible] = useState(false);
   let toggleMenu = () => {
     setMenuVisible((e) => !e);
   };
   let [selectedTab, setSelectedTab] = useState();
-  const navigation = useHistory();     
+  let [hoveredItem, setHoveredItem] = useState({});
+
+  const navigation = useHistory();
   let onProfileClick = () => {
-    navigation.push('/profile')
-  }
+    navigation.push("/profile");
+  };
   let onPlansClick = () => {
-    navigation.push("/plans")
-  }
+    navigation.push("/plans");
+  };
   let onHelpClick = () => {
-    navigation.push("/help")
-  }
+    navigation.push("/help");
+  };
   let onEducationClick = () => {
-    navigation.push("/education")
-  }
+    navigation.push("/education");
+  };
   let onExitClick = () => {
-    navigation.push("/login")
-  }
+    navigation.push("/login");
+  };
   return (
     <>
       <NavbarDiv>
@@ -57,29 +67,77 @@ export default function NavBar({ routes = [] }) {
           </ArrowDownButton>
           {menuVisible && (
             <OptionsContainer>
-              <Option active onClick={() => setSelectedTab(0)} active={selectedTab === 0} onClick={onProfileClick}>
-                <UserProfileIcon style={{
-                   marginRight: "15px"
-                    }} /> Мой профиль
+              <Option
+                onClick={onProfileClick}
+                style={hoveredItem.d ? hoveredStyle : null}
+                onMouseMove={() => setHoveredItem({ d: true })}
+                onMouseLeave={() => setHoveredItem({ d: false })}
+              >
+                <UserProfileIcon
+                  style={{ marginRight: "15px", }}
+                  color={hoveredItem.d ? '#fff' : '#000'}
+                />
+                Мой профиль
               </Option>
-              <Option onClick={onPlansClick}>
-                <NoteBookICon style={{ marginRight: "15px" }} />
+              <Option
+                onClick={onPlansClick}
+                style={hoveredItem.a ? hoveredStyle : null}
+                onMouseMove={() => setHoveredItem({ a: true })}
+                onMouseLeave={() => setHoveredItem({ a: false })}
+              >
+                <NoteBookICon
+                  style={{ marginRight: "15px" }}
+                  color={hoveredItem.a ? "#fff" : "#000"}
+                />
                 Оплатить
               </Option>
-              <Option onClick={onHelpClick}>
-                <HelpIcon style={{ marginRight: "15px" }} /> Помощь
+              <Option
+                onClick={onHelpClick}
+                style={hoveredItem.b ? hoveredStyle : null}
+                onMouseMove={() => setHoveredItem({ b: true })}
+                onMouseLeave={() => setHoveredItem({ b: false })}
+              >
+                <HelpIcon
+                  style={{ marginRight: "15px" }}
+                  color={hoveredItem.b ? "#fff" : "#000"}
+                />
+                Помощь
               </Option>
-              <Option onClick={onEducationClick}>
-                <StudyIcon style={{ marginRight: "15px" }} />
+              <Option
+                onClick={onEducationClick}
+                style={hoveredItem.c ? hoveredStyle : null}
+                onMouseMove={() => setHoveredItem({ c: true })}
+                onMouseLeave={() => setHoveredItem({ c: false })}
+              >
+                <StudyIcon
+                  style={{ marginRight: "15px" }}
+                  color={hoveredItem.c ? "#fff" : "#000"}
+                />
                 Обучение
               </Option>
-              <Option onClick={onExitClick} >
-                <ExitIcon style={{ marginRight: "15px" }} />
+              <Option
+                onClick={onExitClick}
+                style={hoveredItem.o ? hoveredStyle : null}
+                onMouseMove={() => setHoveredItem({ o: true })}
+                onMouseLeave={() => setHoveredItem({ o: false })}
+              >
+                <ExitIcon
+                  style={{ marginRight: "15px" }}
+                  color={hoveredItem.o ? '#fff' : '#000'}
+                />
                 Выйти
               </Option>
-              <Option onClick={onExitClick}>
-                <ChangeAccountIcon style={{ marginRight: "15px" }} /> Сменить
-                аккаунт
+              <Option
+                onClick={onExitClick}
+                style={hoveredItem.p ? hoveredStyle : null}
+                onMouseMove={() => setHoveredItem({ p: true })}
+                onMouseLeave={() => setHoveredItem({ p: false })}
+              >
+                <ChangeAccountIcon
+                  style={{ marginRight: "15px" }}
+                  color={hoveredItem.p ? '#fff' : '#000'}
+                />
+                Сменить аккаунт
               </Option>
             </OptionsContainer>
           )}

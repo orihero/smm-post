@@ -13,8 +13,8 @@ import {
 
 let tabs = [
   { title: "Вовлечённость", Content: "" },
-  { title: "Лучшие посты", Content: DatanotCollected },
-  { title: "Лучшие время", Content: DatanotCollected },
+  { title: "Лучшие посты", Content: "" },
+  { title: "Лучшие время", Content: "" },
 ]
 
 function Analyticsdemo() {
@@ -30,42 +30,11 @@ function Analyticsdemo() {
   }
   return (
     <>
-      <BarContainer>
-        <TextsDiv>
-          {tabs.map((e, i) => {
-            return (
-              <AnalyticTextContainer
-                active={i === activeTab}
-                onClick={() => setActiveTab(i)}
-              >
-                {e.title}
-              </AnalyticTextContainer>
-            );
-          })}
-          <DateButtonContainer>
-            <DateButtonBox active={menuVisible} onClick={toggleMenu}>
-              Последние
-              <ArrowDownIcon style={{ marginLeft: "15px", color: "#102046" }} />
-              {menuVisible && (
-                <OptionBox>
-                  <OptionsHeads onClick={onBarChart}>Последние</OptionsHeads>
-                  <OptionsHeads>За всё время</OptionsHeads>
-                </OptionBox>
-              )}
-            </DateButtonBox>
-            <ExportBox>
-              <ExportIcon style={{ marginRight: "10px", color: "#102046" }} />
-              Экспорт
-            </ExportBox>
-          </DateButtonContainer>
-        </TextsDiv>
-        {Content && <Content />}
-        <AnalyticsParagraph>
-          Взаимодействие аудитории с вашими постами. <br /> Данные обновляются
-          несколько раз в день.
-        </AnalyticsParagraph>
-        <BarChart />
-      </BarContainer>
+      <AnalyticsParagraph>
+        Взаимодействие аудитории с вашими постами. <br /> Данные обновляются
+        несколько раз в день.
+      </AnalyticsParagraph>
+      <BarChart />
     </>
   );
 }

@@ -6,24 +6,37 @@ import RoundButton from "../../components/general/buttons/RoundButton";
 import { COLORS } from "../../constants/colors";
 
 import {
+  CommentsIcon,
   EyeIcon,
   NewpostFacebook,
   NewpostInstagram,
   NewpostTwitter,
   NewpostVkontakte,
+  NiceIcon,
+  PreviewInstaIcon,
+  SendsIcon,
 } from "../../constants/icons";
+import { IMAGES } from "../../constants/images";
 import ModalCalendar from "./calendar-modal/ModalCalendar";
 import Modal from "./newpost-modal/ModalNewpost";
 import {
   AddPLusBox,
   AttachmantsDiv,
   ButtonsContainer,
+  CommentsContainer,
+  CommentsIconContainer,
   Container,
   ContainerBox,
   DataButton,
   DataDiv,
   DataHead,
   DataImg,
+  DiscussionsBox,
+  DiscussionsHead,
+  InstaBox,
+  InstaPageIn,
+  InstaPostsImageBox,
+  MassageImageBox,
   MBContainer,
   MBPlusContainer,
   MBPlusParagraph,
@@ -32,6 +45,7 @@ import {
   NewpostInstagramIcon,
   NewpostTwitterIcon,
   NewpostVkontakteIcon,
+  NiceIconContainer,
   OptionsDiv,
   PostContainer,
   PostDivs,
@@ -43,14 +57,22 @@ import {
   PreviewContainerHeaderText,
   PreviewContainerOne,
   PreviewHead,
+  PreviewInstaInHead,
+  PreviewInstaInHeadSpan,
+  PreviewInstaPage,
   ScripcsIcon,
+  SendIconContainer,
   SmileIcon,
   TemasButton,
   Textarea,
   TextareaContainer,
+  TextBox,
   TipDiv,
   TipHead,
+  TurnOnButton,
 } from "./Newpost.styles";
+import TurnOn from "./turnon-modal/TurnOn";
+import { ModalBackgrundHelp } from "./turnon-modal/TurnOn.style";
 
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
 
@@ -59,6 +81,8 @@ export default function Home() {
   const [openModalNewpost, setOpenModalNewpost] = useState(false);
   let [selectedTab, setSelectedTab] = useState();
   const [openModalCalendar, setOpanModalCalendar] = useState(false);
+  let [isSelectedTab, setIsSelectedTab] = useState();
+  const [openModalTurnOn, setOpenModalTurnOn] = useState(false);
   return (
     <>
       <Container>
@@ -66,7 +90,11 @@ export default function Home() {
           <PostDivs>
             <PostContainer>
               <NetsContainer>
-                <MBContainer>
+                <MBContainer
+                  active
+                  onClick={() => setSelectedTab(20)}
+                  active={selectedTab === 20}
+                >
                   MB
                   <NewpostFacebookIcon>
                     <NewpostFacebook
@@ -80,7 +108,11 @@ export default function Home() {
                     />
                   </NewpostFacebookIcon>
                 </MBContainer>
-                <MBContainer>
+                <MBContainer
+                  active
+                  onClick={() => setSelectedTab(21)}
+                  active={selectedTab === 21}
+                >
                   MB
                   <NewpostVkontakteIcon>
                     <NewpostVkontakte
@@ -94,7 +126,11 @@ export default function Home() {
                     />
                   </NewpostVkontakteIcon>
                 </MBContainer>
-                <MBContainer>
+                <MBContainer
+                  active
+                  onClick={() => setSelectedTab(22)}
+                  active={selectedTab === 22}
+                >
                   MB
                   <NewpostTwitterIcon>
                     <NewpostTwitter
@@ -108,7 +144,11 @@ export default function Home() {
                     />
                   </NewpostTwitterIcon>
                 </MBContainer>
-                <MBContainer>
+                <MBContainer
+                  active
+                  onClick={() => setSelectedTab(23)}
+                  active={selectedTab === 23}
+                >
                   MB
                   <NewpostInstagramIcon>
                     <NewpostInstagram
@@ -133,10 +173,30 @@ export default function Home() {
               <TipDiv>
                 <OptionsDiv>
                   <TipHead>Тип:</TipHead>
-                  <RoundButton active text="Пост" />
-                  <RoundButton text="Сторис" />
-                  <RoundButton text="IGTV" />
-                  <RoundButton text="Карусель" />
+                  <RoundButton
+                    active
+                    onClick={() => setSelectedTab(11)}
+                    active={selectedTab === 11}
+                    text="Пост"
+                  />
+                  <RoundButton
+                    active
+                    onClick={() => setSelectedTab(10)}
+                    active={selectedTab === 10}
+                    text="Сторис"
+                  />
+                  <RoundButton
+                    active
+                    onClick={() => setSelectedTab(12)}
+                    active={selectedTab === 12}
+                    text="IGTV"
+                  />
+                  <RoundButton
+                    active
+                    onClick={() => setSelectedTab(13)}
+                    active={selectedTab === 13}
+                    text="Карусель"
+                  />
                 </OptionsDiv>
                 <PreviewButton
                   active={previewing}
@@ -182,16 +242,37 @@ export default function Home() {
               </DataDiv>
               <DataDiv>
                 <DataHead>Темы:</DataHead>
-                <TemasButton>Образовательный</TemasButton>
-                <TemasButton active onClick={() => setSelectedTab(2)}
-                  active={selectedTab === 2}>Продающий</TemasButton>
+                <TemasButton
+                  active
+                  onClick={() => setIsSelectedTab(0)}
+                  active={isSelectedTab === 0}
+                >Образовательный</TemasButton>
+                <TemasButton
+                  active
+                  onClick={() => setIsSelectedTab(1)}
+                  active={isSelectedTab === 1}
+                >
+                  Продающий
+                </TemasButton>
                 <TemasButton>+</TemasButton>
               </DataDiv>
               <ButtonsContainer>
-                <RoundButton primary active={true}>
+                <RoundButton
+                  active={true}
+                  active
+                  onClick={() => setSelectedTab(15)}
+                  active={selectedTab === 15}
+                >
                   В черновики
                 </RoundButton>
-                <RoundButton active={true}>Опубликовать сейчас</RoundButton>
+                <RoundButton
+                  active={true}
+                  active
+                  onClick={() => setSelectedTab(14)}
+                  active={selectedTab === 14}
+                >
+                  Опубликовать сейчас
+                </RoundButton>
               </ButtonsContainer>
             </PostContainer>
             <Preview>
@@ -214,13 +295,57 @@ export default function Home() {
                     </PreviewContainerHeaderText>
                   </PreviewContainerHeader>
                   <PreviewContainerHeaderIcon>
-                    <PreviewContainerHeaderIconOne>
-                      <EyeIcon />
-                    </PreviewContainerHeaderIconOne>
-                    Выберите страницы в Инстаграме, <br />
-                    чтобы посмотреть, как будет выглядеть <br />
-                    опубликованный пост.
-                    <br />
+                    {selectedTab === 0 ? (
+                      <PreviewInstaPage>
+                        <InstaPageIn>
+                          <InstaBox>
+                            <PreviewInstaIcon />
+                          </InstaBox>
+                          <TextBox>
+                            <PreviewInstaInHead>
+                              Имя аккаунта
+                            </PreviewInstaInHead>
+                            <PreviewInstaInHeadSpan>
+                              Только что
+                            </PreviewInstaInHeadSpan>
+                          </TextBox>
+                        </InstaPageIn>
+                        <InstaPostsImageBox src={IMAGES.newpost.instasposts} />
+                        <CommentsContainer>
+                          <NiceIconContainer>
+                            <NiceIcon
+                              style={{
+                                marginRight: 10,
+                                marginBottom: 2,
+                                marginLeft: 15,
+                              }}
+                            />
+                            Нравится
+                          </NiceIconContainer>
+                          <SendIconContainer>
+                            <SendsIcon style={{ marginRight: 10 }} />
+                            Поделиться
+                          </SendIconContainer>
+                          <CommentsIconContainer>
+                            <CommentsIcon
+                              style={{ marginRight: 10, marginTop: 2 }}
+                            />
+                            Комментировать
+                          </CommentsIconContainer>
+                        </CommentsContainer>
+                      </PreviewInstaPage>
+                    ) : selectedTab === 1 ? (
+                      <DiscussionsBox>
+                        <MassageImageBox src={IMAGES.newpost.massage} />
+                        <DiscussionsHead>
+                          Включите «Обсуждение постов» и пригласите <br /> коллег,
+                          чтобы вместе работать над публикацией
+                        </DiscussionsHead>
+                        <TurnOnButton onClick={() => {
+                          setOpenModalTurnOn(true);
+                        }} >Включить</TurnOnButton>
+                      </DiscussionsBox>
+                    ) : null}
                   </PreviewContainerHeaderIcon>
                 </PreviewContainerOne>
               ) : null}
@@ -228,8 +353,15 @@ export default function Home() {
           </PostDivs>
         </ContainerBox>
       </Container>
-      {openModalCalendar && <ModalCalendar claseModal={setOpanModalCalendar} openModal={openModalCalendar} />}
+      {openModalCalendar && (
+        <ModalCalendar
+          claseModal={setOpanModalCalendar}
+          openModal={openModalCalendar}
+          openModalTurnOn={openModalTurnOn}
+        />
+      )}
       {openModalNewpost && <Modal claseModal={setOpenModalNewpost} />}
+      {openModalTurnOn && <TurnOn closeModal={setOpenModalTurnOn} />}
     </>
   );
 }

@@ -31,20 +31,20 @@ export default function EducationTwo() {
           <EducationTextTwoContainer>
             <EducationIcon />
             <EducationTextTwo>
-              Шаг 2. Подключите страницы, чтобы начать работу{" "}
+              Шаг 2. Подключите страницы, чтобы начать работу
             </EducationTextTwo>
           </EducationTextTwoContainer>
           <EducationTwoContainer>
             <EducationTwoTextContainer>
               <EducationIconmark />
               <EducationTwoText>
-                Bexzod, подключите страницы, чтобы планировать публикации,{" "}
+                Bexzod, подключите страницы, чтобы планировать публикации,
                 <br />
                 пользоваться аналитикой и всеми возможностями Амплифр
               </EducationTwoText>
             </EducationTwoTextContainer>
             <EducationTwoTextTwo>
-              Для подключения нужно быть администратором страницы и предоставить{" "}
+              Для подключения нужно быть администратором страницы и предоставить
               <br /> все доступы, которые запрашивает Модуль А, чтобы всё
               работало корректно. Подключить страницы можно позже в настройках.
             </EducationTwoTextTwo>
@@ -116,22 +116,22 @@ export default function EducationTwo() {
             </EducationBox>
 
             <EducationBoxOne>
-              <EducationIconmark />{" "}
+              <EducationIconmark />
               <EducationTwoTextOne>
                 Амплифер не хранит ваши данные и использует <br /> официальные
                 API соцсетей. Вы можете отключить <br /> страницы и отозвать
-                доступы{" "}
-              </EducationTwoTextOne>{" "}
+                доступы
+              </EducationTwoTextOne>
             </EducationBoxOne>
           </EducationTwoContainer>
           <ButtonsContainerOne>
             <EducationTwoBtn onClick={onBack}>Назад</EducationTwoBtn>
             <RoundButton onClick={onNext} primary active={true}>
-              Слудуюший шаг{" "}
+              Слудуюший шаг
             </RoundButton>
           </ButtonsContainerOne>
         </EducationTwoInner>
-        <EducationcComponents/>
+        <EducationcComponents />
       </EducationTwoHeader>
     </>
   );

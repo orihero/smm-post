@@ -9,11 +9,12 @@ export const CardContent = styled.div`
 `;
 
 export const PlansScrensContainerOne = styled.div`
-  background-color: #fff;
+  background-color: ${COLORS.white};
   margin-left: 15px;
   margin-top: 10px;
   display: flex;
-  border-radius: 10px;
+  border-radius: 12px;
+  border: none;
   color: ${COLORS.fontColors};
 `;
 
@@ -21,9 +22,12 @@ export const PlansScrensDiv = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  border: solid 1px gray;
+  outline: 1px solid grey;
   width: 290px;
   height: 800px;
+  &:hover {
+    outline: 3px solid ${COLORS.primaryPink}
+  }
 `;
 
 export const PlansScrensTextOne = styled(DefaultText)`
@@ -71,6 +75,9 @@ export const PlansScrensTextSix = styled(DefaultText)`
   font-size: 19px;
   margin-left: 40px;
   cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const PlansScrensTextEyt = styled(DefaultText)`

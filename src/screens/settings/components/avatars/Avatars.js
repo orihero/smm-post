@@ -1,5 +1,5 @@
 import React from 'react'
-import { AvatarImg, AvatarsContainer, AvatarSecondImg } from './Avatars.styles'
+import { AvatarImg, AvatarsContainer } from './Avatars.styles'
 
 function Avatars({ images = [] }) {
     return (

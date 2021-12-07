@@ -30,6 +30,7 @@ export const UserDiv = styled.div`
 export const UserParagraph = styled.p`
   font-weight: 500;
   margin-right: 10px;
+  margin-top: 15px;
   color: ${COLORS.primaryPink};
   cursor: pointer;
 `;
@@ -55,6 +56,7 @@ export const ArrowDownButton = styled.button`
 export const Vector = styled.img`
   width: 16px;
   cursor: pointer;
+  margin-left: 10px;
 `;
 
 export const OptionsContainer = styled.div`
@@ -76,9 +78,21 @@ export const Option = styled.div`
   cursor: pointer;
   font-size: 19px;
   font-weight: 500;
-  &:hover {
+  /* &:hover {
     color: ${COLORS.white};
     background-color: ${COLORS.primaryPink};
     border-radius: 15px;
-  }
+  } */
+`
+
+export const OptionHovered = styled.div`
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 500;
+  color: ${COLORS.white};
+  background-color: ${COLORS.primaryPink};
+  border-radius: 15px;
 `

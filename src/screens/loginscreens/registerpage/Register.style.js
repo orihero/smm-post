@@ -18,7 +18,7 @@ export const LeftSideContainer = styled.div`
   align-items: center;
   margin-left: 420px;
   margin-top: 65px;
-`
+`;
 
 export const RightSideContainer = styled.div`
   padding: 10px;
@@ -27,7 +27,7 @@ export const RightSideContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-`
+`;
 
 export const RightSideLanguageBox = styled(DefaultText)`
   color: ${COLORS.fontColors};
@@ -35,13 +35,13 @@ export const RightSideLanguageBox = styled(DefaultText)`
   font-weight: 500;
   margin-left: 15px;
   display: flex;
-`
+`;
 export const RightSideRuBox = styled(DefaultText)`
   margin-left: 20px;
   color: ${COLORS.fontColors};
   font-size: 19px;
   font-weight: 500;
-`
+`;
 
 export const ComeInHead = styled(DefaultText)`
   font-size: 60px;
@@ -109,6 +109,11 @@ export const GoogleIconsBox = styled.div`
   border-radius: 18px;
   cursor: pointer;
   margin-top: 15px;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(244, 67, 54, 0.38);
+    -moz-box-shadow: 1px 1px 31px 3px rgba(244, 67, 54, 0.38);
+    box-shadow: 1px 1px 31px 3px rgba(244, 67, 54, 0.38);
+  }
 `;
 
 export const FaceBookIconsBox = styled.div`
@@ -123,6 +128,11 @@ export const FaceBookIconsBox = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-top: 15px;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(59, 89, 152, 0.38);
+    -moz-box-shadow: 1px 1px 31px 3px rgba(59, 89, 152, 0.38);
+    box-shadow: 1px 1px 31px 3px rgba(59, 89, 152, 0.38);
+  }
 `;
 
 export const VkontakteIconsBox = styled.div`
@@ -136,6 +146,11 @@ export const VkontakteIconsBox = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-top: 15px;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(68, 103, 141, 0.38);
+    -moz-box-shadow: 1px 1px 31px 3px rgba(68, 103, 141, 0.38);
+    box-shadow: 1px 1px 31px 3px rgba(68, 103, 141, 0.38);
+  }
 `;
 
 export const TwitterIconsBox = styled.div`
@@ -150,4 +165,9 @@ export const TwitterIconsBox = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-top: 15px;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(3, 169, 244, 0.38);
+    -moz-box-shadow: 1px 1px 31px 3px rgba(3, 169, 244, 0.38);
+    box-shadow: 1px 1px 31px 3px rgba(3, 169, 244, 0.38);
+  }
 `;

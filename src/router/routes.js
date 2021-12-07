@@ -4,7 +4,6 @@ import NavBar from "../components/navigation/navbar/NavBar";
 import Sidebar from "../components/navigation/sidebar/Sidebar";
 import Analytics from "../screens/analytics/Analytics";
 import Analyticsdemo from "../screens/analytics/analyticsdemo/Analyticsdemo";
-// import DatanotCollected from "../screens/analytics/datanotcollectedfiles/DatanotCollected";
 import Education from "../screens/education/Education";
 import EducationThree from "../screens/education/EducationThree";
 import EducationTwo from "../screens/education/EducationTwo";
@@ -16,7 +15,7 @@ import Newpost from "../screens/new-post/Newpost";
 import PlansScrens from "../screens/plans/PlansScrens";
 import Profile from "../screens/profile/Profile";
 import ProfileChangePassword from "../screens/profile/ProfileChangePassword";
-import Drafts from "../screens/Publications/drafts/Drafts";
+import Drafts from "../screens/Publications/Drafts/Drafts";
 import Publications from "../screens/Publications/Publications";
 import Settings from "../screens/settings/Settings";
 import Moredetails from "../screens/what'snew/moredetails/Moredetails";
@@ -32,7 +31,7 @@ let routes = [
   { key: "Мой профиль", path: "/profile", component: Profile },
   {
     key: "Мой профиль",
-    path: "/publicationchangepasswort",
+    path: "/publicationchangepassword",
     component: ProfileChangePassword,
   },
   { key: "Оплатить", path: "/plans", component: PlansScrens },

@@ -38,7 +38,7 @@ export const ModalExitHelp = styled.div`
   font-size: 15px;
   height: 30px;
   width: 40px;
-  background-color: #f7fafc;
+  background-color: ${COLORS.backgroundColor};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,14 +147,16 @@ export const PlanModalSectionBox = styled.div`
   width: 1000px;
   height: 200px;
   margin-top: 20px;
-  border: 1px solid "#000";
+  border: 1px solid ${COLORS.black};
 `;
+
 export const PlanModalSectionBoxes = styled.img`
   width: 200px;
-  height: 80px;
+  /* height: 80px; */
 `;
+
 export const PlanModalSec = styled.div`
-  width: 200px;
+  /* width: 200px; */
   height: 150px;
   display: flex;
   border-radius: 20px;
@@ -163,8 +165,10 @@ export const PlanModalSec = styled.div`
   position: relative;
   border: 1px solid ${COLORS.fontColors};
   cursor: pointer;
+  box-sizing: border-box;
+  padding: 15px 15px;
   &:hover {
-    border: 3px solid ${COLORS.primaryPink};
+    border: 1px solid ${COLORS.primaryPink};
   }
 `;
 
@@ -188,5 +192,5 @@ export const PlanModalButtonTwo = styled.button`
   padding: 10px 35px;
   margin-left: 60px;
   border: 1px solid ${COLORS.borderGray};
-  background-color: #fff;
+  background-color: ${COLORS.white};
 `;

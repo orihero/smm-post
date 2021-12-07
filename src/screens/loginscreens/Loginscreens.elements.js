@@ -63,7 +63,7 @@ export const RegisterLogin = styled.span`
     color: ${COLORS.loginColors};
     border-bottom: 2px solid ${COLORS.loginColors};
   }
-`;                                   
+`;
 
 export const NetLogin = styled.div`
   display: flex;
@@ -83,7 +83,7 @@ export const NetTabDiv = styled.div`
 
 export const NetLoginHead = styled(DefaultText)`
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   color: ${COLORS.fontColors};
 `;
 
@@ -98,6 +98,11 @@ export const GoogleIconsBox = styled.div`
   border-radius: 18px;
   cursor: pointer;
   margin-top: 15px;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(244, 67, 54, 0.38);
+    -moz-box-shadow: 1px 1px 31px 3px rgba(244, 67, 54, 0.38);
+    box-shadow: 1px 1px 31px 3px rgba(244, 67, 54, 0.38);
+  }
 `;
 
 export const FaceBookIconsBox = styled.div`
@@ -112,6 +117,11 @@ export const FaceBookIconsBox = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-top: 15px;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(59, 89, 152, 0.38);
+    -moz-box-shadow: 1px 1px 31px 3px rgba(59, 89, 152, 0.38);
+    box-shadow: 1px 1px 31px 3px rgba(59, 89, 152, 0.38);
+  }
 `;
 
 export const VkontakteIconsBox = styled.div`
@@ -125,6 +135,11 @@ export const VkontakteIconsBox = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-top: 15px;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(68, 103, 141, 0.38);
+    -moz-box-shadow: 1px 1px 31px 3px rgba(68, 103, 141, 0.38);
+    box-shadow: 1px 1px 31px 3px rgba(68, 103, 141, 0.38);
+  }
 `;
 
 export const TwitterIconsBox = styled.div`
@@ -139,6 +154,11 @@ export const TwitterIconsBox = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-top: 15px;
+  &:hover {
+    -webkit-box-shadow: 1px 1px 31px 3px rgba(3, 169, 244, 0.38);
+    -moz-box-shadow: 1px 1px 31px 3px rgba(3, 169, 244, 0.38);
+    box-shadow: 1px 1px 31px 3px rgba(3, 169, 244, 0.38);
+  }
 `;
 
 export const LanguageHead = styled(DefaultText)`
@@ -149,7 +169,16 @@ export const LanguageHead = styled(DefaultText)`
   margin-left: 300px;
   cursor: pointer;
   display: flex;
-  color: ${(props) => (props.primary ? COLORS.borderGray : COLORS.fontColors)};
+  ${(props) =>
+    props.active &&
+    `{
+      color: ${COLORS.fontColors}
+      opacity: 0.7;
+    }`}
+  &:hover {
+    color: ${COLORS.fontColors};
+    opacity: 0.7;
+  }
 `;
 
 export const RightSideRuBox = styled(DefaultText)`
@@ -157,6 +186,20 @@ export const RightSideRuBox = styled(DefaultText)`
   font-size: 19px;
   font-weight: 500;
   margin-left: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+  ${(props) =>
+    props.active &&
+    `{
+      color: ${COLORS.fontColors}
+      opacity: 0.7;
+    }`}
+  &:hover {
+    color: ${COLORS.fontColors};
+    opacity: 0.7;
+  }
 `;
 
 export const InfoParagraphContainer = styled.div`
@@ -193,4 +236,8 @@ export const BulpIconContaier = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+`;
+
+export const ChangeLanguagebox = styled.div`
+  display: flex;
 `;

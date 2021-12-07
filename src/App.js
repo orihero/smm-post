@@ -2,7 +2,11 @@ import Routes from './router/routes'
 import './App'
 
 function App() {
-  return <Routes />
+  return(
+    <>
+     <Routes />
+    </>
+  )
 }
 
 export default App

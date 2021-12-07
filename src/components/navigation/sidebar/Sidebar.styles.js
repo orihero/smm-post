@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { COLORS } from "../../../constants/colors";
+import { DefaultText } from "../../general/text/Text.style";
 
 export const Container = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ export const LeftSide = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  background-color: ${COLORS.backgroundColor};
+  background-color: ${COLORS.white};
   box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);  
 `;
 
@@ -50,6 +51,7 @@ export const LeftSideButton = styled.button`
   justify-content: space-between;
   cursor: pointer;
   background-color: ${COLORS.white};
+  position: relative;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.05);
@@ -107,3 +109,29 @@ export const PostsParagraph = styled.p`
   color: ${(props) => (props.active ? COLORS.primaryPink : COLORS.darkBlue)};
   font-weight: ${(props) => (props.active ? "600" : "normal")};
 `;
+
+export const IsShowedContainer = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: ${COLORS.white};
+  border-radius: 15px;
+  padding: 15px 15px;
+`
+
+export const IsShowdHead = styled(DefaultText)`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${COLORS.fontColors};
+  padding: 5px 15px;
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: ${COLORS.primaryPink};
+    color: ${COLORS.white};
+    border-radius: 15px;
+  }
+`

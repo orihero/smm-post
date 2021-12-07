@@ -1,35 +1,24 @@
-import React from "react";
-import Images from "./Images"
+import React, { Children } from "react";
+import { Colendar } from "../../../constants/icons";
 import {
+  ComponentsDateText,
   ComponentsHeader,
   ComponentsIconContainer,
   ComponentsimgContainer,
-  ComponentsDateText,
   ComponentsText,
-  ComponentsImg,
 } from "./Components.styles";
-import { ICONS, Colendar } from "../../../constants/icons";
+import Images from "./Images";
 
-export default function Components() {
+export default function Components({
+  text = "",
+  image,
+  description = "",
+  children,
+}) {
   return (
     <>
       <ComponentsHeader>
-        <ComponentsIconContainer>
-          <Colendar />
-          <ComponentsDateText>20 октября, 15:30</ComponentsDateText>
-        </ComponentsIconContainer>
-        <ComponentsText>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. Tortor sollicitudin velit ...</ComponentsText>
-      <ComponentsimgContainer>
-      <Images
-       images={[
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJDttHYVBlulouyL1abAg9Qrnya8JwN_UkQ&usqp=CAU",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJDttHYVBlulouyL1abAg9Qrnya8JwN_UkQ&usqp=CAU",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJDttHYVBlulouyL1abAg9Qrnya8JwN_UkQ&usqp=CAU",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJDttHYVBlulouyL1abAg9Qrnya8JwN_UkQ&usqp=CAU",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJDttHYVBlulouyL1abAg9Qrnya8JwN_UkQ&usqp=CAU",
-       ]}
-      />
-      </ComponentsimgContainer>
+
       </ComponentsHeader>
     </>
   );

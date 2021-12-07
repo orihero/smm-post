@@ -20,6 +20,10 @@ export const AnalyticTextContainer = styled.p`
    border-bottom: 3px solid ${COLORS.primaryPink};
    color: ${COLORS.primaryPink};
     }`}
+    &:hover {
+      color: ${COLORS.primaryPink};
+      border-bottom: 3px solid ${COLORS.primaryPink};
+    }
 `;
 
 export const AnalyticsParagraph = styled.p`

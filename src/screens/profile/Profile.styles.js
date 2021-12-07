@@ -67,6 +67,14 @@ export const ProfileInput1 = styled.input`
   padding-left: 7px;
   font-size: 14px;
   border: none;
+  ::-webkit-inner-spin-button{
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    ::-webkit-outer-spin-button{
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
 `;
 
 export const ProfileInputContainer = styled.div`
@@ -110,7 +118,9 @@ export const ProfileDelete = styled.div`
 export const ProfileTextTwo = styled.div`
   color: ${COLORS.primaryPink};
   cursor: pointer;
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const ProfileIcon = styled.div``;

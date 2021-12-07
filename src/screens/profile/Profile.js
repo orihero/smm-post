@@ -26,15 +26,18 @@ import {
   TextsDiv,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
+// import 'react-phone-number-input/style.css'
+import InputMask from 'react-input-mask';
 
 let tabs = ["Запланированные", "Уведомления"];
 
-export default function Profile({}) {
+export default function Profile({ }) {
   let history = useHistory();
   const [activeTab, setActiveTab] = useState(0);
   let onNavigate = () => {
-    history.push("/profilechangepassword");
+    history.push("/publicationchangepassword");
   };
+  // const [value, setValue] = useState()
   return (
     <>
       <ProfileHeadr>
@@ -77,8 +80,18 @@ export default function Profile({}) {
               <ProfileInputContainer>
                 <ProfileInputText>Номер телефона</ProfileInputText>
                 <ProfileInput>
-                  <ProfileInput1 placeholder="+998 99 888 8888 " />
-                  <ProfileCall />
+                  <InputMask
+                    mask="+999 99 999 9999"
+                    placeholder="+998 97 777 7777"
+                    style={{
+                      height: '100%',
+                      border: 'none',
+                      outline: 'none',
+                      marginLeft: 12,
+                      fontSize: 16,
+                      textDecoration: 'none'
+                    }} />
+                  <ProfileCall style={{ marginLeft: 150 }} />
                 </ProfileInput>
               </ProfileInputContainer>
             </ProfileInnercontainer>

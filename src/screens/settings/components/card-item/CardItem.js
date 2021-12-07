@@ -1,7 +1,20 @@
-import React from 'react'
-import { Container, DetailsContainer, LeftContainer, SettingsImage, Title, Description,RightContainer } from './CardItem.style'
+import React from "react";
+import {
+    Container,
+    DetailsContainer,
+    LeftContainer,
+    SettingsImage,
+    Title,
+    Description,
+    RightContainer,
+} from "./CardItem.style";
 
-export default function CardItem({ text = "", image, description = "", children }) {
+export default function CardItem({
+    text = "",
+    image,
+    description = "",
+    children,
+}) {
     return (
         <Container>
             <LeftContainer>
@@ -11,9 +24,7 @@ export default function CardItem({ text = "", image, description = "", children 
                     <Description>{description}</Description>
                 </DetailsContainer>
             </LeftContainer>
-            <RightContainer>
-                {children}
-            </RightContainer>
+            <RightContainer>{children}</RightContainer>
         </Container>
-    )
+    );
 }

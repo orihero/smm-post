@@ -3,7 +3,7 @@ import { COLORS } from "../../../constants/colors";
 
 export const DraftsHeader = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -36,6 +36,9 @@ export const DraftsTextOne = styled.div`
 `;
 export const DraftsBox = styled.div``;
 export const DraftsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 600;
   margin-top: 40px;

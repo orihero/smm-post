@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router";
 import { Buttons } from "../../components/general/buttons/RectangleButton.styles";
 import { COLORS } from "../../constants/colors";
@@ -14,6 +14,7 @@ import {
   BulpContainer,
   BulpIconContaier,
   BulpParagraph,
+  ChangeLanguagebox,
   FaceBookIconsBox,
   GoogleIconsBox,
   InfoParagraphContainer,
@@ -36,15 +37,15 @@ import {
   VkontakteIconsBox,
 } from "./Loginscreens.elements";
 
-
 function Loginscreens() {
+  let [selectedTab, setSelectedTab] = useState();
   const navigation = useHistory();
   let onStartClick = () => {
-    navigation.push("/newpost")
-  }
+    navigation.push("/newpost");
+  };
   let onComeInClick = () => {
-    navigation.push("/register")
-  }
+    navigation.push("/register");
+  };
   return (
     <>
       <Section>
@@ -80,10 +81,11 @@ function Loginscreens() {
             Начать пользоваться
           </Buttons>
           <RegisterHeadSecond>
-            Уже зарегистрированы? <RegisterLogin onClick={onComeInClick}>Войти</RegisterLogin>
+            Уже зарегистрированы?{" "}
+            <RegisterLogin onClick={onComeInClick}>Войти</RegisterLogin>
           </RegisterHeadSecond>
           <NetLogin>
-            <NetLoginHead >Войти через соцсеть</NetLoginHead>
+            <NetLoginHead>Войти через соцсеть</NetLoginHead>
             <NetTabDiv>
               <GoogleIconsBox>
                 <GoogleIcon color="#FFFFFF" />
@@ -101,36 +103,67 @@ function Loginscreens() {
           </NetLogin>
         </LeftSideContainer>
         <RightSideContainer>
-          <LanguageHead>Uz <RightSideRuBox>Ру</RightSideRuBox></LanguageHead>
+          <ChangeLanguagebox>
+            <LanguageHead
+              onClick={() => setSelectedTab(0)}
+              active={selectedTab === 0}
+            >
+              Uz
+            </LanguageHead>
+            <RightSideRuBox
+              onClick={() => setSelectedTab(1)}
+              active={selectedTab === 1}
+            >Ру</RightSideRuBox>
+          </ChangeLanguagebox>
           <InfoParagraphContainer>
             <OrangeIcons style={{ marginRight: "8px" }} />
             <RightSideInfoParagraph>
-              Отложенная публикация во <br /> «ВКонтакте», Фейсбук, <br /> Инстаграм и ещё 8 <br />
+              Отложенная публикация во <br /> «ВКонтакте», Фейсбук, <br />{" "}
+              Инстаграм и ещё 8 <br />
               соцсетей из одного окна
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <InfoParagraphContainer>
-            <OrangeIcons style={{ marginRight: "8px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <OrangeIcons
+              style={{ marginRight: "8px" }}
+              backgroundColor={COLORS.backgroundColorIconOrange}
+            />
             <RightSideInfoParagraph>
-              Получайте больше трафика и <br /> охвата для постов без усилий с <br /> «Автопилотом»
+              Получайте больше трафика и <br /> охвата для постов без усилий с{" "}
+              <br /> «Автопилотом»
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <InfoParagraphContainer>
-            <OrangeIcons style={{ marginRight: "8px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <OrangeIcons
+              style={{ marginRight: "8px" }}
+              backgroundColor={COLORS.backgroundColorIconOrange}
+            />
             <RightSideInfoParagraph>
-              Обсуждайте, комментируйте и <br /> дорабатывайте посты с <br /> коллегами и клиентами в <br /> одном приложении
+              Обсуждайте, комментируйте и <br /> дорабатывайте посты с <br />{" "}
+              коллегами и клиентами в <br /> одном приложении
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <InfoParagraphContainer>
-            <OrangeIcons style={{ marginRight: "8px" }} backgroundColor={COLORS.backgroundColorIconOrange} />
+            <OrangeIcons
+              style={{ marginRight: "8px" }}
+              backgroundColor={COLORS.backgroundColorIconOrange}
+            />
             <RightSideInfoParagraph>
               Прямая публикация в <br /> Инстаграм
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
           <BulpContainer>
             <BulpIconContaier>
-              <BulpIcons style={{ marginRight: "8px" }} color={COLORS.backgroundColorIconOrange} />
-              <BulpParagraph> Мы выпускаем 60 постов в день <br /> и экономим с Амплифером 700+ <br /> часов в месяц.Без Модуль А <br /> пришлось бы нанять ещё трёх <br /> человек или сократить <br /> количество постов вдвое.</BulpParagraph>
+              <BulpIcons
+                style={{ marginRight: "8px" }}
+                color={COLORS.backgroundColorIconOrange}
+              />
+              <BulpParagraph>
+                Мы выпускаем 60 постов в день <br /> и экономим с Амплифером
+                700+ <br /> часов в месяц.Без Модуль А <br /> пришлось бы нанять
+                ещё трёх <br /> человек или сократить <br /> количество постов
+                вдвое.
+              </BulpParagraph>
             </BulpIconContaier>
           </BulpContainer>
         </RightSideContainer>

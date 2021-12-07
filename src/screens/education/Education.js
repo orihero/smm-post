@@ -22,6 +22,7 @@ import {
   EducationTextTwoContainer,
 } from "./Education.styles";
 import EducationcComponents from "./components/EducationcComponents";
+import { COLORS } from "../../constants/colors";
 
 export default function Education() {
   let history = useHistory();
@@ -35,9 +36,8 @@ export default function Education() {
       <EducationHeader>
         <EducationInner>
           <EducationTextTwoContainer>
-            <EducationIcon /> <EducationTextTwo>  Шаг 1. Расскажите немного о себе</EducationTextTwo>
+            <EducationIcon /> <EducationTextTwo>Шаг 1. Расскажите немного о себе</EducationTextTwo>
           </EducationTextTwoContainer>
-
           <EducationContainer>
             <EducationText>
               Чтобы мы знали, как обращаться к вам в Модуле А, <br /> отчётах и
@@ -62,35 +62,37 @@ export default function Education() {
             </EducationBoxContainer>
             <EducationTextOne>Откуда вы узнали про Модуль А</EducationTextOne>
             <EducationCheckContainer>
-              <EducationCheck type={"checkbox"} />
+              <EducationCheck
+                type="checkbox"
+              />
               <EducationCheckText>От друзей</EducationCheckText>
             </EducationCheckContainer>
             <EducationCheckContainer>
-              <EducationCheck type={"checkbox"} />
+              <EducationCheck type="checkbox" />
               <EducationCheckText>
                 Из поисковых систем (Яндекс, Google и другие)
               </EducationCheckText>
             </EducationCheckContainer>
             <EducationCheckContainer>
-              <EducationCheck type={"checkbox"} />
+              <EducationCheck type="checkbox" />
               <EducationCheckText>Из блога Модуль А</EducationCheckText>
             </EducationCheckContainer>
             <EducationCheckContainer>
-              <EducationCheck type={"checkbox"} />
+              <EducationCheck type="checkbox" />
               <EducationCheckText>Нетология</EducationCheckText>
             </EducationCheckContainer>
             <EducationCheckContainer>
-              <EducationCheck type={"checkbox"} />
+              <EducationCheck type="checkbox" />
               <EducationCheckText>Skillbox</EducationCheckText>
             </EducationCheckContainer>
             <EducationCheckContainer>
-              <EducationCheck type={"checkbox"} />
+              <EducationCheck type="checkbox" />
               <EducationCheckText>Другое</EducationCheckText>
             </EducationCheckContainer>
           </EducationContainer>
           <EducationButton onClick={onNext} >Пропустить</EducationButton>
         </EducationInner>
-        <EducationcComponents/>
+        <EducationcComponents />
       </EducationHeader>
     </>
   );

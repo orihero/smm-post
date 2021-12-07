@@ -31,6 +31,7 @@ export const AnalyticsParagraph = styled.p`
   margin-bottom: 25px;
   font-size: 25px;
   font-weight: 600;
+  margin-left: 25px;
   color: ${COLORS.fontColors};
 `;
 

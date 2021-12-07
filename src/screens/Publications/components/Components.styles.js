@@ -10,6 +10,7 @@ export const ComponentsHeader = styled.div`
   height: 250px;
   background-color: ${COLORS.white};
 `;
+
 export const ComponentsIconContainer = styled.div`
   display: flex;
   align-items: center;
@@ -17,19 +18,20 @@ export const ComponentsIconContainer = styled.div`
   margin-bottom: 15px;
   margin-left: 23px;
 `;
+
 export const ComponentsDateText = styled.div`
   color: ${COLORS.primaryPink};
   margin-left: 12px;
 `;
+
 export const ComponentsText = styled.div`
-font-size: 18px;
-color: grey;
-padding-left: 25px;
+  font-size: 18px;
+  color: grey;
+  padding-left: 25px;
 `;
+
 export const ComponentsImg = styled.div``;
- export const ComponentsimgContainer = styled.div`
- margin-left:150px;
- 
- 
- `
-//  export const = styled.div``
+
+export const ComponentsimgContainer = styled.div`
+  margin-left: 150px;
+`;

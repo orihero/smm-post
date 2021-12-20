@@ -14,7 +14,7 @@ export const InstrumentsHeaderContainer = styled.div`
 
 export const InstrumentsInner = styled.div`
   margin-bottom: 30px;
-display: flex;
+  display: flex;
 `;
 
 export const InstrumentsContainer = styled.div`
@@ -22,9 +22,10 @@ export const InstrumentsContainer = styled.div`
 `;
 
 export const InstrumentsText = styled.div`
-align-items: center;
-display: flex;
-margin-left: 5px;
+  align-items: center;
+  display: flex;
+  margin-left: 5px;
+  font-weight: 500;
 `;
 
 export const InstrumentsBox = styled.div`
@@ -60,7 +61,7 @@ export const InstrumentsBoxTextTwo = styled.div`
 
 export const InstrumentsBoxTextThree = styled.button`
   color: #e8427e;
-  border:none ;
+  border: none;
   background-color: ${COLORS.white};
   cursor: pointer;
 `;
@@ -83,7 +84,7 @@ export const InstrumentsBoxContainerImage = styled.div`
 `;
 
 export const InstrumentsBoxContainerImageText = styled.h1`
-  padding: 5px 15px;
+  padding: 5px 20px;
   cursor: pointer;
   border-radius: 20px;
   font-size: 15px;
@@ -94,7 +95,7 @@ export const InstrumentsBoxContainerImageText = styled.h1`
 `;
 
 export const InstrumentsBoxContainerImageTextOne = styled.div`
-  padding: 5px 15px;
+  padding: 4px 20px;
   border-radius: 20px;
   cursor: pointer;
   font-size: 15px;

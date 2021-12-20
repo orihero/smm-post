@@ -81,6 +81,12 @@ export const EducationImageContainer = styled.div`
   &:hover {
     border: 1px solid ${COLORS.primaryPink};
   }
+  ${(props) =>
+    props.active &&
+    `{
+      outline: 1px solid ${COLORS.primaryPink}
+    }`
+  }
 `;
 
 export const EducationBoxContainer = styled.div`
@@ -93,7 +99,7 @@ export const EducationCheck = styled.input`
   width: 25px;
   height: 25px;
   border-radius: 20px;
-  color: ${props => props.active ? '#fff' : '#000'}
+  color: ${props => props.active ? '#fff' : '#000'};
 `;
 
 export const EducationCheckContainer = styled.div`

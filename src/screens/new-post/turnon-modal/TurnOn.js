@@ -8,7 +8,6 @@ import {
   HaedPhoneImgParagraph,
   HandAndMassageContainer,
   HandAndMassageParagraph,
-  HandAndMAssageParagraph,
   HandAndMassageParagraphSpan,
   HandPhoneImageBox,
   HeadPhoneContainer,
@@ -101,12 +100,22 @@ function TurnOn({ closeModal }) {
           </LikeHandImgContainer>
           <ButtonContainer>
             <NewPostModalsButton
-             onClick={() => closeModal(false)}
-             style={{
-               marginRight: 5
-             }}
-             >Закрыть</NewPostModalsButton>
-            <NewPostModalsButton style={{ border: 'none',backgroundColor: COLORS.primaryPink, color: COLORS.white }}>Включить «Обсуждение постов» </NewPostModalsButton>
+              onClick={() => closeModal(false)}
+              style={{
+                marginRight: 5,
+              }}
+            >
+              Закрыть
+            </NewPostModalsButton>
+            <NewPostModalsButton
+              style={{
+                border: "none",
+                backgroundColor: COLORS.primaryPink,
+                color: COLORS.white,
+              }}
+            >
+              Включить «Обсуждение постов»{" "}
+            </NewPostModalsButton>
           </ButtonContainer>
         </ModalContainerHelp>
       </ModalBackgrundHelp>

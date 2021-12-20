@@ -12,7 +12,12 @@ export const Buttons = styled(DefaultText)`
   opacity: ${(props) => (props.active ? 1 : 0.5)};
   color: ${(props) => (props.primary ? COLORS.white : COLORS.primaryPink)};
   background-color: ${(props) =>
-        props.primary ? COLORS.primaryPink : COLORS.white};
+    props.primary ? COLORS.primaryPink : COLORS.white};
   margin: 15px;
   margin-right: 30px;
+  &:hover {
+    -webkit-box-shadow: 1px 0px 29px 6px rgba(232, 66, 126, 0.2);
+    -moz-box-shadow: 1px 0px 29px 6px rgba(232, 66, 126, 0.2);
+    box-shadow: 1px 0px 29px 6px rgba(232, 66, 126, 0.2);
+  }
 `;

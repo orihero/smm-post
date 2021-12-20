@@ -22,7 +22,7 @@ function Settings() {
             text="Страницы в соцсетях и наборы"
             description="Добавляйте страницы и объединяйте их в группы"
           >
-            <RoundButton primary>0 страниц</RoundButton>
+            <RoundButton primary >0 страниц</RoundButton>
           </CardItem>
           <CardItem
             image={IMAGES.settings.userIcon}

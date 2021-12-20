@@ -6,12 +6,12 @@ export const Container = styled.div`
   width: 100%;
   height: 110vh;
   display: flex;
-`;
+`
 
 export const OptionsDiv = styled.div`
   display: flex;
   align-items: center;
-`;
+`
 
 export const Preview = styled.div`
   display: flex;
@@ -394,11 +394,12 @@ export const PreviewInstaInHeadSpan = styled(DefaultText)`
 `;
 
 export const PreviewContainerHeader = styled.div`
-  display: flex;
-  background-color: ${COLORS.white};
-  justify-content: space-between;
-  border-radius: 20px;
-`;
+
+display: flex;
+background-color: ${COLORS.white};
+justify-content: space-between;
+border-radius: 20px;
+`
 
 export const PreviewContainerHeaderIcon = styled.div`
   margin-top: 50px;

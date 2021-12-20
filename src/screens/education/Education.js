@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { EducationIcon } from "../../constants/icons"
 import { useHistory } from "react-router-dom";
+import { EducationIcon } from "../../constants/icons";
 import { IMAGES } from "../../constants/images";
+import EducationcComponents from "./components/EducationcComponents";
 import {
   EducationBoxContainer,
   EducationButton,
@@ -21,8 +22,6 @@ import {
   EducationTextTwo,
   EducationTextTwoContainer,
 } from "./Education.styles";
-import EducationcComponents from "./components/EducationcComponents";
-import { COLORS } from "../../constants/colors";
 
 export default function Education() {
   let history = useHistory();
@@ -31,12 +30,16 @@ export default function Education() {
   };
 
   let [selectedTab, setSelectedTab] = useState();
+  let [isSelectedTab, setIsSelectedTab] = useState();
   return (
     <>
       <EducationHeader>
         <EducationInner>
           <EducationTextTwoContainer>
-            <EducationIcon /> <EducationTextTwo>Шаг 1. Расскажите немного о себе</EducationTextTwo>
+            <EducationIcon />
+            <EducationTextTwo>
+              Шаг 1. Расскажите немного о себе
+            </EducationTextTwo>
           </EducationTextTwoContainer>
           <EducationContainer>
             <EducationText>
@@ -46,15 +49,17 @@ export default function Education() {
             <EducationInput placeholder={"Как вас зовут?"} />
             <EducationBoxContainer>
               <EducationImageContainer
-                onClick={() => setSelectedTab(0)}
-                active={selectedTab === 0}
+                active
+                onClick={() => setIsSelectedTab(0)}
+                active={isSelectedTab === 0}
               >
                 <EducationImage src={IMAGES.education.Iworkmyself} />
                 <EducationImageText>Работаю сам</EducationImageText>
               </EducationImageContainer>
               <EducationImageContainer
-                onClick={() => setSelectedTab(1)}
-                active={selectedTab === 1}
+                active
+                onClick={() => setIsSelectedTab(1)}
+                active={isSelectedTab === 1}
               >
                 <EducationImage1 src={IMAGES.education.Team} />
                 <EducationImageText>Работаем командой</EducationImageText>
@@ -62,9 +67,7 @@ export default function Education() {
             </EducationBoxContainer>
             <EducationTextOne>Откуда вы узнали про Модуль А</EducationTextOne>
             <EducationCheckContainer>
-              <EducationCheck
-                type="checkbox"
-              />
+              <EducationCheck type="checkbox" />
               <EducationCheckText>От друзей</EducationCheckText>
             </EducationCheckContainer>
             <EducationCheckContainer>
@@ -90,7 +93,7 @@ export default function Education() {
               <EducationCheckText>Другое</EducationCheckText>
             </EducationCheckContainer>
           </EducationContainer>
-          <EducationButton onClick={onNext} >Пропустить</EducationButton>
+          <EducationButton onClick={onNext}>Пропустить</EducationButton>
         </EducationInner>
         <EducationcComponents />
       </EducationHeader>

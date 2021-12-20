@@ -55,12 +55,12 @@ export const EducationTwoTextContainerTwo = styled.div`
   cursor: pointer;
   ${(props) =>
     props.active ?
-    css`
+      css`
        {
-        border: 3px solid ${COLORS.primaryPink};
+        outline: 3px solid ${COLORS.primaryPink};
       }
-    `:`&:hover {
-    border: 1px solid ${COLORS.primaryPink};
+    `: `&:hover {
+    outline: 1px solid ${COLORS.primaryPink};
   }`}
 `;
 export const EducationIconContainer = styled.div`
@@ -89,6 +89,7 @@ export const EducationTwoBtn = styled.button`
  border-radius: 20px;
   border: solid 1px #C9CED8;
   padding: 10px 20px;
+  padding-bottom: 15;
   background-color:  #f7fafc;
   cursor: pointer;
   margin-top: 10px;

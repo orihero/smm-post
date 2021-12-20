@@ -29,8 +29,9 @@ export default function Instruments() {
       <InstrumentsHeader>
         <InstrumentsHeaderContainer>
           <InstrumentsInner>
-            
-            <EducationIcon /> <InstrumentsText> Используйте Модуль А по максимуму с полезными инструментами, чтобы{" "}
+            <EducationIcon />
+            <InstrumentsText>
+              Используйте Модуль А по максимуму с полезными инструментами, чтобы
               <br /> экономить время при работе с соцсетями и успевать больше
             </InstrumentsText>
           </InstrumentsInner>
@@ -44,9 +45,13 @@ export default function Instruments() {
                   Составьте расписание публикаций с учётом <br /> особенностей
                   вашего проекта для удобной и <br /> быстрой работы с
                   соцсетями...
-                  <InstrumentsBoxTextThree onClick={() => {
-                    setOpenModal(true);
-                  }}> подробнее</InstrumentsBoxTextThree>
+                  <InstrumentsBoxTextThree
+                    onClick={() => {
+                      setOpenModal(true);
+                    }}
+                  >
+                    подробнее
+                  </InstrumentsBoxTextThree>
                 </InstrumentsBoxTextOne>
                 <InstrumentsBoxTextTwo>
                   Для тех, кто хочет упростить работу с публикацией в соцсети
@@ -56,7 +61,6 @@ export default function Instruments() {
                 <InstrumentsBoxContainerImageTextOne>
                   Вкл
                 </InstrumentsBoxContainerImageTextOne>
-
                 <InstrumentsBoxImage src={IMAGES.insturments.ok} />
               </InstrumentsBoxContainerImage>
             </InstrumentsBox>
@@ -152,5 +156,3 @@ export default function Instruments() {
     </>
   );
 }
-
-

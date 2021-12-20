@@ -89,7 +89,7 @@ export const RoundtButton = styled.div`
   font-weight: bold;
   padding: 10px 20px 0px 20px;
   margin-bottom: 10px;
-  background-color: ${COLORS.primaryPink};
+  background-color: ${COLORS.vkontakteBackgroundColor};
   text-align: center;
   align-content: center;
   justify-content: center;

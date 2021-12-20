@@ -29,12 +29,9 @@ import {
   EducationTwoBtn,
   EducationTextTwoContainer,
   EducationTextTwo,
- 
 } from "./EducationThree.styles";
 import { useHistory } from "react-router-dom";
 import EducationcComponents from "./components/EducationcComponents";
-
-
 
 let tabs = ["Запланированные", "Опубликованные", "Избранное", "Черновики"];
 
@@ -45,6 +42,9 @@ export default function Home() {
   };
   const [activeTab, setActiveTab] = useState(0);
   const [previewing, setPreviewing] = useState(false);
+  let [isSelected, setIsSelectedTab] = useState();
+  let [selectedTab, setSelectedTab] = useState();
+  let [isTabed, setIsTabed] = useState();
   return (
     <>
       <Container>
@@ -52,7 +52,7 @@ export default function Home() {
           <EducationTextTwoContainer>
             <EducationIcon />
             <EducationTextTwo>
-              Шаг 1. Расскажите немного о себе{" "}
+              Шаг 1. Расскажите немного о себе
             </EducationTextTwo>
           </EducationTextTwoContainer>
           <PostDivs>
@@ -60,10 +60,30 @@ export default function Home() {
               <TipDiv>
                 <OptionsDiv>
                   <TipHead>Тип:</TipHead>
-                  <RoundButton active text="Пост" />
-                  <RoundButton text="Сторис" />
-                  <RoundButton text="IGTV" />
-                  <RoundButton text="Карусель" />
+                  <RoundButton
+                    active
+                    onClick={() => setIsSelectedTab(0)}
+                    active={isSelected === 0}
+                    text="Пост"
+                  />
+                  <RoundButton
+                    active
+                    onClick={() => setIsSelectedTab(1)}
+                    active={isSelected === 1}
+                    text="Сторис"
+                  />
+                  <RoundButton
+                    active
+                    onClick={() => setIsSelectedTab(2)}
+                    active={isSelected === 2}
+                    text="IGTV"
+                  />
+                  <RoundButton
+                    active
+                    onClick={() => setIsSelectedTab(3)}
+                    active={isSelected === 3}
+                    text="Карусель"
+                  />
                 </OptionsDiv>
                 <PreviewButton
                   active={previewing}
@@ -104,26 +124,46 @@ export default function Home() {
                 </DataButton>
               </DataDiv>
               <DataDiv>
-                <DataHead>Темы:</DataHead>{" "}
-                <TemasButton>Образовательный</TemasButton>{" "}
-                <TemasButton>Продающий</TemasButton>
+                <DataHead>Темы:</DataHead>
+                <TemasButton
+                  active
+                  onClick={() => setIsTabed(0)}
+                  active={isTabed === 0}
+                >
+                  Образовательный
+                </TemasButton>
+                <TemasButton
+                  active
+                  onClick={() => setIsTabed(1)}
+                  active={isTabed === 1}
+                >Продающий</TemasButton>
               </DataDiv>
               <ButtonsContainer>
-                <RoundButton primary active={true}>
+                <RoundButton
+                  active
+                  onClick={() => setSelectedTab(0)}
+                  active={selectedTab === 0}
+                >
                   В черновики
                 </RoundButton>
-                <RoundButton active={true}>Опубликовать сейчас</RoundButton>
+                <RoundButton
+                  active
+                  onClick={() => setSelectedTab(1)}
+                  active={selectedTab === 1}
+                >
+                  Опубликовать сейчас
+                </RoundButton>
               </ButtonsContainer>
             </PostContainer>
           </PostDivs>
           <ButtonsContainerOne>
-            <EducationTwoBtn  onClick={onNext} >Назад</EducationTwoBtn>
-            <RoundButton  primary active={true}>
+            <EducationTwoBtn onClick={onNext}>Назад</EducationTwoBtn>
+            <RoundButton primary active={true}>
               Слудуюший шаг
             </RoundButton>
           </ButtonsContainerOne>
         </ContainerBox>
-        <EducationcComponents/>
+        <EducationcComponents />
       </Container>
     </>
   );

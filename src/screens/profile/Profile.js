@@ -26,7 +26,6 @@ import {
   TextsDiv,
 } from "./Profile.styles";
 import ProfileHeader from "./ProfileHeader";
-// import 'react-phone-number-input/style.css'
 import InputMask from 'react-input-mask';
 
 let tabs = ["Запланированные", "Уведомления"];
@@ -37,7 +36,6 @@ export default function Profile({ }) {
   let onNavigate = () => {
     history.push("/publicationchangepassword");
   };
-  // const [value, setValue] = useState()
   return (
     <>
       <ProfileHeadr>

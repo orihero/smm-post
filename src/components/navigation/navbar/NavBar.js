@@ -20,7 +20,6 @@ import {
   Vector,
   OptionsContainer,
   Option,
-  OptionHovered,
 } from ".././navbar/Navbar.style";
 
 export default function NavBar({ routes = [] }) {

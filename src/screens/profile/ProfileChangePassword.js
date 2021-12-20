@@ -35,7 +35,7 @@ export default function ProfileChangePassword() {
             <ProfileBoxLeft>
               <ProfileBoxLeftText>Уведомление</ProfileBoxLeftText>
               <ProfileBoxLeftInputContiner>
-                <ProfileBoxLeftInput type={"checkbox"}  />
+                <ProfileBoxLeftInput type={"checkbox"} />
                 <ProfileBoxLeftInputText>
                   Ошибки публикации и аккаунта
                 </ProfileBoxLeftInputText>
@@ -85,9 +85,9 @@ export default function ProfileChangePassword() {
               </ProfileBoxRightInputContiner>
               <ProfileText>Аккаунты в соцсетях для быстрого входа</ProfileText>
               <ProfileTextContaine>
-                <RoundtButton> Войти через «ВКонтакте»</RoundtButton>
-                <RoundtButton>Войти через Фейсбук</RoundtButton>
-                <RoundtButton>Войти через Твиттер</RoundtButton>
+                <RoundtButton>Войти через «ВКонтакте»</RoundtButton>
+                <RoundtButton style={{ backgroundColor: '#3B5998' }}>Войти через Фейсбук</RoundtButton>
+                <RoundtButton style={{ backgroundColor: '#03A9F4' }}>Войти через Твиттер</RoundtButton>
               </ProfileTextContaine>
             </ProfileBoxRight>
           </ProfileBoxOne>

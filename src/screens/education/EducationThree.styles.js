@@ -194,7 +194,7 @@ export const DataDiv = styled.div`
   color: #102046;
   flex: 1;
   padding-bottom: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   border-bottom: 1px solid rgba(16, 32, 70, 0.1);
 `;
 
@@ -215,6 +215,7 @@ export const DataButton = styled.div`
 export const DataHead = styled.h1`
   font-size: 16px;
   font-weight: 500;
+  margin-top: 25;
 `;
 
 export const DataImg = styled.img`
@@ -222,16 +223,33 @@ export const DataImg = styled.img`
 `;
 
 export const TemasButton = styled.div`
-  display: flex;
+    display: flex;
   align-items: center;
+  justify-content: center;
   border: 1px solid ${COLORS.primaryPink};
   border-radius: 15px;
-  padding: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 1px 10px;
+  padding-bottom: 3px;
   color: ${COLORS.primaryPink};
   font-weight: 500;
   margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  opacity: 0.6;
+  opacity: ${(props) => (props.active ? 1 : 0.5)};
+  color: ${(props) => (props.primary ? COLORS.white : COLORS.primaryPink)};
+  background-color: ${(props) =>
+    props.primary ? COLORS.primaryPink : COLORS.white};
+  &:hover {
+    color: ${COLORS.white};
+    background-color: ${COLORS.primaryPink};
+  }
+  ${(props) =>
+    props.active &&
+    `{
+        background-color: ${COLORS.primaryPink};
+        color: ${COLORS.white};
+    }`}
 `;
 
 export const ButtonsContainer = styled.div`
@@ -313,7 +331,9 @@ export const EducationTwoBtn = styled.button`
   border: solid 1px #c9ced8;
   padding: 10px 20px;
   background-color: #f7fafc;
+  padding-top: 25;
   cursor: pointer;
+  
 `;
 export const EducationTextTwoContainer = styled.div`
   display: flex;

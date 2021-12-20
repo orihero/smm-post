@@ -20,6 +20,7 @@ width: 100%;
   margin-right: 28%;
   margin-bottom: 20px;
   padding: 5px 25px;
+  cursor: pointer;
 `;
 
 export const ParagpaphFirst = styled.p`

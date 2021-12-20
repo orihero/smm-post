@@ -35,6 +35,119 @@ export const AnalyticsParagraph = styled.p`
   color: ${COLORS.fontColors};
 `;
 
+export const NetsContainer = styled.div`
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+`
+
+export const NetsInBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px;
+  border-radius: 35px;
+  outline: 1px solid ${COLORS.borderGray}; 
+  background-color: ${COLORS.backgroundColor};
+  margin-left: 15px;
+  position: relative;
+  cursor: pointer;
+  &:hover{
+    outline: 1px solid ${COLORS.primaryPink};
+  }
+  ${(props) =>
+    props.active &&
+    `{
+      outline: 3px solid ${COLORS.primaryPink}
+    }`
+  }
+`
+
+export const PlusBox = styled.div`
+  padding: 12px 18px;
+  border-radius: 35px;
+  outline: 1px solid ${COLORS.borderGray};
+  cursor: pointer;
+  background-color: ${COLORS.backgroundColor};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-left: 15px;
+  &:hover {
+    outline: 1px solid ${COLORS.primaryPink};
+  }
+`
+
+export const AnalyticsNetsFaceBookBox = styled.div`
+  width: 20px;
+  height: 20px;
+  background-color: ${COLORS.facebookBackgroundColor};
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 5px 5px;
+  margin: -10px -2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const AnalyticsNetsVkontankteBox = styled.div`
+  width: 20px;
+  height: 20px;
+  background-color: ${COLORS.vkontakteBackgroundColor};
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 5px 5px;
+  margin: -10px -2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const AnalyticsNetsTwitterBox = styled.div`
+  width: 20px;
+  height: 20px;
+  background-color: ${COLORS.twitterBackgroundColor};
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 5px 5px;
+  margin: -10px -2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const AnalyticsNetsInstagramBox = styled.div`
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    49.33deg,
+    #ffdd55 7%,
+    #ff543e 50.26%,
+    #c837ab 93.53%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 5px 5px;
+  margin: -10px -2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 export const DateButtonContainer = styled.div`
   display: flex;
   align-items: center;

@@ -81,7 +81,7 @@ function Loginscreens() {
             Начать пользоваться
           </Buttons>
           <RegisterHeadSecond>
-            Уже зарегистрированы?{" "}
+            Уже зарегистрированы?
             <RegisterLogin onClick={onComeInClick}>Войти</RegisterLogin>
           </RegisterHeadSecond>
           <NetLogin>
@@ -118,7 +118,7 @@ function Loginscreens() {
           <InfoParagraphContainer>
             <OrangeIcons style={{ marginRight: "8px" }} />
             <RightSideInfoParagraph>
-              Отложенная публикация во <br /> «ВКонтакте», Фейсбук, <br />{" "}
+              Отложенная публикация во <br /> «ВКонтакте», Фейсбук, <br />
               Инстаграм и ещё 8 <br />
               соцсетей из одного окна
             </RightSideInfoParagraph>
@@ -129,7 +129,7 @@ function Loginscreens() {
               backgroundColor={COLORS.backgroundColorIconOrange}
             />
             <RightSideInfoParagraph>
-              Получайте больше трафика и <br /> охвата для постов без усилий с{" "}
+              Получайте больше трафика и <br /> охвата для постов без усилий
               <br /> «Автопилотом»
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
@@ -139,7 +139,7 @@ function Loginscreens() {
               backgroundColor={COLORS.backgroundColorIconOrange}
             />
             <RightSideInfoParagraph>
-              Обсуждайте, комментируйте и <br /> дорабатывайте посты с <br />{" "}
+              Обсуждайте, комментируйте и <br /> дорабатывайте посты с <br />
               коллегами и клиентами в <br /> одном приложении
             </RightSideInfoParagraph>
           </InfoParagraphContainer>
